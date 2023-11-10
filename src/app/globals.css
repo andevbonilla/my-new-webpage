@@ -3,6 +3,40 @@
 @tailwind utilities;
 
 /* stars */
+#asteroid{
+    background-image: url("../assets/asteroid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation-name: move;
+    animation-duration: 6300ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+#asteroid1{
+    background-image: url("../assets/asteroid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation-name: move;
+    animation-duration: 9500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+#asteroid2{
+    background-image: url("../assets/asteroid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation-name: move;
+    animation-duration: 8100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 .stars {
     display: flex;
     flex-direction: column;
@@ -19,4 +53,20 @@
     height:100%;
     background: transparent;
     z-index:0;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+        transform: translate(20);
+    }
+    to {
+        transform:rotate(360deg);
+        transform: translate(200);
+    }
+}
+
+@keyframes move {
+  from{transform: translateX(-10rem) rotate(300deg);}
+  to{transform: translateX(150vw) rotate(450deg);}
 }
