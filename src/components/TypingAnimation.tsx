@@ -18,6 +18,6 @@ export const TypingAnimation = ({stringList}:any) => {
     }, []);
 
   return (
-    <h2 className='h-10 text-white font-bold' ref={subtitle}></h2>
+    <h2 className='h-10 text-white text-xl font-bold' ref={subtitle}></h2>
   )
 }
