@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/Navbar';
+import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
 import Image from 'next/image';
@@ -35,7 +36,7 @@ export default function Home() {
 
             {/* about me */}
             <div className='px-[15%]'>
-                <h2 className='font-bold text-white text-center text-2xl my-20'>ABOUT ME</h2>
+                <h2 className='font-bold text-white text-center text-2xl mt-20 mb-10'>ABOUT ME</h2>
                 <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur. 
                    I love creating technological products. When I was 16, I founded my first company, Fansive. 
                    I&apos;m passionate about science, technology, cars, music, but above all, ice cream. 😄
@@ -43,9 +44,9 @@ export default function Home() {
             </div>
 
             {/* my business */}
-            <div>
+            <div className='w-full'>
               
-                <h2 className='font-bold text-white text-center text-2xl my-20'>MY BUSINESS</h2>
+                <h2 className='font-bold text-white text-center text-2xl mt-20 mb-10'>MY BUSINESS</h2>
 
                 <div className='w-full'>
 
@@ -55,24 +56,26 @@ export default function Home() {
                     className='w-full p-6 floating'
                   />
                   
-                  <h3 className='font-bold text-2xl text-white mx-[10%] mt-5 leading-10'>Simpliterms</h3>
+                  <h3 className='font-bold text-2xl text-white mx-[13%] mt-6 leading-10'>Simpliterms</h3>
 
-                  <p className='text-white text-left text-xl leading-10 mx-[10%] mb-8'>
+                  <p className='text-white text-left text-xl leading-10 mx-[13%] mb-8'>
                       Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
                       they are too long and difficult to understand? Simpliterms is an extension that summarizes the policies 
                       with a single click so you don't have to blindly accept them again.
                   </p>
 
-                  <Link className=' mx-[10%] bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
+                  <div className='px-[13%]'>
+                     <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
+                  </div>
 
                 </div>                
 
             </div>
 
             {/* my skills */}
-            <div className='px-[10%]'>
-                <h2 className='font-bold text-white text-center text-2xl my-20'>SKILLS</h2>
-                
+            <div className='px-[13%]'>
+                <h2 className='font-bold text-white text-center text-2xl mt-20 mb-10'>SKILLS</h2>
+                <Skills />
             </div>
 
             {/* my projects */}
