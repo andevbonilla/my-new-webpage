@@ -17,6 +17,10 @@
      background: linear-gradient(180deg, rgb(15, 25, 59) 35%, rgb(147, 197, 253) 99%);
 }
 
+.gradient-background-water{
+    background: linear-gradient(180deg, #71acad 0%, #018af5 50%, #001a2f 100%);
+}
+
 #asteroid{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
@@ -67,6 +71,11 @@
     height:100%;
     background: transparent;
     z-index:0;
+}
+
+.city{
+    display: flex;
+    width: 100%;
 }
 
 @keyframes spin {

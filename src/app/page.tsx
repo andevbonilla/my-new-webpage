@@ -106,10 +106,22 @@ export default function Home() {
             </div>
 
 
-            <div className='h-[30rem]'></div>
+            <div className='h-[12rem]'></div>
+
+            <div className='city scale-150'>
+                  <Image 
+                    src={require("@/assets/city.png")}
+                    alt="singapur city"
+                    className='w-full scale-150 -translate-x-6'
+                  />
+            </div>
 
 
           </StarsBackground>
+
+          <div className='h-[100rem] bg-[#71acad] gradient-background-water'>
+
+          </div>
           
       </main>
     </>
