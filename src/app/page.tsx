@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/Navbar';
+import { Project } from '@/components/Project';
 import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
@@ -52,7 +53,7 @@ export default function Home() {
 
                   <Image 
                     src={require("@/assets/simpliterms-planet.png")}
-                    alt='Hologram of simpliterms'
+                    alt="simpliterm's planet"
                     className='w-full p-6 floating'
                   />
                   
@@ -79,17 +80,32 @@ export default function Home() {
             </div>
 
             {/* my projects */}
-            <div className='px-[13%]'>
+            <div>
                 <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY PROJECTS</h2>
-                
+                <Project name={"YourDreamCar"} 
+                         desc={"YourDreamCar is a web page that I designed for a company that I developed with my best friend David. Which offers wrapping services, window tinting and more. #YourDreamCar"} 
+                         link={"https://www.yourdreamcar.ca/"} 
+                         github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
+                         imgUrl={"yourdreamcar-interface.png"}
+                         imgStack={"fansive-stack.png"}
+                />
+                <Project name={"Simpliterms"} 
+                         desc={"Fansive is a startup created by me which is a platform for exclusive content. This app has all the necessary tools for content creators to offer the best content to their subscribers, such as live streaming, stories, group chats, private chats, post, file storage and much more."} 
+                         link={"https://fansive.netlify.app/"} 
+                         github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
+                         imgUrl={"fansive-interface.png"}
+                         imgStack={"fansive-stack.png"}
+                />
+                <Project name={"Virtual Board"} 
+                         desc={"Virtual Board is a web application that simulates a classroom board, so you can draw, erase, create figures, drag and drop, rotate and many other things. This app use trigonometry and algebra to solve some of the functionalities in the virtual board."} 
+                         link={"https://super-virtual-board.netlify.app/"} 
+                         github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
+                         imgUrl={"virtualboard-interface.jpg"}
+                         imgStack={"fansive-stack.png"}
+                />
             </div>
 
 
-            <div className='h-[30rem]'></div>
-            <div className='h-[30rem]'></div>
-            <div className='h-[30rem]'></div>
-            <div className='h-[30rem]'></div>
-            <div className='h-[30rem]'></div>
             <div className='h-[30rem]'></div>
 
 
