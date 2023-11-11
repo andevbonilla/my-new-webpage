@@ -87,7 +87,7 @@ export default function Home() {
                          link={"https://www.yourdreamcar.ca/"} 
                          github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                          imgUrl={"yourdreamcar-interface.png"}
-                         imgStack={"fansive-stack.png"}
+                         imgStack={"yourdreamcar-stack.png"}
                 />
                 <Project name={"Simpliterms"} 
                          desc={"Fansive is a startup created by me which is a platform for exclusive content. This app has all the necessary tools for content creators to offer the best content to their subscribers, such as live streaming, stories, group chats, private chats, post, file storage and much more."} 
@@ -101,7 +101,7 @@ export default function Home() {
                          link={"https://super-virtual-board.netlify.app/"} 
                          github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                          imgUrl={"virtualboard-interface.jpg"}
-                         imgStack={"fansive-stack.png"}
+                         imgStack={"virtual-board-stack.png"}
                 />
             </div>
 
