@@ -1,3 +1,5 @@
+import { ContactForm } from '@/components/ContactForm';
+import { CuriosFact } from '@/components/CuriosFact';
 import { Navbar } from '@/components/Navbar';
 import { Project } from '@/components/Project';
 import { Skills } from '@/components/Skills';
@@ -46,6 +48,8 @@ export default function Home() {
                     </p>
                 </div>
 
+                <CuriosFact text={"At this point we are 400 kilometers above sea level. At this altitude is the International Space Station (ISS)."}/>
+
                 {/* my business */}
                 <div className='w-full'>
                   
@@ -76,10 +80,12 @@ export default function Home() {
                 </div>
 
                 {/* my skills */}
-                <div className='px-[13%]'>
+                <div className='px-[13%] mb-14'>
                     <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>SKILLS</h2>
                     <Skills />
                 </div>
+
+                <CuriosFact text={"At this point we are at 1000 kilometers above sea level. At this altitude we can find the STARLINK satellites of Elon Musk which are usually between 340 km and 1200 km above sea level."}/>
 
                 {/* my projects */}
                 <div>
@@ -107,8 +113,8 @@ export default function Home() {
                     />
                 </div>
 
-
-                <div className='h-[12rem]'></div>
+                <CuriosFact text={"At this point we are at an altitude of 30,000 meters, at this altitude most of today's commercial airplanes usually fly."}/>
+                <div className='h-[25rem]'></div>
 
                 <div className='city scale-150'>
                       <Image 
@@ -126,7 +132,7 @@ export default function Home() {
           <div className='gradient-background-water'>
 
               {/* my projects */}
-              <div className='pt-[4rem]'>
+              <div className='pt-[10rem]'>
                     <Project name={"FileBox"} 
                             desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."} 
                             link={"https://www.yourdreamcar.ca/"} 
@@ -150,7 +156,25 @@ export default function Home() {
                     />
                 </div>
 
-                <div className='h-[50rem]'></div>
+                <div className='px-[13%]'>
+                    <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>CONTACT ME</h2>
+                    <ContactForm />
+                </div>
+
+                <CuriosFact text={"At this point we are at 3800 meters deep, at this depth is the remains of the Titanic and ends the content of my website."}/>
+
+                <div className='h-[10rem]'></div>
+
+                <div className='titanic'>
+                      <div className='flex'>
+                          
+                      </div>
+                      <Image 
+                        src={require("@/assets/titanic.png")}
+                        alt="singapur city"
+                        className='w-full scale-150 -translate-x-6'
+                      />
+                </div>
 
           </div>
           
