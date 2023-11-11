@@ -28,6 +28,7 @@ export default function Home() {
                             alt='Andres Bonilla in a tesla roadster'
                             width={350}
                             height={350}
+                            className='floating'
                         />
                 </div>
             </div>
@@ -43,14 +44,15 @@ export default function Home() {
 
             {/* my business */}
             <div>
+              
                 <h2 className='font-bold text-white text-center text-2xl my-20'>MY BUSINESS</h2>
 
-                <div>
+                <div className='w-full'>
 
                   <Image 
-                    src={require("@/assets/hologram.png")}
+                    src={require("@/assets/simpliterms-planet.png")}
                     alt='Hologram of simpliterms'
-                    className='w-full'
+                    className='w-full p-6 floating'
                   />
                   
                   <h3 className='font-bold text-2xl text-white mx-[10%] mt-5 leading-10'>Simpliterms</h3>
@@ -61,17 +63,17 @@ export default function Home() {
                       with a single click so you don't have to blindly accept them again.
                   </p>
 
-                  <Link className='mx-[10%] bg-yellow-200 py-3 px-4' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
+                  <Link className=' mx-[10%] bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
 
                 </div>                
 
             </div>
 
             {/* my skills */}
-            {/* <div className='px-[10%]'>
-                <h2 className='font-bold text-white text-center text-2xl my-20'>ABOUT ME</h2>
+            <div className='px-[10%]'>
+                <h2 className='font-bold text-white text-center text-2xl my-20'>SKILLS</h2>
                 
-            </div> */}
+            </div>
 
             {/* my projects */}
             {/* <div className='px-[10%]'>

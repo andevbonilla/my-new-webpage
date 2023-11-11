@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 /* stars */
+
+/* planets */
+.floating{
+    animation-name: float;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 #asteroid{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
@@ -69,4 +79,13 @@
 @keyframes move {
   from{transform: translateX(-10rem) rotate(300deg);}
   to{transform: translateX(150vw) rotate(450deg);}
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.8rem);
+  }
 }
