@@ -64,7 +64,7 @@ export default function Home() {
                       <p className='text-white text-left text-xl leading-10 mx-[13%] mb-8'>
                           Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
                           they are too long and difficult to understand? Simpliterms is an extension that summarizes the policies 
-                          with a single click so you don't have to blindly accept them again.
+                          with a single click so you don&apos;t have to blindly accept them again.
                       </p>
 
                       <div className='px-[13%]'>
