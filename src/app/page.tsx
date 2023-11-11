@@ -10,7 +10,7 @@ export default function Home() {
     <>
       
       <Navbar />
-      <main className='overflow-x-hidden bg-gradient-to-b from-[#0F193B] via-[#1A2B65] to-blue-300 z-20'>
+      <main className='overflow-x-hidden gradient-background z-20'>
           
           <StarsBackground>
 
@@ -36,7 +36,7 @@ export default function Home() {
 
             {/* about me */}
             <div className='px-[15%]'>
-                <h2 className='font-bold text-white text-center text-2xl mt-20 mb-10'>ABOUT ME</h2>
+                <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>ABOUT ME</h2>
                 <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur. 
                    I love creating technological products. When I was 16, I founded my first company, Fansive. 
                    I&apos;m passionate about science, technology, cars, music, but above all, ice cream. 😄
@@ -46,7 +46,7 @@ export default function Home() {
             {/* my business */}
             <div className='w-full'>
               
-                <h2 className='font-bold text-white text-center text-2xl mt-20 mb-10'>MY BUSINESS</h2>
+                <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY BUSINESS</h2>
 
                 <div className='w-full'>
 
@@ -74,26 +74,17 @@ export default function Home() {
 
             {/* my skills */}
             <div className='px-[13%]'>
-                <h2 className='font-bold text-white text-center text-2xl mt-20 mb-10'>SKILLS</h2>
+                <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>SKILLS</h2>
                 <Skills />
             </div>
 
             {/* my projects */}
-            {/* <div className='px-[10%]'>
-                <h2 className='font-bold text-white text-center text-2xl my-20'>ABOUT ME</h2>
+            <div className='px-[13%]'>
+                <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY PROJECTS</h2>
                 
-            </div> */}
-
-            {/* my contact */}
-            {/* <div className='px-[10%]'>
-                <h2 className='font-bold text-white text-center text-2xl'>ABOUT ME</h2>
-                
-            </div> */}
+            </div>
 
 
-            <div className='h-[30rem]'></div>
-            <div className='h-[30rem]'></div>
-            <div className='h-[30rem]'></div>
             <div className='h-[30rem]'></div>
             <div className='h-[30rem]'></div>
             <div className='h-[30rem]'></div>
