@@ -13,8 +13,8 @@ export const ContactForm = () => {
                className='w-full mt-8 py-3 px-4 bg-[#008CFF] text-white'/>
 
         <textarea name="info" 
-                  id="" 
-                  rows={"10" as any}
+                  id=""
+                  rows={"5" as any} 
                   placeholder='Message'
                   className='w-full mt-8 py-3 px-4 bg-[#008CFF] text-white'>
             

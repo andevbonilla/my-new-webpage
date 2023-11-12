@@ -28,13 +28,13 @@ export default function Home() {
                             <h1 className='text-white font-bold text-3xl'>Andres Bonilla</h1>
                             <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete']}/>
                     </div>
-                    <div className='mt-[10rem]'>
+                    <div className='mt-[10rem] h-[10rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
                                 alt='Andres Bonilla in a tesla roadster'
                                 width={350}
                                 height={350}
-                                className='floating'
+                                className='absolute floating left-0 ml-[5%]'
                             />
                     </div>
                 </div>
@@ -51,16 +51,16 @@ export default function Home() {
                 <CuriosFact text={"At this point we are 400 kilometers above sea level. At this altitude is the International Space Station (ISS)."}/>
 
                 {/* my business */}
-                <div className='w-full'>
+                <div className='w-full relative'>
                   
                     <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY BUSINESS</h2>
 
                     <div className='w-full'>
-
+                      <div className='h-[10rem]'></div>
                       <Image 
                         src={require("@/assets/simpliterms-planet.png")}
                         alt="simpliterm's planet"
-                        className='w-full p-6 floating'
+                        className='absolute top-0 w-full p-6 floating'
                       />
                       
                       <h3 className='font-bold text-2xl text-white mx-[13%] mt-6 leading-10'>Simpliterms</h3>
@@ -129,7 +129,7 @@ export default function Home() {
 
           </div>
 
-          <div className='gradient-background-water'>
+          <div className='gradient-background-water overflow-hidden'>
 
               {/* my projects */}
               <div className='pt-[10rem]'>
@@ -167,7 +167,7 @@ export default function Home() {
 
                 <div className='titanic'>
                       <div className='flex'>
-                          
+
                       </div>
                       <Image 
                         src={require("@/assets/titanic.png")}
