@@ -4,7 +4,8 @@ import React, {useEffect, useState} from 'react';
 
 export const Vehicle = () => {
 
-    const [counterTime, setCounterTime] = useState(20); // in seconds
+    const [counterTime, setCounterTime] = useState(15); // in seconds
+    const [vehicleIndex, setvehicleIndex] = useState(0);
     const [canUptade, setCanUptade] = useState(false);
     const [vehicles, setVehicles] = useState([
         {
@@ -72,31 +73,45 @@ export const Vehicle = () => {
 
 
     useEffect(() => {
-        let number = 20;
-        setInterval(() => {
+        let number = 15;
+        const newInterval = setInterval(() => {
+            console.log(number)
             if (!canUptade) {
+                console.log("trabajando")
                 number--;
                 setCounterTime(number);
                 if (number === 0) {
+                    setCounterTime(15);
+                    number = 15;
                     setCanUptade(true);
-                    setCounterTime(20);
-                    number = 20;
-                }
+                 }
             }
         }, 1000);
-    }, []);
+
+        return () => {
+            clearInterval(newInterval);
+        }
+      
+    }, [canUptade]);
+
+
+    
+
+    
 
     const updateVehicle = () => {
-
+        if (!canUptade) return;
+        setvehicleIndex(vehicleIndex+1);
+        setCanUptade(false);
     }
     
   return (
     <div className='fixed bottom-0 right-0 mr-6 z-50 flex flex-col justify-center items-center'>
 
-            <div className='rounded-full bg-white p-4 border-green-500 border-4'>
+            <div className={`rounded-full bg-white p-4 ${(canUptade) ? "border-green-500" : "border-gray-400"} border-4`}>
 
                 <Image 
-                    src={require("@/assets/vehicle1.png")}
+                    src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
                     alt="bicicross"
                     className='w-[3rem] h-[3rem]'
                 />
