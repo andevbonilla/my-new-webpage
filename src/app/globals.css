@@ -21,9 +21,34 @@
     background: linear-gradient(180deg, #71acad 0%, #018af5 50%, #001a2f 100%);
 }
 
+/* curiosity objects */
 .international-space-station{
     animation-name: normalmove;
     animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+.plane1{
+    animation-name: plane1animation;
+    animation-duration: 13500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+.plane2{
+    animation-name: plane2animation;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+.plane3{
+    animation-name: plane3animation;
+    animation-duration: 10500ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -111,6 +136,21 @@
 @keyframes normalmove {
   from{transform: translateX(-30rem) translateY(-6rem);}
   to{transform: translateX(200vw) translateY(-6rem);}
+}
+
+@keyframes plane1animation {
+  from{transform: translateX(-30rem) translateY(-6rem);}
+  to{transform: translateX(200vw) translateY(-6rem);}
+}
+
+@keyframes plane2animation {
+  from{transform: translateX(200vw) translateY(0rem);}
+  to{transform: translateX(-30rem) translateY(0rem);}
+}
+
+@keyframes plane3animation {
+  from{transform: translateX(-50rem) translateY(10rem);}
+  to{transform: translateX(200vw) translateY(10rem);}
 }
 
 @keyframes move {

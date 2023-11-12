@@ -61,7 +61,7 @@ export default function Home() {
                 {/* my business */}
                 <div className='w-full'>
                   
-                    <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY BUSINESS</h2>
+                    <h2 className='font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
 
                     <div className='w-full'>
                       <div className='h-[25rem] relative'>
@@ -124,7 +124,26 @@ export default function Home() {
                 </div>
 
                 <CuriosFact text={"At this point we are at an altitude of 30,000 meters, at this altitude most of today's commercial airplanes usually fly."}/>
-                <div className='h-[25rem]'></div>
+                <div className='flex'>
+                  <Image 
+                        src={require("@/assets/airplane-icon.png")}
+                        alt="simpliterm's planet"
+                        className='w-[14rem] h-[14rem] plane1'
+                      />
+                  <Image 
+                        src={require("@/assets/airplane2-icon.png")}
+                        alt="simpliterm's planet"
+                        className='w-[8rem] h-[8rem] plane2'
+                      />
+                  <Image 
+                        src={require("@/assets/airplane3-icon.png")}
+                        alt="simpliterm's planet"
+                        className='w-[10rem] h-[10rem] plane3'
+                      />
+                </div>
+                
+                
+                <div className='h-[12rem]'></div>
 
                 <div className='city scale-150'>
                       <Image 
