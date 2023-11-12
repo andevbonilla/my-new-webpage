@@ -5,6 +5,11 @@ import { Project } from '@/components/Project';
 import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -173,22 +178,22 @@ export default function Home() {
               <div className='pt-[10rem]'>
                     <Project name={"FileBox"} 
                             desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."} 
-                            link={"https://www.yourdreamcar.ca/"} 
-                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
+                            link={"https://filebox.netlify.app/#/login"} 
+                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
-                            imgStack={"yourdreamcar-stack.png"}
+                            imgStack={"filebox-stack.png"}
                     />
                     <Project name={"Geekepedia"} 
                             desc={"Geekipedia is a blog where you can learn how some of the most famous algorithms in computer science work, such as BFS (Breath First Search), QuickSort, Binary Search and many more."} 
-                            link={"https://fansive.netlify.app/"} 
-                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
+                            link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
+                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
-                            imgStack={"fansive-stack.png"}
+                            imgStack={"geekipedia-stack.png"}
                     />
                     <Project name={"thePokedex"} 
                             desc={"thePokedex is an app with light and dark theme in which you can find and search information of all existing pokemon and you can use it on android and ios devices."} 
-                            link={"https://super-virtual-board.netlify.app/"} 
-                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
+                            link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
+                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
                     />
@@ -201,11 +206,20 @@ export default function Home() {
 
                 <CuriosFact text={"At this point we are at 3800 meters deep, at this depth is the remains of the Titanic and ends the content of my website."}/>
 
-                <div className='h-[10rem]'></div>
-
                 <div className='titanic'>
-                      <div className='flex'>
-
+                      <div className='flex justify-center items-center mb-24'>
+                          <Link href={"https://www.instagram.com/__andrec__/"} target='_blank'>
+                            <FontAwesomeIcon icon={faInstagram} className='text-white w-[2.5rem] h-[2.5rem] mr-10' />
+                          </Link>
+                          <Link href={"https://twitter.com/AndresB64566284"} target='_blank'>
+                            <FontAwesomeIcon icon={faTwitter} className='text-white w-[2.5rem] h-[2.5rem] mr-10' />
+                          </Link>
+                          <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} target='_blank'>
+                            <FontAwesomeIcon icon={faLinkedin} className='text-white w-[2.5rem] h-[2.5rem] mr-10' />
+                          </Link>
+                          <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} target='_blank'>
+                            <FontAwesomeIcon icon={faGithub} className='text-white w-[2.5rem] h-[2.5rem]' />
+                          </Link>
                       </div>
                       <Image 
                         src={require("@/assets/titanic.png")}
