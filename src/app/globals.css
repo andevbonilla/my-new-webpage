@@ -21,6 +21,14 @@
     background: linear-gradient(180deg, #71acad 0%, #018af5 50%, #001a2f 100%);
 }
 
+.international-space-station{
+    animation-name: normalmove;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 #asteroid{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
@@ -98,6 +106,11 @@
         transform:rotate(360deg);
         transform: translate(200);
     }
+}
+
+@keyframes normalmove {
+  from{transform: translateX(-30rem) translateY(-6rem);}
+  to{transform: translateX(200vw) translateY(-6rem);}
 }
 
 @keyframes move {

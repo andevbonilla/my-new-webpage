@@ -49,19 +49,29 @@ export default function Home() {
                 </div>
 
                 <CuriosFact text={"At this point we are 400 kilometers above sea level. At this altitude is the International Space Station (ISS)."}/>
+                <div className='flex'>
+                  <Image 
+                        src={require("@/assets/space-station-icon.png")}
+                        alt="simpliterm's planet"
+                        className='w-[30rem] h-[30rem] international-space-station'
+                      />
+                </div>
+
 
                 {/* my business */}
-                <div className='w-full relative'>
+                <div className='w-full'>
                   
                     <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY BUSINESS</h2>
 
                     <div className='w-full'>
-                      <div className='h-[10rem]'></div>
-                      <Image 
-                        src={require("@/assets/simpliterms-planet.png")}
-                        alt="simpliterm's planet"
-                        className='absolute top-0 w-full p-6 floating'
-                      />
+                      <div className='h-[25rem] relative'>
+                          <Image 
+                            src={require("@/assets/simpliterms-planet.png")}
+                            alt="simpliterm's planet"
+                            className='absolute top-0 w-full p-6 floating'
+                          />
+                      </div>
+                      
                       
                       <h3 className='font-bold text-2xl text-white mx-[13%] mt-6 leading-10'>Simpliterms</h3>
 
