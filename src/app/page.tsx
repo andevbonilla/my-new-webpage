@@ -97,6 +97,15 @@ export default function Home() {
 
                 <CuriosFact text={"At this point we are at 1000 kilometers above sea level. At this altitude we can find the STARLINK satellites of Elon Musk which are usually between 340 km and 1200 km above sea level."}/>
 
+                <div className='flex'>
+                  <Image 
+                        src={require("@/assets/starlink-icon.png")}
+                        alt="simpliterm's planet"
+                        className='w-[10rem] h-[10rem] starlink'
+                      />
+                </div>
+
+
                 {/* my projects */}
                 <div>
                     <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY PROJECTS</h2>

@@ -30,6 +30,14 @@
     animation-direction: normal;
 }
 
+.starlink{
+    animation-name: starlinkmove;
+    animation-duration: 6200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 .plane1{
     animation-name: plane1animation;
     animation-duration: 13500ms;
@@ -136,6 +144,18 @@
 @keyframes normalmove {
   from{transform: translateX(-30rem) translateY(-6rem);}
   to{transform: translateX(200vw) translateY(-6rem);}
+}
+
+@keyframes starlinkmove {
+      0% {
+        transform: translate(-50vw, -15rem);
+      }
+      50% {
+        transform: translate(100vw, 0);
+      }
+      100% {
+        transform: translate(150vw, -15rem);
+      }
 }
 
 @keyframes plane1animation {
