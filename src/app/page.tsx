@@ -5,6 +5,7 @@ import { Project } from '@/components/Project';
 import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
+import { Vehicle } from '@/components/Vehicle';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -18,6 +19,7 @@ export default function Home() {
     <>
       
       <Navbar />
+      <Vehicle />
       <main className='overflow-x-hidden z-20'>
           
           <div className='gradient-background'>
@@ -25,7 +27,7 @@ export default function Home() {
             <StarsBackground>
 
                 {/* simulate the navbar height */}
-                <div className='h-20'></div>
+                <div className='h-16'></div>
 
                 {/* presentation section */}
                 <div className='flex flex-col justify-center items-center h-screen px-[10%]'>
