@@ -90,27 +90,31 @@ export const Vehicle = () => {
       
     }, [canUptade]);
 
-    let isScrolling:any;
-    document.addEventListener('scroll', function () {
-        
-        clearTimeout(isScrolling);
-        setIsGoingUp(false);
-        setCanClick(false);
+    useEffect(() => {
 
-        if (elemento.current) {
-            elemento.current.style.opacity = '0';
-            elemento.current.classList.remove('opacity-transition');
-        }
+        let isScrolling:any;
+        document.addEventListener('scroll', function () {
+            
+            clearTimeout(isScrolling);
+            setIsGoingUp(false);
+            setCanClick(false);
 
-        isScrolling = setTimeout(function () {
             if (elemento.current) {
-                elemento.current.classList.add('opacity-transition');
-                elemento.current.style.opacity = '1';
+                elemento.current.style.opacity = '0';
+                elemento.current.classList.remove('opacity-transition');
             }
-            setCanClick(true);
-        }, 200);
 
-    }, false);
+            isScrolling = setTimeout(function () {
+                if (elemento.current) {
+                    elemento.current.classList.add('opacity-transition');
+                    elemento.current.style.opacity = '1';
+                }
+                setCanClick(true);
+            }, 200);
+
+        }, false);
+        
+    }, [])
     
     
     const updateVehicle = () => {
