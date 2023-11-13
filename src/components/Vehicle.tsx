@@ -172,7 +172,7 @@ export const Vehicle = () => {
                                         }
 
                                         {
-                                            (!canUptade && vehicleIndex !== 9) && <p className='bg-gray-400 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>{counterTime}s</p>
+                                            (!canUptade && vehicleIndex !== 9) && <p onClick={goUp} className='bg-gray-400 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>{counterTime}s</p>
                                         }
 
                                         {
