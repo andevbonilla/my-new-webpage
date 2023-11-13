@@ -113,7 +113,7 @@ export const Vehicle = () => {
             }, 200);
 
         }, false);
-        
+
     }, [])
     
     
@@ -126,13 +126,10 @@ export const Vehicle = () => {
 
     const goUp = () => {
         if(!canClick) return;
-        // go to the bottom of the page
         window.scrollTo(0, document.body.scrollHeight);
         setTimeout(() => {
             setIsGoingUp(true);
-        }, 50);
-        
-        // show info message 
+        }, 100);
     }
     
   return (
