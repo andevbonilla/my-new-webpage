@@ -7,12 +7,11 @@ export const Vehicle = () => {
     const [counterTime, setCounterTime] = useState(15); // in seconds
     const [vehicleIndex, setvehicleIndex] = useState(0);
     const [canUptade, setCanUptade] = useState(false);
-    const [isGoingUp, setIsGoingUp] = useState(false);
     const [canClick, setCanClick] = useState(true);
+    const [haveMoved, setHaveMoved] = useState(false);
     
-
-
-    const elemento:any = useRef(null);
+    const vehicleWrapper:any = useRef(null);
+    const vehicleIMG:any = useRef(null);
     
     const [vehicles, setVehicles] = useState([
         {
@@ -68,7 +67,6 @@ export const Vehicle = () => {
     ]);
 
 
-
     useEffect(() => {
 
         let number = 15;
@@ -96,23 +94,25 @@ export const Vehicle = () => {
         document.addEventListener('scroll', function () {
             
             clearTimeout(isScrolling);
-            setIsGoingUp(false);
             setCanClick(false);
+            setHaveMoved(false);
 
-            if (elemento.current) {
-                elemento.current.style.opacity = '0';
-                elemento.current.classList.remove('opacity-transition');
+            if (vehicleWrapper.current) {
+                vehicleWrapper.current.style.opacity = '0';
+                vehicleWrapper.current.classList.remove('opacity-transition');
             }
 
             isScrolling = setTimeout(function () {
-                if (elemento.current) {
-                    elemento.current.classList.add('opacity-transition');
-                    elemento.current.style.opacity = '1';
+                if (vehicleWrapper.current) {
+                    vehicleWrapper.current.classList.add('opacity-transition');
+                    vehicleWrapper.current.style.opacity = '1';
                 }
                 setCanClick(true);
             }, 200);
 
         }, false);
+
+        moveImage();
 
     }, [])
     
@@ -128,34 +128,57 @@ export const Vehicle = () => {
         if(!canClick) return;
         window.scrollTo(0, document.body.scrollHeight);
         setTimeout(() => {
-            setIsGoingUp(true);
-        }, 100);
+            setHaveMoved(true);
+        }, 200);
+    }
+
+    function moveImage() {
+
+            let position = document.body.scrollHeight-1200; // Posición inicial desde el fondo
+
+            function moveStep(timestamp:any) {
+                const speed = 100; // Velocidad en píxeles por segundo
+                const timeDelta = timestamp - lastTimestamp;
+                lastTimestamp = timestamp;
+
+                position -= speed * (timeDelta / 1000);
+
+                vehicleIMG.current.style.transform = `translate(-30%, ${position}px) rotate(90deg)`;
+                vehicleIMG.current.style.zIndex = "99";
+
+                if (position > -vehicleIMG.current.height-1000) {
+                    requestAnimationFrame(moveStep);
+                } else {
+                    // La imagen ha alcanzado la parte superior, puedes realizar acciones adicionales aquí si es necesario
+                }
+            }
+
+            let lastTimestamp = performance.now();
+            requestAnimationFrame(moveStep);
     }
     
   return (
     <div>
+        
+            <Image 
+               src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
+               alt="bicicross"
+               className='absolute left-0 bottom-0 w-[12rem] h-[12rem]'
+               ref={vehicleIMG}
+            />
 
             {
-                isGoingUp &&    <div className='fixed w-full bottom-0 left-0 z-50'>
 
-                                    <Image 
-                                        src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
-                                        alt="bicicross"
-                                        className='w-[12rem] h-[12rem] rotate-90 -translate-x-9'
-                                    />
-
-                                    <div className='bg-gradient-to-b from-transparent via-black to-black text-white flex items-center px-10 py-[5rem]'>
+                   haveMoved &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-gradient-to-b from-transparent via-black to-black text-white flex items-center px-10 py-[5rem]`}>
                                         
-                                        <p className='text-lg'>You are currently on a {vehicles[vehicleIndex].name}. The maximum speed of this object is: {vehicles[vehicleIndex].velocity}. 
-                                                            Therefore it will take about: 20 days to rise to the top of the page.</p>
-                                    </div>
-
-                                </div>
+                                    <p className='text-lg'>You are currently on a {vehicles[vehicleIndex].name}. The maximum speed of this object is: {vehicles[vehicleIndex].velocity}. 
+                                                        Therefore it will take about: 20 days to rise to the top of the page.</p>
+                                 </div>
                 
             }
 
             {
-                !isGoingUp &&  <div ref={elemento} className={`fixed bottom-0 right-0 mr-6 z-40 flex flex-col justify-center items-center`}>
+                  <div ref={vehicleWrapper} className={`fixed bottom-0 right-0 mr-6 z-40 flex flex-col justify-center items-center`}>
                                         <button onClick={goUp}
                                                 type='button' 
                                                 className={`rounded-full bg-white p-2 ${(canUptade) ? "border-green-500" : "border-gray-400"} border-4`}>
