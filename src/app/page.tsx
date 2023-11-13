@@ -142,12 +142,12 @@ export default function Home() {
                 <CuriosFact text={"At this point we are at an altitude of 30,000 meters, at this altitude most of today's commercial airplanes usually fly."}/>
                 <div className='flex'>
                   <Image 
-                        src={require("@/assets/vehicle8.png")}
+                        src={require("@/assets/vehicle7.png")}
                         alt="simpliterm's planet"
                         className='w-[14rem] h-[14rem] plane1'
                       />
                   <Image 
-                        src={require("@/assets/vehicle7.png")}
+                        src={require("@/assets/vehicle8.png")}
                         alt="simpliterm's planet"
                         className='w-[8rem] h-[8rem] plane2'
                       />
