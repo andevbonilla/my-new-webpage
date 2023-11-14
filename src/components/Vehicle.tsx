@@ -19,67 +19,188 @@ export const Vehicle = () => {
             name: "supercross",
             velocity: 35,
             img: "vehicle1.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Honda cb 125f",
             velocity: 90,
             img: "vehicle2.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Renault Sandero",
             velocity: 160,
             img: "vehicle3.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "BMW M4",
             velocity: 250,
             img: "vehicle4.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Porsche 992 GT3 rs",
             velocity: 320,
             img: "vehicle5.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Bugatti Chiron",
             velocity: 490,
             img: "vehicle6.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Boeing 737",
             velocity: 840,
             img: "vehicle7.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "f-15 eagle",
             velocity: 2600,
             img: "vehicle8.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Saturn V",
             velocity: 64500,
             img: "vehicle9.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Parker Solar Probe",
             velocity: 692000,
             img: "vehicle10.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
         {
             name: "Caza estelar T-65 Ala-X - Stars Wars",
             velocity: 2000000,
             img: "vehicle11.png",
-            desc: ""
+            subvehicle: "Vehicle:",
+            vehicle: "",
+            submaxSpeed: "Max-speed:",
+            maxSpeed: "",
+            subtimeTitanic: "Titanic->city:",
+            timeTitanic: "",
+            subtimeCity: "City->Airplanes:",
+            timeCity: "",
+            subtimeAirplanes: "Airplanes->ISS:",
+            timeAirplanes: "",
+            subtotalTime: "Titaic->Top of the page:",
+            totalTime: "",
         },
     ]);
 
@@ -234,11 +355,30 @@ export const Vehicle = () => {
 
             {
 
-                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-gradient-to-b from-transparent via-black to-black text-white flex items-center px-10 py-[5rem]`}>
-                                            <p className='text-lg'>{vehicles[vehicleIndex].desc}</p>
-                                            <div>
-                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black' type='button'>View Vehicle</button>
-                                                <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black' type='button'>Close</button>
+                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white flex flex-col items-start p-10`}>            
+                                            <div className='flex'>
+                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subvehicle}</p>
+                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].vehicle}</p>
+                                            </div>
+                                            <div className='flex'>
+                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtimeTitanic}</p>
+                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].timeTitanic}</p>
+                                            </div>
+                                            <div className='flex'>
+                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtimeCity}</p>
+                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].timeCity}</p>
+                                            </div>
+                                            <div className='flex'>
+                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtimeAirplanes}</p>
+                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].timeAirplanes}</p>
+                                            </div>
+                                            <div className='flex'>
+                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtotalTime}</p>
+                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].totalTime}</p>
+                                            </div>
+                                            <div className='w-full flex justify-between items-center mt-10'>
+                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>View Vehicle</button>
+                                                <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Close</button>
                                             </div>
                                         </div>
                 
