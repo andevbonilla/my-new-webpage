@@ -340,24 +340,24 @@ export const Vehicle = () => {
 
                    showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white flex flex-col items-start p-10`}>            
                                             <div className='flex'>
-                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subvehicle}</p>
-                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].vehicle}</p>
+                                                <p className='font-bold text-lg mt-4 mr-2'>{vehicles[vehicleIndex].subvehicle}</p>
+                                                <p className='text-lg mt-4 opacity-80'>{vehicles[vehicleIndex].vehicle}</p>
                                             </div>
                                             <div className='flex'>
-                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtimeTitanic}</p>
-                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].timeTitanic}</p>
+                                                <p className='font-bold text-lg mt-4 mr-2'>{vehicles[vehicleIndex].subtimeTitanic}</p>
+                                                <p className='text-lg mt-4 opacity-80'>{vehicles[vehicleIndex].timeTitanic}</p>
                                             </div>
                                             <div className='flex'>
-                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtimeCity}</p>
-                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].timeCity}</p>
+                                                <p className='font-bold text-lg mt-4 mr-2'>{vehicles[vehicleIndex].subtimeCity}</p>
+                                                <p className='text-lg mt-4 opacity-80'>{vehicles[vehicleIndex].timeCity}</p>
                                             </div>
                                             <div className='flex'>
-                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtimeAirplanes}</p>
-                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].timeAirplanes}</p>
+                                                <p className='font-bold text-lg mt-4 mr-2'>{vehicles[vehicleIndex].subtimeAirplanes}</p>
+                                                <p className='text-lg mt-4 opacity-80'>{vehicles[vehicleIndex].timeAirplanes}</p>
                                             </div>
                                             <div className='flex'>
-                                                <p className='font-bold text-lg mt-4'>{vehicles[vehicleIndex].subtotalTime}</p>
-                                                <p className='text-lg mt-4'>{vehicles[vehicleIndex].totalTime}</p>
+                                                <p className='font-bold text-lg mt-4 mr-2'>{vehicles[vehicleIndex].subtotalTime}</p>
+                                                <p className='text-lg mt-4 opacity-80'>{vehicles[vehicleIndex].totalTime}</p>
                                             </div>
                                             <div className='w-full flex justify-between items-center mt-10'>
                                                 <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>View Vehicle</button>
