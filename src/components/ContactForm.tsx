@@ -16,6 +16,7 @@ export const ContactForm = () => {
       email: formData.get('email') ? formData.get("email") :'',
       message: formData.get('message') ? formData.get("message") :'',
     }
+    console.log(messageInfo);
 
     if (messageInfo.name?.toString() === "") {
       setNameError("The Name is required.");
@@ -29,7 +30,7 @@ export const ContactForm = () => {
       setEmailError("");
     }
 
-    if (messageInfo.message?.toString() && messageInfo.message?.toString().length < 10) {
+    if (messageInfo.message?.toString() && (messageInfo.message?.toString() === "" || messageInfo.message?.toString().length < 10)) {
       setMessageError("The Message must have at least 10 chracters.");
     }else{
       setMessageError("");
@@ -72,7 +73,6 @@ export const ContactForm = () => {
         <div>
 
           <textarea name="message" 
-                    id=""
                     rows={"5" as any} 
                     placeholder='Message'
                     className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}>
