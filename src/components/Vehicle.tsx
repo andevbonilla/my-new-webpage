@@ -10,9 +10,11 @@ export const Vehicle = () => {
     const [canClick, setCanClick] = useState(true);
     const [showVehicleInfo, setShowVehicleInfo] = useState(false);
     const [vehiclePosition, setVehiclePosition] = useState(0);
+    const [vehicleIsMoving, setVehicleIsMoving] = useState(false);
     
     const vehicleWrapper:any = useRef(null);
     const vehicleIMG:any = useRef(null);
+
     
     const [vehicles, setVehicles] = useState([
         {
@@ -240,14 +242,6 @@ export const Vehicle = () => {
 
     }, [])
     
-    
-    const updateVehicle = () => {
-        if (!canUptade) return;
-        if (vehicleIndex === 10) return;
-        setvehicleIndex(vehicleIndex+1);
-        setCanUptade(false);
-    }
-
     const goUp = () => {
         if(!canClick) return;
         window.scrollTo(0, document.body.scrollHeight);
@@ -273,11 +267,18 @@ export const Vehicle = () => {
             const part3 = document.getElementById("part3");
             const part4 = document.getElementById("part4");
 
-            let position =  document.body.scrollHeight-1200; // Posición inicial desde el fondo
-            let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vehicleIndex].velocity, 3.8); // Velocidad en píxeles por segundo
+
+            let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vehicleIndex].velocity, 3.8);
+            let position =  0; // Posición inicial desde el fondo
+            if (vehiclePosition === 0) {
+                position =  document.body.scrollHeight-1200;
+            }else{
+                position =  vehiclePosition;
+            }
 
             const moveStep = (timestamp:any) => {
 
+                setVehicleIsMoving(true);
                 const timeDelta = timestamp - lastTimestamp;
                 lastTimestamp = timestamp;
 
@@ -289,6 +290,7 @@ export const Vehicle = () => {
 
                 if (position > calculateAmountOfpixels(part1)) {
 
+                    speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vehicleIndex].velocity, 3.8);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part2)) {
@@ -299,8 +301,8 @@ export const Vehicle = () => {
 
                 } else if (position > calculateAmountOfpixels(part3)) {
 
-                    // La imagen ha alcanzado la parte
-                    speed = Math.abs(calculateAmountOfpixels(part3)) / calculateTime(vehicles[vehicleIndex].velocity, 400);
+                    // La imagen ha alcanzado la parte  
+                    speed = Math.abs(calculateAmountOfpixels(part3)) / calculateTime(vehicles[vehicleIndex].velocity, 370);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part4)) {
@@ -311,12 +313,28 @@ export const Vehicle = () => {
 
                 }else{
                     // La imagen ha alcanzado la parte superior, puedes realizar acciones adicionales aquí si es necesario
+                    setVehicleIsMoving(false);
                 }
             }
 
             let lastTimestamp = performance.now();
             requestAnimationFrame(moveStep);
     }
+
+    const updateVehicle = () => {
+        if (!canUptade) return;
+        if (vehicleIndex === 10) return;
+        if (vehicleIsMoving) {
+            window.scrollTo(0, vehiclePosition);
+            moveImage();
+            setvehicleIndex(vehicleIndex+1);
+            setCanUptade(false);
+            return;
+        }
+        setvehicleIndex(vehicleIndex+1);
+        setCanUptade(false);
+    }
+
 
     const closeInfo = () => {
         setShowVehicleInfo(false);
@@ -361,7 +379,7 @@ export const Vehicle = () => {
                                             </div>
                                             <div>
                                                 <p className='font-bold text-lg mt-6'>IMPORTANT</p>
-                                                <p className='text-lg opacity-80 mt-2'>if you notice that the vehicle stops, it is not because it has stopped, but because it is too slow for the distance it has to travel, so it will take longer according to the values you see above. if you want it to move faster, improve it.</p>
+                                                <p className='text-lg opacity-80 mt-2'>This is a realistic simulation of the speed of the vehicles presented, the only unrealistic thing is the size of the distances and the vehicle, but the time it would take from x point to b is real. So if you notice that the vehicle stops, it is because it is going too slow.</p>
                                             </div>
                                             <div className='w-full flex justify-between items-center mt-10'>
                                                 <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>View Vehicle</button>
