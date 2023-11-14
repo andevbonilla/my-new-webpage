@@ -175,8 +175,16 @@ export default function Home() {
 
           <div className='gradient-background-water overflow-hidden'>
 
+              <div className='flex h-[10rem]'>
+                  <Image 
+                        src={require("@/assets/fish-group-1-icon.png")}
+                        alt="simpliterm's planet"
+                        className='w-[14rem] h-[14rem] fish-group'
+                      />
+              </div>
+
               {/* my projects */}
-              <div className='pt-[10rem]'>
+              <div>
                     <Project name={"FileBox"} 
                             desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."} 
                             link={"https://filebox.netlify.app/#/login"} 
@@ -184,6 +192,19 @@ export default function Home() {
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
                     />
+                    <div className='flex h-[10rem]'>
+                        <Image 
+                              src={require("@/assets/fish-group-1-icon.png")}
+                              alt="simpliterm's planet"
+                              className='w-[14rem] h-[14rem] fish-group delay-300'
+                            />
+                        <Image 
+                              src={require("@/assets/fish-group-2-icon.png")}
+                              alt="simpliterm's planet"
+                              className='w-[14rem] h-[14rem] fish-group-2'
+                        />
+                    </div>
+                    <CuriosFact text={"We are in shallow water at this depth you can find fish such as salmon, reef fish and more."}/>
                     <Project name={"Geekepedia"} 
                             desc={"Geekipedia is a blog where you can learn how some of the most famous algorithms in computer science work, such as BFS (Breath First Search), QuickSort, Binary Search and many more."} 
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 

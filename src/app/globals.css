@@ -62,6 +62,22 @@
     animation-direction: normal;
 }
 
+.fish-group{
+  animation-name: fishgroupanimation;
+  animation-duration: 30000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+.fish-group-2{
+  animation-name: plane1animation;
+  animation-duration: 27000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
 #asteroid{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
@@ -170,6 +186,11 @@
 }
 
 @keyframes plane3animation {
+  from{transform: translateX(-30rem) translateY(10rem);}
+  to{transform: translateX(200vw) translateY(0rem);}
+}
+
+@keyframes fishgroupanimation {
   from{transform: translateX(-50rem) translateY(10rem);}
   to{transform: translateX(200vw) translateY(10rem);}
 }
