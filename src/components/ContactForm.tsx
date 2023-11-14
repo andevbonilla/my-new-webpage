@@ -1,18 +1,41 @@
-import React from 'react'
+"use client"
+import React, { FormEvent, useState } from 'react'
 
 export const ContactForm = () => {
+
+  const sendEmail = (e:FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const messageInfo = {
+      name: formData.get('name') ?? '',
+      email: formData.get('email') ?? '',
+      message: formData.get('message') ?? '',
+    }
+    if (messageInfo.name === "") {
+      return;
+    }
+    if (messageInfo.email === "") {
+      return;
+    }
+    if (messageInfo.message === "") {
+      return;
+    }
+  }
+
   return (
-    <form className='w-full'> 
+    <form onSubmit={sendEmail} className='w-full'> 
 
         <input type="text" 
                placeholder='Name'
+               name='name'
                className='w-full mt-8 py-3 px-4 bg-[#008CFF] text-white'/>
 
         <input type="text" 
                placeholder='Email'
+               name='email'
                className='w-full mt-8 py-3 px-4 bg-[#008CFF] text-white'/>
 
-        <textarea name="info" 
+        <textarea name="message" 
                   id=""
                   rows={"5" as any} 
                   placeholder='Message'
