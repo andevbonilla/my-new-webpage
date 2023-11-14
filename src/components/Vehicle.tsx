@@ -359,6 +359,10 @@ export const Vehicle = () => {
                                                 <p className='font-bold text-lg mt-4 mr-2'>{vehicles[vehicleIndex].subtotalTime}</p>
                                                 <p className='text-lg mt-4 opacity-80'>{vehicles[vehicleIndex].totalTime}</p>
                                             </div>
+                                            <div>
+                                                <p className='font-bold text-lg mt-6'>IMPORTANT</p>
+                                                <p className='text-lg mt-4 opacity-80 mt-2'>if you notice that the vehicle stops, it is not because it has stopped, but because it is too slow for the distance it has to travel, so it will take longer according to the values you see above. if you want it to move faster, improve it.</p>
+                                            </div>
                                             <div className='w-full flex justify-between items-center mt-10'>
                                                 <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>View Vehicle</button>
                                                 <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Close</button>
