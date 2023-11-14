@@ -30,18 +30,18 @@ export default function Home() {
                 <div id="part4" className='h-16'></div>
 
                 {/* presentation section */}
-                <div className='flex flex-col justify-center items-center h-screen px-[10%]'>
-                    <div className='mb-10'>
-                            <h1 className='text-white font-bold text-3xl'>Andres Bonilla</h1>
+                <div className='md:px-[15%] lg:px-[20%] flex flex-col md:flex-row justify-center items-center h-screen px-[10%]'>
+                    <div className='mb-10 md:w-[50%]'>
+                            <h1 className='text-white font-bold text-[2.2rem]'>Andres Bonilla</h1>
                             <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete']}/>
                     </div>
-                    <div className='mt-[10rem] h-[10rem]'>
+                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
                                 alt='Andres Bonilla in a tesla roadster'
-                                width={350}
+                                width={350} 
                                 height={350}
-                                className='absolute floating left-0 ml-[5%]'
+                                className='absolute w-full floating'
                             />
                     </div>
                 </div>
