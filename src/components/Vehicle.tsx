@@ -137,7 +137,7 @@ export const Vehicle = () => {
     }
 
     const calculateAmountOfpixels = (elem:any) => {
-        return elem.offsetTop - window.innerHeight;
+        return elem.offsetTop - window.innerHeight; // return the amount of pixels between th parts
     }
 
     // velocity: km/h distance: km
@@ -151,11 +151,10 @@ export const Vehicle = () => {
             const part2 = document.getElementById("part2");
             const part3 = document.getElementById("part3");
             const part4 = document.getElementById("part4");
-            const part5 = document.getElementById("part5");
 
 
             let position =  document.body.scrollHeight-1200; // Posición inicial desde el fondo
-            let speed = calculateAmountOfpixels(part1) / calculateTime(vehicles[vehicleIndex].velocity, 3.8); // Velocidad en píxeles por segundo
+            let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vehicleIndex].velocity, 3.8); // Velocidad en píxeles por segundo
 
             const moveStep = (timestamp:any) => {
 
@@ -179,19 +178,19 @@ export const Vehicle = () => {
                 } else if (position > calculateAmountOfpixels(part2)) {
 
                     // La imagen ha alcanzado la parte
-                    speed = calculateAmountOfpixels(part2) / calculateTime(vehicles[vehicleIndex].velocity, 30);
+                    speed = Math.abs(calculateAmountOfpixels(part2)) / calculateTime(vehicles[vehicleIndex].velocity, 30);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part3)) {
 
                     // La imagen ha alcanzado la parte
-                    speed = calculateAmountOfpixels(part3) / calculateTime(vehicles[vehicleIndex].velocity, 400);
+                    speed = Math.abs(calculateAmountOfpixels(part3)) / calculateTime(vehicles[vehicleIndex].velocity, 400);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part4)) {
 
                     // La imagen ha alcanzado la parte
-                    speed = calculateAmountOfpixels(part4) / calculateTime(vehicles[vehicleIndex].velocity, 400000);
+                    speed = Math.abs(calculateAmountOfpixels(part4)) / calculateTime(vehicles[vehicleIndex].velocity, 390000);
                     requestAnimationFrame(moveStep);
 
                 }else{
