@@ -56,7 +56,7 @@ export default function Home() {
                 </div>
 
                 <CuriosFact text={"We are 384,400 km above sea level, at this altitude the moon is orbiting the earth. Wait a little and you will surely see it."}/>
-                <div className='flex relative h-[20rem]'>
+                <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
                         alt="simpliterm's planet"
@@ -81,7 +81,7 @@ export default function Home() {
                       </div>
                       
                       
-                      <h3 className='font-bold text-2xl text-white mx-[13%] mt-[5rem] leading-10'>Simpliterms</h3>
+                      <h3 className='font-bold text-2xl text-white mx-[13%] mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                       <p className='text-white text-left text-xl leading-10 mx-[13%] mb-8'>
                           Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
@@ -98,7 +98,7 @@ export default function Home() {
                 </div>
 
                 {/* my skills */}
-                <div className='px-[13%] mb-14'>
+                <div className='lg:px-[30%] px-[13%] mb-14'>
                     <h2 className='font-bold text-white text-center text-2xl mt-[12rem] mb-10'>SKILLS</h2>
                     <Skills />
                 </div>
