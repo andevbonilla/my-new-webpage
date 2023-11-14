@@ -365,10 +365,10 @@ export const Vehicle = () => {
 
             {
                vehicleIsMoving && <button onClick={findVehicleInScreen} className='fixed left-0 bottom-0 text-white font-bold bg-green-500 z-50 py-4 px-5 rounded-full ml-4 mb-4'>
-                                        {(vehiclePart === 1) && <span>{`Titanic -> City`}</span>}
-                                        {(vehiclePart === 2) && <span>{`City -> Airplanes`}</span>}
-                                        {(vehiclePart === 3) && <span>{`Airplanes -> ISS`}</span>}
-                                        {(vehiclePart === 4) && <span>{`ISS -> +moon`}</span>}
+                                        {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
+                                        {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
+                                        {(vehiclePart === 3) && <p className='font-bold'>{`Airplanes -> ISS`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeAirplanes}</span></p>}
+                                        {(vehiclePart === 4) && <p className='font-bold'>{`ISS -> +moon`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].totalTime}</span></p>}
                                   </button>
             }
 

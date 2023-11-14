@@ -71,7 +71,7 @@ export default function Home() {
                     <h2 className='font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
 
                     <div className='w-full'>
-                      <div className='h-[25rem] relative'>
+                      <div className='h-[30rem] relative'>
                           <Image 
                             src={require("@/assets/simpliterms-planet.png")}
                             alt="simpliterm's planet"
