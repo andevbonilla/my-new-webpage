@@ -11,7 +11,7 @@ export const ContactForm = () => {
 
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const messageInfo = {
+    const messageInfo:any = {
       name: formData.get('name') ? formData.get("name") :'',
       email: formData.get('email') ? formData.get("email") :'',
       message: formData.get('message') ? formData.get("message") :'',
@@ -30,7 +30,7 @@ export const ContactForm = () => {
       setEmailError("");
     }
 
-    if (messageInfo.message?.toString() && (messageInfo.message?.toString() === "" || messageInfo.message?.toString().length < 10)) {
+    if (messageInfo.message?.toString().length < 10) {
       setMessageError("The Message must have at least 10 chracters.");
     }else{
       setMessageError("");
