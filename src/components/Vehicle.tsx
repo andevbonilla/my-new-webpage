@@ -4,7 +4,7 @@ import React, {useEffect, useState, useRef} from 'react';
 
 export const Vehicle = () => {
 
-    const [counterTime, setCounterTime] = useState(15); // in seconds
+    const [counterTime, setCounterTime] = useState(1); // in seconds
     const [vehicleIndex, setvehicleIndex] = useState(0);
     const [canUptade, setCanUptade] = useState(false);
     const [canClick, setCanClick] = useState(true);
@@ -16,67 +16,72 @@ export const Vehicle = () => {
     const [vehicles, setVehicles] = useState([
         {
             name: "supercross",
-            velocity: "35km/h",
+            velocity: 35,
             img: "vehicle1.png"
         },
         {
             name: "Honda cb 125f",
-            velocity: "90km/h",
+            velocity: 90,
             img: "vehicle2.png"
         },
         {
             name: "Renault Sandero",
-            velocity: "160km/h",
+            velocity: 160,
             img: "vehicle3.png"
         },
         {
             name: "BMW M4",
-            velocity: "250km/h",
+            velocity: 250,
             img: "vehicle4.png"
         },
         {
             name: "Porsche 992 GT3 rs",
-            velocity: "320km/h",
+            velocity: 320,
             img: "vehicle5.png"
         },
         {
             name: "Bugatti Chiron",
-            velocity: "490km/h",
+            velocity: 490,
             img: "vehicle6.png"
         },
         {
             name: "Boeing 737",
-            velocity: "840km/h",
+            velocity: 840,
             img: "vehicle7.png"
         },
         {
             name: "f-15 eagle",
-            velocity: "2.600km/h",
+            velocity: 2600,
             img: "vehicle8.png"
         },
         {
             name: "Saturn V",
-            velocity: "64.500km/h",
+            velocity: 64500,
             img: "vehicle9.png"
         },
         {
             name: "Parker Solar Probe",
-            velocity: "692,000 km/h",
+            velocity: 692000,
             img: "vehicle10.png"
+        },
+        {
+            name: "Caza estelar T-65 Ala-X - Stars Wars",
+            velocity: 2000000,
+            img: "vehicle11.png"
         },
     ]);
 
 
     useEffect(() => {
 
-        let number = 15;
+        let number = 1;
         const newInterval = setInterval(() => {
             if (!canUptade) {
                 number--;
                 setCounterTime(number);
                 if (number === 0) {
-                    setCounterTime(15);
-                    number = 15;
+                    setCounterTime(1);
+                    number = 1;
                     setCanUptade(true);
                  }
             }
@@ -112,14 +117,12 @@ export const Vehicle = () => {
 
         }, false);
 
-        moveImage();
-
     }, [])
     
     
     const updateVehicle = () => {
         if (!canUptade) return;
-        if (vehicleIndex === 9) return;
+        if (vehicleIndex === 10) return;
         setvehicleIndex(vehicleIndex+1);
         setCanUptade(false);
     }
@@ -129,15 +132,33 @@ export const Vehicle = () => {
         window.scrollTo(0, document.body.scrollHeight);
         setTimeout(() => {
             setHaveMoved(true);
+            moveImage();
         }, 200);
     }
 
-    function moveImage() {
+    const calculateAmountOfpixels = (elem:any) => {
+        return elem.offsetTop - window.innerHeight;
+    }
 
-            let position = document.body.scrollHeight-1200; // Posición inicial desde el fondo
+    // velocity: km/h distance: km
+    const calculateTime = (velocity:number, distance:number) => {
+        return (3600 * distance) / velocity; // return the time it will take to go up. in seconds
+    }
 
-            function moveStep(timestamp:any) {
-                const speed = 100; // Velocidad en píxeles por segundo
+    const moveImage = () => {
+
+            const part1 = document.getElementById("part1");
+            const part2 = document.getElementById("part2");
+            const part3 = document.getElementById("part3");
+            const part4 = document.getElementById("part4");
+            const part5 = document.getElementById("part5");
+
+
+            let position =  document.body.scrollHeight-1200; // Posición inicial desde el fondo
+            let speed = calculateAmountOfpixels(part1) / calculateTime(vehicles[vehicleIndex].velocity, 3.8); // Velocidad en píxeles por segundo
+
+            const moveStep = (timestamp:any) => {
+
                 const timeDelta = timestamp - lastTimestamp;
                 lastTimestamp = timestamp;
 
@@ -146,9 +167,34 @@ export const Vehicle = () => {
                 vehicleIMG.current.style.transform = `translate(-30%, ${position}px) rotate(90deg)`;
                 vehicleIMG.current.style.zIndex = "99";
 
-                if (position > -vehicleIMG.current.height-1000) {
+                // if (position > -vehicleIMG.current.height-1200) {
+                //     requestAnimationFrame(moveStep);
+                // } else {
+                //     // La imagen ha alcanzado la parte superior, puedes realizar acciones adicionales aquí si es necesario
+                // }
+                if (position > calculateAmountOfpixels(part1)) {
+
                     requestAnimationFrame(moveStep);
-                } else {
+
+                } else if (position > calculateAmountOfpixels(part2)) {
+
+                    // La imagen ha alcanzado la parte
+                    speed = calculateAmountOfpixels(part2) / calculateTime(vehicles[vehicleIndex].velocity, 30);
+                    requestAnimationFrame(moveStep);
+
+                } else if (position > calculateAmountOfpixels(part3)) {
+
+                    // La imagen ha alcanzado la parte
+                    speed = calculateAmountOfpixels(part3) / calculateTime(vehicles[vehicleIndex].velocity, 400);
+                    requestAnimationFrame(moveStep);
+
+                } else if (position > calculateAmountOfpixels(part4)) {
+
+                    // La imagen ha alcanzado la parte
+                    speed = calculateAmountOfpixels(part4) / calculateTime(vehicles[vehicleIndex].velocity, 400000);
+                    requestAnimationFrame(moveStep);
+
+                }else{
                     // La imagen ha alcanzado la parte superior, puedes realizar acciones adicionales aquí si es necesario
                 }
             }
@@ -192,15 +238,15 @@ export const Vehicle = () => {
                                         </button>
 
                                         {
-                                            (canUptade && vehicleIndex !== 9) && <button onClick={updateVehicle} type='button' className='bg-green-500 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>Update</button>
+                                            (canUptade && vehicleIndex !== 10) && <button onClick={updateVehicle} type='button' className='bg-green-500 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>Update</button>
                                         }
 
                                         {
-                                            (!canUptade && vehicleIndex !== 9) && <p onClick={goUp} className='bg-gray-400 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>{counterTime}s</p>
+                                            (!canUptade && vehicleIndex !== 10) && <p onClick={goUp} className='bg-gray-400 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>{counterTime}s</p>
                                         }
 
                                         {
-                                            (vehicleIndex === 9) && <p className='opacity-0'>{counterTime}s</p>
+                                            (vehicleIndex === 10) && <p className='opacity-0'>{counterTime}s</p>
                                         }
                                         
                                 </div>

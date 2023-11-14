@@ -30,9 +30,9 @@
     animation-direction: normal;
 }
 
-.starlink{
-    animation-name: starlinkmove;
-    animation-duration: 6200ms;
+.moon{
+    animation-name: moonmove;
+    animation-duration: 10000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -150,15 +150,12 @@
   to{transform: translateX(200vw) translateY(-6rem);}
 }
 
-@keyframes starlinkmove {
+@keyframes moonmove {
       0% {
-        transform: translate(-50vw, -15rem);
-      }
-      50% {
-        transform: translate(100vw, 0);
+        transform: translate(-300rem, -30rem) scale(3,3);
       }
       100% {
-        transform: translate(150vw, -15rem);
+        transform: translate(500vw, 0) scale(3,3);
       }
 }
 

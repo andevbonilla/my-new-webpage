@@ -27,7 +27,7 @@ export default function Home() {
             <StarsBackground>
 
                 {/* simulate the navbar height */}
-                <div className='h-16'></div>
+                <div id="part4" className='h-16'></div>
 
                 {/* presentation section */}
                 <div className='flex flex-col justify-center items-center h-screen px-[10%]'>
@@ -55,12 +55,12 @@ export default function Home() {
                     </p>
                 </div>
 
-                <CuriosFact text={"At this point we are 400 kilometers above sea level. At this altitude is the International Space Station (ISS)."}/>
-                <div className='flex'>
+                <CuriosFact text={"We are 384,400 km above sea level, at this altitude the moon is orbiting the earth. Wait a little and you will surely see it."}/>
+                <div className='flex relative h-[20rem]'>
                   <Image 
-                        src={require("@/assets/space-station-icon.png")}
+                        src={require("@/assets/moon-icon.png")}
                         alt="simpliterm's planet"
-                        className='w-[30rem] h-[30rem] international-space-station'
+                        className='absolute moon'
                       />
                 </div>
 
@@ -102,13 +102,12 @@ export default function Home() {
                     <Skills />
                 </div>
 
-                <CuriosFact text={"At this point we are at 1000 kilometers above sea level. At this altitude we can find the STARLINK satellites of Elon Musk which are usually between 340 km and 1200 km above sea level."}/>
-
-                <div className='flex'>
+                <CuriosFact text={"At this point we are 400 kilometers above sea level. At this altitude is the International Space Station (ISS)."}/>
+                <div id="part3" className='flex'>
                   <Image 
-                        src={require("@/assets/starlink-icon.png")}
+                        src={require("@/assets/space-station-icon.png")}
                         alt="simpliterm's planet"
-                        className='w-[10rem] h-[10rem] starlink'
+                        className='w-[30rem] h-[30rem] international-space-station'
                       />
                 </div>
 
@@ -140,7 +139,7 @@ export default function Home() {
                 </div>
 
                 <CuriosFact text={"At this point we are at an altitude of 30,000 meters, at this altitude most of today's commercial airplanes usually fly."}/>
-                <div className='flex'>
+                <div id="part2" className='flex'>
                   <Image 
                         src={require("@/assets/vehicle7.png")}
                         alt="simpliterm's planet"
@@ -161,7 +160,7 @@ export default function Home() {
                 
                 <div className='h-[12rem]'></div>
 
-                <div className='city scale-150'>
+                <div className='city scale-150' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
                         alt="singapur city"
