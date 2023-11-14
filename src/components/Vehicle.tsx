@@ -8,7 +8,8 @@ export const Vehicle = () => {
     const [vehicleIndex, setvehicleIndex] = useState(0);
     const [canUptade, setCanUptade] = useState(false);
     const [canClick, setCanClick] = useState(true);
-    const [haveMoved, setHaveMoved] = useState(false);
+    const [showVehicleInfo, setShowVehicleInfo] = useState(false);
+    const [vehiclePosition, setVehiclePosition] = useState(0);
     
     const vehicleWrapper:any = useRef(null);
     const vehicleIMG:any = useRef(null);
@@ -17,57 +18,68 @@ export const Vehicle = () => {
         {
             name: "supercross",
             velocity: 35,
-            img: "vehicle1.png"
+            img: "vehicle1.png",
+            desc: ""
         },
         {
             name: "Honda cb 125f",
             velocity: 90,
-            img: "vehicle2.png"
+            img: "vehicle2.png",
+            desc: ""
         },
         {
             name: "Renault Sandero",
             velocity: 160,
-            img: "vehicle3.png"
+            img: "vehicle3.png",
+            desc: ""
         },
         {
             name: "BMW M4",
             velocity: 250,
-            img: "vehicle4.png"
+            img: "vehicle4.png",
+            desc: ""
         },
         {
             name: "Porsche 992 GT3 rs",
             velocity: 320,
-            img: "vehicle5.png"
+            img: "vehicle5.png",
+            desc: ""
         },
         {
             name: "Bugatti Chiron",
             velocity: 490,
-            img: "vehicle6.png"
+            img: "vehicle6.png",
+            desc: ""
         },
         {
             name: "Boeing 737",
             velocity: 840,
-            img: "vehicle7.png"
+            img: "vehicle7.png",
+            desc: ""
         },
         {
             name: "f-15 eagle",
             velocity: 2600,
-            img: "vehicle8.png"
+            img: "vehicle8.png",
+            desc: ""
         },
         {
             name: "Saturn V",
             velocity: 64500,
-            img: "vehicle9.png"
+            img: "vehicle9.png",
+            desc: ""
         },
         {
             name: "Parker Solar Probe",
             velocity: 692000,
-            img: "vehicle10.png"
+            img: "vehicle10.png",
+            desc: ""
         },
         {
             name: "Caza estelar T-65 Ala-X - Stars Wars",
             velocity: 2000000,
-            img: "vehicle11.png"
+            img: "vehicle11.png",
+            desc: ""
         },
     ]);
 
@@ -100,7 +112,6 @@ export const Vehicle = () => {
             
             clearTimeout(isScrolling);
             setCanClick(false);
-            setHaveMoved(false);
 
             if (vehicleWrapper.current) {
                 vehicleWrapper.current.style.opacity = '0';
@@ -131,7 +142,7 @@ export const Vehicle = () => {
         if(!canClick) return;
         window.scrollTo(0, document.body.scrollHeight);
         setTimeout(() => {
-            setHaveMoved(true);
+            setShowVehicleInfo(true);
             moveImage();
         }, 200);
     }
@@ -164,6 +175,7 @@ export const Vehicle = () => {
                 position -= speed * (timeDelta / 1000);
 
                 vehicleIMG.current.style.transform = `translate(-30%, ${position}px) rotate(90deg)`;
+                setVehiclePosition(position);
                 vehicleIMG.current.style.zIndex = "99";
 
                 // if (position > -vehicleIMG.current.height-1200) {
@@ -201,6 +213,14 @@ export const Vehicle = () => {
             let lastTimestamp = performance.now();
             requestAnimationFrame(moveStep);
     }
+
+    const closeInfo = () => {
+        setShowVehicleInfo(false);
+    }
+
+    const findVehicleInScreen = () => {
+        window.scrollTo(0, vehiclePosition);
+    }
     
   return (
     <div>
@@ -214,11 +234,13 @@ export const Vehicle = () => {
 
             {
 
-                   haveMoved &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-gradient-to-b from-transparent via-black to-black text-white flex items-center px-10 py-[5rem]`}>
-                                        
-                                    <p className='text-lg'>You are currently on a {vehicles[vehicleIndex].name}. The maximum speed of this object is: {vehicles[vehicleIndex].velocity}. 
-                                                        Therefore it will take about: 20 days to rise to the top of the page.</p>
-                                 </div>
+                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-gradient-to-b from-transparent via-black to-black text-white flex items-center px-10 py-[5rem]`}>
+                                            <p className='text-lg'>{vehicles[vehicleIndex].desc}</p>
+                                            <div>
+                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black' type='button'>View Vehicle</button>
+                                                <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black' type='button'>Close</button>
+                                            </div>
+                                        </div>
                 
             }
 
