@@ -260,15 +260,14 @@ export const Vehicle = () => {
         return (3600 * distance) / velocity; // return the time it will take to go up. in seconds
     }
 
-    const moveImage = () => {
+    const moveImage = (vindex:number = vehicleIndex) => {
 
             const part1 = document.getElementById("part1");
             const part2 = document.getElementById("part2");
             const part3 = document.getElementById("part3");
             const part4 = document.getElementById("part4");
 
-
-            let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vehicleIndex].velocity, 3.8);
+            let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vindex].velocity, 3.8);
             let position =  0; // Posición inicial desde el fondo
             if (vehiclePosition === 0) {
                 position =  document.body.scrollHeight-1200;
@@ -290,25 +289,25 @@ export const Vehicle = () => {
 
                 if (position > calculateAmountOfpixels(part1)) {
 
-                    speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vehicleIndex].velocity, 3.8);
+                    speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vindex].velocity, 3.8);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part2)) {
 
                     // La imagen ha alcanzado la parte
-                    speed = Math.abs(calculateAmountOfpixels(part2)) / calculateTime(vehicles[vehicleIndex].velocity, 30);
+                    speed = Math.abs(calculateAmountOfpixels(part2)) / calculateTime(vehicles[vindex].velocity, 30);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part3)) {
 
                     // La imagen ha alcanzado la parte  
-                    speed = Math.abs(calculateAmountOfpixels(part3)) / calculateTime(vehicles[vehicleIndex].velocity, 370);
+                    speed = Math.abs(calculateAmountOfpixels(part3)) / calculateTime(vehicles[vindex].velocity, 370);
                     requestAnimationFrame(moveStep);
 
                 } else if (position > calculateAmountOfpixels(part4)) {
 
                     // La imagen ha alcanzado la parte
-                    speed = Math.abs(calculateAmountOfpixels(part4)) / calculateTime(vehicles[vehicleIndex].velocity, 390000);
+                    speed = Math.abs(calculateAmountOfpixels(part4)) / calculateTime(vehicles[vindex].velocity, 390000);
                     requestAnimationFrame(moveStep);
 
                 }else{
@@ -325,10 +324,10 @@ export const Vehicle = () => {
         if (!canUptade) return;
         if (vehicleIndex === 10) return;
         if (vehicleIsMoving) {
-            window.scrollTo(0, vehiclePosition);
-            moveImage();
             setvehicleIndex(vehicleIndex+1);
             setCanUptade(false);
+            window.scrollTo(0, vehiclePosition);
+            moveImage(vehicleIndex+1);
             return;
         }
         setvehicleIndex(vehicleIndex+1);
@@ -346,13 +345,13 @@ export const Vehicle = () => {
     
   return (
     <div>
-        
-            <Image 
-               src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
-               alt="bicicross"
-               className='absolute left-0 bottom-0 w-[12rem] h-[12rem]'
-               ref={vehicleIMG}
-            />
+            <button onClick={()=>setShowVehicleInfo(true)} ref={vehicleIMG} className='absolute left-0 bottom-0 w-[12rem] h-[12rem]'>
+                <Image    
+                    src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
+                    alt="bicicross"
+                    className='w-[12rem] h-[12rem]'
+                />
+            </button>
 
             {
 
@@ -382,7 +381,7 @@ export const Vehicle = () => {
                                                 <p className='text-lg opacity-80 mt-2'>This is a realistic simulation of the speed of the vehicles presented, the only unrealistic thing is the size of the distances and the vehicle, but the time it would take from x point to b is real. So if you notice that the vehicle stops, it is because it is going too slow.</p>
                                             </div>
                                             <div className='w-full flex justify-between items-center mt-10'>
-                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>View Vehicle</button>
+                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Follow</button>
                                                 <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Close</button>
                                             </div>
                                         </div>
