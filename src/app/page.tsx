@@ -71,16 +71,17 @@ export default function Home() {
                     <h2 className='font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
 
                     <div className='w-full'>
-                      <div className='h-[30rem] relative'>
+
+                      <div className='flex items-center justify-center h-[35rem] relative w-auto mx-[13%]'>
                           <Image 
                             src={require("@/assets/simpliterms-planet.png")}
                             alt="simpliterm's planet"
-                            className='absolute top-0 w-full p-6 floating'
+                            className='absolute w-auto floating'
                           />
                       </div>
                       
                       
-                      <h3 className='font-bold text-2xl text-white mx-[13%] mt-6 leading-10'>Simpliterms</h3>
+                      <h3 className='font-bold text-2xl text-white mx-[13%] mt-[5rem] leading-10'>Simpliterms</h3>
 
                       <p className='text-white text-left text-xl leading-10 mx-[13%] mb-8'>
                           Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
