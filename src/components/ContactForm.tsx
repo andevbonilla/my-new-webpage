@@ -8,6 +8,7 @@ export const ContactForm = () => {
   const [messageError, setMessageError] = useState("")
 
   const sendEmail = (e:FormEvent<HTMLFormElement>) => {
+
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const messageInfo = {
@@ -15,22 +16,29 @@ export const ContactForm = () => {
       email: formData.get('email') ? formData.get("email") :'',
       message: formData.get('message') ? formData.get("message") :'',
     }
+
     if (messageInfo.name?.toString() === "") {
       setNameError("The Name is required.");
-      return;
+    }else{
+      setNameError("");
     }
+
     if (messageInfo.email?.toString() === "") {
       setEmailError("The Email is required.");
-      return;
+    }else{
+      setEmailError("");
     }
-    if (messageInfo.message?.toString() === "") {
-      setMessageError("The Email is required.");
-      return;
-    }
+
     if (messageInfo.message?.toString() && messageInfo.message?.toString().length < 10) {
-      setMessageError("The message must have at least 10 chracters");
+      setMessageError("The Message must have at least 10 chracters.");
+    }else{
+      setMessageError("");
+    }
+
+    if ((nameError === "") || (emailError === "") || (messageError === "")) {
       return;
     }
+
   }
 
   return (
