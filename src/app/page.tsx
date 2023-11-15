@@ -70,29 +70,32 @@ export default function Home() {
                   
                     <h2 className='font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
 
-                    <div className='w-full'>
+                    <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
-                      <div className='flex items-center justify-center h-[35rem] relative w-auto mx-[13%]'>
-                          <Image 
-                            src={require("@/assets/simpliterms-planet.png")}
-                            alt="simpliterm's planet"
-                            className='absolute w-auto floating'
-                          />
-                      </div>
+                        <div className='lg:w-[40%] flex items-center justify-center h-[35rem] relative w-auto mx-[13%] md:mx-0'>
+                            <Image 
+                              src={require("@/assets/simpliterms-planet.png")}
+                              alt="simpliterm's planet"
+                              className='absolute w-auto floating'
+                            />
+                        </div>
+
+                        <div className='lg:w-[60%] lg:ml-12'>
+
+                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
+
+                            <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
+                                Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
+                                they are too long and difficult to understand? Simpliterms is an extension that summarizes the policies 
+                                with a single click so you don&apos;t have to blindly accept them again.
+                            </p>
+
+                            <div className='px-[13%] lg:px-0'>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
+                            </div>
+
+                        </div>
                       
-                      
-                      <h3 className='font-bold text-2xl text-white mx-[13%] mt-[5rem] mb-[2rem]'>Simpliterms</h3>
-
-                      <p className='text-white text-left text-xl leading-10 mx-[13%] mb-8'>
-                          Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
-                          they are too long and difficult to understand? Simpliterms is an extension that summarizes the policies 
-                          with a single click so you don&apos;t have to blindly accept them again.
-                      </p>
-
-                      <div className='px-[13%]'>
-                        <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
-                      </div>
-
                     </div>                
 
                 </div>
