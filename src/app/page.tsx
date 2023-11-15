@@ -33,7 +33,11 @@ export default function Home() {
                 <div className='md:px-[15%] lg:px-[20%] flex flex-col md:flex-row justify-center items-center h-screen px-[10%]'>
                     <div className='mb-10 md:w-[50%]'>
                             <h1 className='text-white font-bold text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
-                            <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete']}/>
+                            <div className='flex text-white'>
+                                <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete']}
+                                                 wrapper="h2"/>
+                            </div>
+                            
                     </div>
                     <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
                             <Image 
@@ -72,7 +76,7 @@ export default function Home() {
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
-                        <div className='lg:w-[40%] flex items-center justify-center h-[35rem] relative w-auto mx-[13%] md:mx-0'>
+                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[35rem] relative w-auto mx-[13%]'>
                             <Image 
                               src={require("@/assets/simpliterms-planet.png")}
                               alt="simpliterm's planet"
