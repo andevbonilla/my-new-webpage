@@ -357,7 +357,7 @@ export const Vehicle = () => {
                vehicleIsMoving && <button onClick={()=>setShowVehicleInfo(true)} ref={vehicleIMG} className='absolute left-0 bottom-0 w-[12rem] h-[12rem]'>
                                         <Image    
                                             src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
-                                            alt="bicicross"
+                                            alt={vehicles[vehicleIndex].vehicle}
                                             className='w-[12rem] h-[12rem]'
                                         />
                                   </button>
