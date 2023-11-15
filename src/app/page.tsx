@@ -52,7 +52,7 @@ export default function Home() {
 
                 {/* about me */}
                 <div className='px-[15%]'>
-                    <h2 className='md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>ABOUT ME</h2>
+                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>ABOUT ME</h2>
                     <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur. 
                       I love creating technological products. When I was 16, I founded my first company, Fansive. 
                       I&apos;m passionate about science, technology, cars, music, but above all, ice cream. 😄
@@ -72,7 +72,7 @@ export default function Home() {
                 {/* my business */}
                 <div className='w-full'>
                   
-                    <h2 className='md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
+                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
@@ -106,7 +106,7 @@ export default function Home() {
 
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
-                    <h2 className='md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>SKILLS</h2>
+                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>SKILLS</h2>
                     <Skills />
                 </div>
 
@@ -122,7 +122,8 @@ export default function Home() {
 
                 {/* my projects */}
                 <div>
-                    <h2 className='md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>MY PROJECTS</h2>
+                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-24'>MY PROJECTS</h2>
+
                     <Project name={"YourDreamCar"} 
                             desc={"YourDreamCar is a web page that I designed for a company that I developed with my best friend David. Which offers wrapping services, window tinting and more. #YourDreamCar"} 
                             link={"https://www.yourdreamcar.ca/"} 
@@ -151,12 +152,12 @@ export default function Home() {
                   <Image 
                         src={require("@/assets/vehicle7.png")}
                         alt="simpliterm's planet"
-                        className='w-[14rem] h-[14rem] plane1'
+                        className='w-auto plane1'
                       />
                   <Image 
                         src={require("@/assets/vehicle8.png")}
                         alt="simpliterm's planet"
-                        className='w-[8rem] h-[8rem] plane2'
+                        className='w-[8rem] h-[4rem] plane2'
                       />
                   <Image 
                         src={require("@/assets/airplane3-icon.png")}
@@ -232,7 +233,7 @@ export default function Home() {
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
                     />
-                    <div className='flex h-[15rem]'>
+                    <div className='flex h-[18rem]'>
                         <Image 
                               src={require("@/assets/tentaculos.gif")}
                               alt="simpliterm's planet"
@@ -242,7 +243,7 @@ export default function Home() {
                 </div>
 
                 <div className='px-[13%]'>
-                    <h2 className='md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>CONTACT ME</h2>
+                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>CONTACT ME</h2>
                     <ContactForm />
                 </div>
 
@@ -251,22 +252,22 @@ export default function Home() {
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>
                           <Link href={"https://www.instagram.com/__andrec__/"} target='_blank'>
-                            <FontAwesomeIcon icon={faInstagram} className='text-white cursor-pointer md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
+                            <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://twitter.com/AndresB64566284"} target='_blank'>
-                            <FontAwesomeIcon icon={faTwitter} className='text-white cursor-pointer md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
+                            <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} target='_blank'>
-                            <FontAwesomeIcon icon={faLinkedin} className='text-white cursor-pointer md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
+                            <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} target='_blank'>
-                            <FontAwesomeIcon icon={faGithub} className='text-white cursor-pointer md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
+                            <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
                           </Link>
                       </div>
                       <Image 
                         src={require("@/assets/titanic.png")}
                         alt="singapur city"
-                        className='w-full scale-150 -translate-x-6'
+                        className='w-full scale-150 lg:scale-[1.4] -translate-x-6 mt-[15rem]'
                       />
                 </div>
 

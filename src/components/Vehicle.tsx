@@ -272,7 +272,7 @@ export const Vehicle = () => {
             let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vindex].velocity, 3.8);
             let position =  0; // Posición inicial desde el fondo
             if (vehiclePosition === 0) {
-                position =  document.body.scrollHeight-1200;
+                position =  document.body.scrollHeight-1400;
             }else{
                 position =  vehiclePosition;
             }
@@ -284,7 +284,7 @@ export const Vehicle = () => {
 
                 position -= speed * (timeDelta / 1000);
 
-                vehicleIMG.current.style.transform = `translate(-30%, ${position}px) rotate(90deg)`;
+                vehicleIMG.current.style.transform = `translate(-30%, ${position}px) rotate(90deg) scale(1.2,1.2)`;
                 setVehiclePosition(position);
                 vehicleIMG.current.style.zIndex = "99";
 
@@ -358,7 +358,7 @@ export const Vehicle = () => {
                                         <Image    
                                             src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
                                             alt={vehicles[vehicleIndex].vehicle}
-                                            className='w-[12rem] h-[12rem]'
+                                            className='w-auto'
                                         />
                                   </button>
             }
@@ -404,12 +404,12 @@ export const Vehicle = () => {
                   <div ref={vehicleWrapper} className={`fixed bottom-0 right-0 mr-6 z-40 flex flex-col justify-center items-center`}>
                                         <button onClick={goUp}
                                                 type='button' 
-                                                className={`rounded-full bg-white p-2 ${(canUptade) ? "border-green-500" : "border-gray-400"} border-4`}>
+                                                className={`rounded-full bg-white p-2 ${(canUptade) ? "border-green-500" : "border-gray-400"} border-4 w-[6rem] h-[6rem]`}>
 
                                             <Image 
                                                 src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
-                                                alt="bicicross"
-                                                className='w-[4.5rem] h-[4.5rem]'
+                                                alt={vehicles[vehicleIndex].vehicle}
+                                                className='w-full'
                                             />
 
                                         </button>
