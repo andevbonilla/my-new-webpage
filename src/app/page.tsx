@@ -32,7 +32,7 @@ export default function Home() {
                 {/* presentation section */}
                 <div className='md:px-[15%] lg:px-[20%] flex flex-col md:flex-row justify-center items-center h-screen px-[10%]'>
                     <div className='mb-10 md:w-[50%]'>
-                            <h1 className='text-white font-bold text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
+                            <h1 className='text-white font-bold text-[1.6rem] um:text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
                             <div className='flex text-white'>
                                 <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete']}
                                                  wrapper="h2"/>
@@ -223,7 +223,7 @@ export default function Home() {
                         <Image 
                               src={require("@/assets/fish-group-3-icon.png")}
                               alt="simpliterm's planet"
-                              className='w-[36rem] h-[14rem] fish-group-3'
+                              className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>
                     <CuriosFact text={"We are in shallow water at this depth you can find fish such as salmon, reef fish and more."}/>

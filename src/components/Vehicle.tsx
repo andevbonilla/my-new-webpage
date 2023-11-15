@@ -272,7 +272,7 @@ export const Vehicle = () => {
             let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vindex].velocity, 3.8);
             let position =  0; // Posición inicial desde el fondo
             if (vehiclePosition === 0) {
-                position =  document.body.scrollHeight-1400;
+                position =  document.body.scrollHeight-1000;
             }else{
                 position =  vehiclePosition;
             }
@@ -364,12 +364,15 @@ export const Vehicle = () => {
             }
 
             {
-               vehicleIsMoving && <button onClick={findVehicleInScreen} className='fixed left-0 bottom-0 text-white font-bold bg-green-500 z-50 py-4 px-5 rounded-full ml-4 mb-4'>
-                                        {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
-                                        {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
-                                        {(vehiclePart === 3) && <p className='font-bold'>{`Airplanes -> ISS`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeAirplanes}</span></p>}
-                                        {(vehiclePart === 4) && <p className='font-bold'>{`ISS -> +moon`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].totalTime}</span></p>}
-                                  </button>
+               vehicleIsMoving && <div className='fixed flex justify-center items-center w-full mt-4'>
+                                        <button onClick={findVehicleInScreen} className='text-white font-bold bg-green-500 bg-opacity-90 z-50 py-4 px-5 rounded-full'>
+                                            {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
+                                            {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
+                                            {(vehiclePart === 3) && <p className='font-bold'>{`Airplanes -> ISS`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeAirplanes}</span></p>}
+                                            {(vehiclePart === 4) && <p className='font-bold'>{`ISS -> +moon`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].totalTime}</span></p>}
+                                        </button>
+                
+                                  </div>
             }
 
             {

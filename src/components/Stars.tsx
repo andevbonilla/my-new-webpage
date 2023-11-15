@@ -11,7 +11,7 @@ export const StarsBackground = ({children}:any) => {
                     document.body.scrollHeight,
                     document.documentElement.scrollHeight
                 );                
-                if (Math.round(window.scrollY) > (totalHeight * 0.50)) {
+                if (Math.round(window.scrollY) > (totalHeight * 0.4)) {
                         // sin estrellas
                         starElem.current.className = `no-stars`;                                       
                 }else {
