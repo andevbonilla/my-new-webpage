@@ -43,7 +43,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={sendEmail} className='w-full'> 
+    <form onSubmit={sendEmail} className='w-full sm:px-[10%] lg:px-[20%]'> 
 
         <div>
 

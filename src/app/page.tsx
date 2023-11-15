@@ -164,7 +164,7 @@ export default function Home() {
                 
                 <div className='h-[12rem]'></div>
 
-                <div className='city scale-150' id="part1">
+                <div className='city scale-150 lg:scale-100' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
                         alt="singapur city"
@@ -177,7 +177,7 @@ export default function Home() {
 
           </div>
 
-          <div className='gradient-background-water overflow-hidden'>
+          <div className='gradient-background-water overflow-hidden md:pt-[10rem]'>
 
               <div className='flex h-[10rem]'>
                   <Image 
@@ -232,19 +232,19 @@ export default function Home() {
 
                 <CuriosFact text={"At this point we are at 3800 meters deep, at this depth is the remains of the Titanic and ends the content of my website."}/>
 
-                <div className='titanic'>
+                <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>
                           <Link href={"https://www.instagram.com/__andrec__/"} target='_blank'>
-                            <FontAwesomeIcon icon={faInstagram} className='text-white w-[2.5rem] h-[2.5rem] mr-10' />
+                            <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://twitter.com/AndresB64566284"} target='_blank'>
-                            <FontAwesomeIcon icon={faTwitter} className='text-white w-[2.5rem] h-[2.5rem] mr-10' />
+                            <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} target='_blank'>
-                            <FontAwesomeIcon icon={faLinkedin} className='text-white w-[2.5rem] h-[2.5rem] mr-10' />
+                            <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} target='_blank'>
-                            <FontAwesomeIcon icon={faGithub} className='text-white w-[2.5rem] h-[2.5rem]' />
+                            <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
                           </Link>
                       </div>
                       <Image 
