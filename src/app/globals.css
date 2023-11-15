@@ -64,7 +64,7 @@
 
 .fish-group{
   animation-name: fishgroupanimation;
-  animation-duration: 30000ms;
+  animation-duration: 45000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: normal;
@@ -72,11 +72,30 @@
 
 .fish-group-2{
   animation-name: plane1animation;
-  animation-duration: 27000ms;
+  animation-duration: 32000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: normal;
 }
+
+.fish-group-3{
+  animation-name: sharkAnimation;
+  animation-duration: 25000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+
+.fish-group-4{
+  animation-name: plane1animation;
+  animation-duration: 32000ms;
+  animation-delay: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
 
 #asteroid{
     background-image: url("../assets/asteroid.png");
@@ -191,9 +210,18 @@
 }
 
 @keyframes fishgroupanimation {
-  from{transform: translateX(-50rem) translateY(10rem);}
+  from{transform: translateX(-10rem) translateY(10rem);}
   to{transform: translateX(200vw) translateY(10rem);}
 }
+@keyframes fishgroupanimation2 {
+  from{transform: translateX(-10rem) translateY(10rem);}
+  to{transform: translateX(200vw) translateY(10rem);}
+}
+@keyframes sharkAnimation {
+  0%{transform: translateX(150vw) translateY(-20rem);}
+  100%{transform: translateX(-100rem) translateY(-20rem);}
+}
+
 
 @keyframes move {
   from{transform: translateX(-10rem) rotate(300deg);}

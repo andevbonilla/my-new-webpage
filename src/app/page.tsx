@@ -187,7 +187,7 @@ export default function Home() {
                   <Image 
                         src={require("@/assets/fish-group-1-icon.png")}
                         alt="simpliterm's planet"
-                        className='w-[14rem] h-[14rem] fish-group'
+                        className='w-[10rem] h-[10rem] fish-group'
                       />
               </div>
 
@@ -204,12 +204,17 @@ export default function Home() {
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
                               alt="simpliterm's planet"
-                              className='w-[14rem] h-[14rem] fish-group delay-300'
+                              className='w-[6rem] h-[6rem] fish-group delay-300'
                             />
                         <Image 
                               src={require("@/assets/fish-group-2-icon.png")}
                               alt="simpliterm's planet"
-                              className='w-[14rem] h-[14rem] fish-group-2'
+                              className='w-[8rem] h-[8rem] fish-group-2'
+                        />
+                        <Image 
+                              src={require("@/assets/fish-group-3-icon.png")}
+                              alt="simpliterm's planet"
+                              className='w-[36rem] h-[14rem] fish-group-3'
                         />
                     </div>
                     <CuriosFact text={"We are in shallow water at this depth you can find fish such as salmon, reef fish and more."}/>
@@ -227,6 +232,13 @@ export default function Home() {
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
                     />
+                    <div className='flex h-[15rem]'>
+                        <Image 
+                              src={require("@/assets/tentaculos.gif")}
+                              alt="simpliterm's planet"
+                              className='w-[30rem] h-[30rem] rotate-[75deg] -translate-x-20'
+                            />
+                    </div>
                 </div>
 
                 <div className='px-[13%]'>
