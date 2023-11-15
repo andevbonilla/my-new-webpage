@@ -52,7 +52,9 @@ export default function Home() {
 
                 {/* about me */}
                 <div className='px-[15%]'>
-                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>ABOUT ME</h2>
+                    <div className='flex w-full justify-center items-center'>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>ABOUT ME</h2>
+                    </div>
                     <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur. 
                       I love creating technological products. When I was 16, I founded my first company, Fansive. 
                       I&apos;m passionate about science, technology, cars, music, but above all, ice cream. 😄
@@ -72,7 +74,9 @@ export default function Home() {
                 {/* my business */}
                 <div className='w-full'>
                   
-                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mb-10'>MY BUSINESS</h2>
+                    <div className='flex w-full justify-center items-center'>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MY BUSINESS</h2>
+                    </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
@@ -106,7 +110,9 @@ export default function Home() {
 
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
-                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>SKILLS</h2>
+                    <div className='flex w-full justify-center items-center'>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SKILLS</h2>
+                    </div>
                     <Skills />
                 </div>
 
@@ -122,7 +128,9 @@ export default function Home() {
 
                 {/* my projects */}
                 <div>
-                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-24'>MY PROJECTS</h2>
+                    <div className='flex w-full justify-center items-center'>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MY PROJECTS</h2>
+                    </div>
 
                     <Project name={"YourDreamCar"} 
                             desc={"YourDreamCar is a web page that I designed for a company that I developed with my best friend David. Which offers wrapping services, window tinting and more. #YourDreamCar"} 
@@ -243,7 +251,9 @@ export default function Home() {
                 </div>
 
                 <div className='px-[13%]'>
-                    <h2 className='tracking-[.8rem] md:text-3xl underline decoration-yellow-200 decoration-4 underline-offset-8 font-bold text-white text-center text-2xl mt-[12rem] mb-10'>CONTACT ME</h2>
+                    <div className='flex w-full justify-center items-center'>
+                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>CONTACT</h2>
+                    </div>
                     <ContactForm />
                 </div>
 
