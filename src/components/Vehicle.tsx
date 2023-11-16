@@ -4,7 +4,7 @@ import React, {useEffect, useState, useRef} from 'react';
 
 export const Vehicle = () => {
 
-    const [counterTime, setCounterTime] = useState(10); // in seconds
+    const [counterTime, setCounterTime] = useState(5); // in seconds
     const [vehicleIndex, setvehicleIndex] = useState(0);
     const [canUptade, setCanUptade] = useState(false);
     const [canClick, setCanClick] = useState(true);
@@ -31,7 +31,7 @@ export const Vehicle = () => {
             timeCity: "aprox 1 hour",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 12 hours",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 18 months",
         },
         {
@@ -47,7 +47,7 @@ export const Vehicle = () => {
             timeCity: "aprox 20 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 4 hours",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 180 days",
         },
         {
@@ -63,7 +63,7 @@ export const Vehicle = () => {
             timeCity: "aprox 11.5 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 2.3 hours",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 101 days",
         },
         {
@@ -79,7 +79,7 @@ export const Vehicle = () => {
             timeCity: "aprox 7.3 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 1.48 hours",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 65 days",
         },
         {
@@ -95,7 +95,7 @@ export const Vehicle = () => {
             timeCity: "aprox 6 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 1.2 hours",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 54 days",
         },
         {
@@ -111,7 +111,7 @@ export const Vehicle = () => {
             timeCity: "aprox 3.7 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 45 minutes",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 33 days",
         },
         {
@@ -127,7 +127,7 @@ export const Vehicle = () => {
             timeCity: "aprox 2.2 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 26.4 minutes",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 19 days",
         },
         {
@@ -143,7 +143,7 @@ export const Vehicle = () => {
             timeCity: "aprox 43 seconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 8.6 minutes",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 6 days",
         },
         {
@@ -159,7 +159,7 @@ export const Vehicle = () => {
             timeCity: "aprox 1.75 seconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 21 seconds",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 6 hours",
         },
         {
@@ -175,7 +175,7 @@ export const Vehicle = () => {
             timeCity: "aprox 158 miliseconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 2 seconds",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 33 minutes",
         },
         {
@@ -191,7 +191,7 @@ export const Vehicle = () => {
             timeCity: "aprox 50 miliseconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 0.66 seconds",
-            subtotalTime: "Titaic->Top of the page:",
+            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 11 minutes",
         },
     ]);
@@ -199,14 +199,14 @@ export const Vehicle = () => {
 
     useEffect(() => {
 
-        let number = 10;
+        let number = 5;
         const newInterval = setInterval(() => {
             if (!canUptade) {
                 number--;
                 setCounterTime(number);
                 if (number === 0) {
-                    setCounterTime(10);
-                    number = 10;
+                    setCounterTime(5);
+                    number = 5;
                     setCanUptade(true);
                  }
             }
@@ -227,7 +227,7 @@ export const Vehicle = () => {
             setCanClick(false);
 
             if (vehicleWrapper.current) {
-                vehicleWrapper.current.style.opacity = '0';
+                vehicleWrapper.current.style.opacity = '0.4';
                 vehicleWrapper.current.classList.remove('opacity-transition');
             }
 
