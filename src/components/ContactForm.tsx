@@ -128,7 +128,7 @@ export const ContactForm = () => {
         <div>
 
             <input type="email" 
-                   placeholder='Name'
+                   placeholder='Email'
                    name='email'
                    className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}
             />
