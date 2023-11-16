@@ -199,12 +199,12 @@ export const Vehicle = () => {
 
     useEffect(() => {
 
-        let number = 1;
+        let number = 10;
         const newInterval = setInterval(() => {
             if (!canUptade) {
                 number--;
                 setCounterTime(number);
-                if (number === 0) {
+                if (number === 10) {
                     setCounterTime(10);
                     number = 10;
                     setCanUptade(true);
