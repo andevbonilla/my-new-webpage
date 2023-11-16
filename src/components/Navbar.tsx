@@ -28,7 +28,7 @@ export const Navbar = () => {
   return (
     <>
 
-        <nav className='absolute top-0 left-0 w-full flex justify-between items-center py-10 px-[15%]'>
+        <nav className='z-[998] absolute top-0 left-0 w-full flex justify-between items-center py-10 px-[15%]'>
 
             <Image 
                 src={require("@/assets/slogan.png")}
@@ -49,26 +49,26 @@ export const Navbar = () => {
         </nav>
 
         {
-            asteroidsMenuOpen && <div className='fixed w-full h-screen z-50 bg-[#0F193B]'>
+            asteroidsMenuOpen && <div className='fixed w-full h-screen z-[999] bg-[#0F193B]'>
                                     <div className='stars'>
-                                        <div className='flex justify-end items-center p-10 mb-12'>
+                                        <div className='flex justify-end items-center p-10'>
                                             <FontAwesomeIcon
                                                     onClick={closeAsteroidsMenu} 
                                                     icon={faXmark}
                                                     className='text-white w-12 h-12 cursor-pointer' 
                                             />
                                         </div>
-                                        <div className='overflow-hidden h-screen'>
+                                        <div className='overflow-hidden'>
 
-                                            <button onClick={()=>clickOnAsteroid("/#about")} className='w-[7rem] h-[7rem] flex justify-center items-center mb-8' id='asteroid'>
+                                            <button onClick={()=>clickOnAsteroid("/#about")} className='w-[7rem] h-[7rem] flex justify-center items-center mb-8 asteroid' id='asteroid'>
                                                 <p className='font-bold text-white text-2xl'>ABOUT</p>
                                             </button>
 
-                                            <button onClick={()=>clickOnAsteroid("/#projects")} className='w-[10rem] h-[10rem] flex justify-center items-center mb-12' id='asteroid1'>
+                                            <button onClick={()=>clickOnAsteroid("/#projects")} className='w-[10rem] h-[10rem] flex justify-center items-center mb-12 asteroid1' id='asteroid1'>
                                                 <p className='font-bold text-white text-2xl'>PROJECTS</p>                         
                                             </button>
 
-                                            <button onClick={()=>clickOnAsteroid("/#contact")} className='w-[8rem] h-[8rem] flex justify-center items-center mb-12' id='asteroid2'>
+                                            <button onClick={()=>clickOnAsteroid("/#contact")} className='w-[8rem] h-[8rem] flex justify-center items-center mb-12 asteroid2' id='asteroid2'>
                                                 <p className='font-bold text-white text-2xl'>CONTACT</p>
                                             </button>
 

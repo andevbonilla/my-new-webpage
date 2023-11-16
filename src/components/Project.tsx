@@ -28,7 +28,7 @@ export const Project = ({name, desc, link, github, imgUrl, imgStack}:any) => {
 
             <div className='flex justify-between items-center mt-10 lg:mt-5'>
                 <Link target='_blank' className='text-white font-bold text-lg underline decoration-yellow-200 underline-offset-8 decoration-8' href={link}>View Project</Link>
-                <Link target='_blank' href={github}>
+                <Link title='Github repository Link' target='_blank' href={github}>
                     <FontAwesomeIcon icon={faGithub} className='w-10 h-10 text-white' />
                 </Link>
             </div>

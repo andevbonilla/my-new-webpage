@@ -272,7 +272,7 @@ export const Vehicle = () => {
             let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vindex].velocity, 3.8);
             let position =  0; // Posición inicial desde el fondo
             if (vehiclePosition === 0) {
-                position =  document.body.scrollHeight-1000;
+                position =  document.body.scrollHeight-500;
             }else{
                 position =  vehiclePosition;
             }
@@ -365,7 +365,7 @@ export const Vehicle = () => {
 
             {
                vehicleIsMoving && <div className='fixed flex justify-center items-center w-full mt-4'>
-                                        <button onClick={findVehicleInScreen} className='text-white font-bold bg-green-500 bg-opacity-90 z-50 py-4 px-5 rounded-full'>
+                                        <button onClick={findVehicleInScreen} className='text-white font-bold bg-green-500 bg-opacity-90 z-[99] py-4 px-5 rounded-full'>
                                             {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
                                             {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
                                             {(vehiclePart === 3) && <p className='font-bold'>{`Airplanes -> ISS`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeAirplanes}</span></p>}
@@ -377,7 +377,7 @@ export const Vehicle = () => {
 
             {
 
-                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white flex flex-col items-start p-10`}>            
+                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 lg:px-[25%]`}>            
                                             <div className='flex'>
                                                 <p className='font-bold text-lg mr-2'>{vehicles[vehicleIndex].subvehicle}</p>
                                                 <p className='text-lg opacity-80'>{vehicles[vehicleIndex].vehicle}</p>
@@ -395,8 +395,8 @@ export const Vehicle = () => {
                                                 <p className='font-bold text-lg mt-6'>IMPORTANT</p>
                                                 <p className='text-lg opacity-80 mt-2'>This is a realistic speed simulation for: {vehicles[vehicleIndex].vehicle}. So in case you see it stopped it is because it is going too slow for the distance it has to travel.</p>
                                             </div>
-                                            <div className='w-full flex justify-between items-center mt-10'>
-                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Follow</button>
+                                            <div className='w-full flex justify-end items-center mt-10'>
+                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold mr-6' type='button'>Follow</button>
                                                 <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Close</button>
                                             </div>
                                         </div>

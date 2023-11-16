@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media (min-width:1200px){
+  #asteroid{
+      animation-duration: 30300ms;
+  }
+  #asteroid1{
+      animation-duration: 22500ms;
+  }
+  #asteroid2{
+      animation-duration: 36100ms;
+  }
+}
+
 /* stars */
 
 /* planets */
@@ -97,7 +110,7 @@
 }
 
 
-#asteroid{
+.asteroid{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -108,7 +121,7 @@
     animation-timing-function: linear;
     animation-direction: normal;
 }
-#asteroid1{
+.asteroid1{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -119,7 +132,7 @@
     animation-timing-function: linear;
     animation-direction: normal;
 }
-#asteroid2{
+.asteroid2{
     background-image: url("../assets/asteroid.png");
     background-repeat: no-repeat;
     background-position: center;

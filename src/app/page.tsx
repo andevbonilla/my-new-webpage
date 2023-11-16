@@ -52,7 +52,7 @@ export default function Home() {
 
                 {/* about me */}
                 <div className='px-[15%]'>
-                    <div className='flex w-full justify-center items-center'>
+                    <div className='flex w-full justify-center items-center' id='about'>
                         <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>ABOUT ME</h2>
                     </div>
                     <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur. 
@@ -65,7 +65,7 @@ export default function Home() {
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
-                        alt="simpliterm's planet"
+                        alt="moon picture"
                         className='absolute moon'
                       />
                 </div>
@@ -120,14 +120,14 @@ export default function Home() {
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
-                        alt="simpliterm's planet"
+                        alt="International Space Station"
                         className='w-[30rem] h-[30rem] international-space-station'
                       />
                 </div>
 
 
                 {/* my projects */}
-                <div>
+                <div id='projects'>
                     <div className='flex w-full justify-center items-center'>
                         <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MY PROJECTS</h2>
                     </div>
@@ -147,7 +147,7 @@ export default function Home() {
                             imgStack={"fansive-stack.png"}
                     />
                     <Project name={"Virtual Board"} 
-                            desc={"Virtual Board is a web application that simulates a classroom board, so you can draw, erase, create figures, drag and drop, rotate and many other things. This app use trigonometry and algebra to solve some of the functionalities in the virtual board."} 
+                            desc={"Virtual Board is a web application made without using libraries that simulates a classroom board, so you can draw, erase, create figures, drag and drop, rotate and many other things. This app use trigonometry and algebra to solve some of the functionalities in the virtual board."} 
                             link={"https://super-virtual-board.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
@@ -159,18 +159,18 @@ export default function Home() {
                 <div id="part2" className='flex'>
                   <Image 
                         src={require("@/assets/vehicle7.png")}
-                        alt="simpliterm's planet"
-                        className='w-auto plane1'
+                        alt="boeing 737"
+                        className='w-[17rem] h-[6rem] lg:w-[25rem] lg:h-[10rem] plane1'
                       />
                   <Image 
                         src={require("@/assets/vehicle8.png")}
-                        alt="simpliterm's planet"
-                        className='w-[8rem] h-[4rem] plane2'
+                        alt="militar airplane"
+                        className='w-[12rem] h-[6rem] lg:w-[15rem] lg:h-[8rem] plane2'
                       />
                   <Image 
                         src={require("@/assets/airplane3-icon.png")}
-                        alt="simpliterm's planet"
-                        className='w-[10rem] h-[10rem] plane3'
+                        alt="private jet"
+                        className='w-[7rem] h-[7rem] lg:w-[15rem] lg:h-[10rem] plane3'
                       />
                 </div>
                 
@@ -195,7 +195,7 @@ export default function Home() {
               <div className='flex h-[10rem]'>
                   <Image 
                         src={require("@/assets/fish-group-1-icon.png")}
-                        alt="simpliterm's planet"
+                        alt="yellow fishes in group"
                         className='w-[10rem] h-[10rem] fish-group'
                       />
               </div>
@@ -212,17 +212,17 @@ export default function Home() {
                     <div className='flex h-[10rem]'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
-                              alt="simpliterm's planet"
+                              alt="yellow fishes in group"
                               className='w-[6rem] h-[6rem] fish-group delay-300'
                             />
                         <Image 
                               src={require("@/assets/fish-group-2-icon.png")}
-                              alt="simpliterm's planet"
+                              alt="salmon fish swimming"
                               className='w-[8rem] h-[8rem] fish-group-2'
                         />
                         <Image 
                               src={require("@/assets/fish-group-3-icon.png")}
-                              alt="simpliterm's planet"
+                              alt="shark swimming"
                               className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>
@@ -244,14 +244,14 @@ export default function Home() {
                     <div className='flex h-[18rem]'>
                         <Image 
                               src={require("@/assets/tentaculos.gif")}
-                              alt="simpliterm's planet"
+                              alt="kraken tentaculus"
                               className='w-[30rem] h-[30rem] rotate-[75deg] -translate-x-20'
                             />
                     </div>
                 </div>
 
                 <div className='px-[13%]'>
-                    <div className='flex w-full justify-center items-center'>
+                    <div className='flex w-full justify-center items-center' id='contact'>
                         <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>CONTACT</h2>
                     </div>
                     <ContactForm />
@@ -261,22 +261,30 @@ export default function Home() {
 
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>
-                          <Link href={"https://www.instagram.com/__andrec__/"} target='_blank'>
+                          <Link href={"https://www.instagram.com/__andrec__/"} 
+                                target='_blank'
+                                title='instagram link'>
                             <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
-                          <Link href={"https://twitter.com/AndresB64566284"} target='_blank'>
+                          <Link href={"https://twitter.com/AndresB64566284"} 
+                                target='_blank'
+                                title='twitter link'>
                             <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
-                          <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} target='_blank'>
+                          <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} 
+                                target='_blank'
+                                title='linkedin link'>
                             <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
-                          <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} target='_blank'>
+                          <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} 
+                                target='_blank'
+                                title='github link'>
                             <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
                           </Link>
                       </div>
                       <Image 
                         src={require("@/assets/titanic.png")}
-                        alt="singapur city"
+                        alt="titanic in the deep of the sea"
                         className='w-full scale-150 lg:scale-[1.4] -translate-x-6 mt-[15rem]'
                       />
                 </div>
