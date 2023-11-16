@@ -204,7 +204,7 @@ export const Vehicle = () => {
             if (!canUptade) {
                 number--;
                 setCounterTime(number);
-                if (number === 10) {
+                if (number === 0) {
                     setCounterTime(10);
                     number = 10;
                     setCanUptade(true);
