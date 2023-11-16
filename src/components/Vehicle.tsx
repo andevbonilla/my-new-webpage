@@ -4,7 +4,7 @@ import React, {useEffect, useState, useRef} from 'react';
 
 export const Vehicle = () => {
 
-    const [counterTime, setCounterTime] = useState(1); // in seconds
+    const [counterTime, setCounterTime] = useState(10); // in seconds
     const [vehicleIndex, setvehicleIndex] = useState(0);
     const [canUptade, setCanUptade] = useState(false);
     const [canClick, setCanClick] = useState(true);
@@ -205,8 +205,8 @@ export const Vehicle = () => {
                 number--;
                 setCounterTime(number);
                 if (number === 0) {
-                    setCounterTime(1);
-                    number = 1;
+                    setCounterTime(10);
+                    number = 10;
                     setCanUptade(true);
                  }
             }
