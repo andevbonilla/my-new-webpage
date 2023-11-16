@@ -1,11 +1,14 @@
 "use client"
-import React, { FormEvent, useState } from 'react'
+import React, { FormEvent, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
 
-  const [nameError, setNameError] = useState("")
-  const [emailError, setEmailError] = useState("")
-  const [messageError, setMessageError] = useState("")
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [messageError, setMessageError] = useState("");
+
+  const form:any = useRef(null);
 
   const sendEmail = (e:FormEvent<HTMLFormElement>) => {
 
@@ -22,28 +25,35 @@ export const ContactForm = () => {
       setNameError("The Name is required.");
     }else{
       setNameError("");
-    }
+    };
 
     if (messageInfo.email?.toString() === "") {
       setEmailError("The Email is required.");
     }else{
       setEmailError("");
-    }
+    };
 
     if (messageInfo.message?.toString().length < 10) {
       setMessageError("The Message must have at least 10 chracters.");
     }else{
       setMessageError("");
-    }
+    };
 
     if ((nameError === "") || (emailError === "") || (messageError === "")) {
       return;
-    }
+    }else{
+      emailjs.sendForm('service_ljreywj', 'template_12scdup', form.current, 'BDIxeZDcmcXTCdO5z')
+        .then((result:any) => {
+          
+        }, (error:any) => {
+            
+        });
+    };
 
   }
 
   return (
-    <form onSubmit={sendEmail} className='w-full sm:px-[10%] lg:px-[20%] 2xl:px-[25%]'> 
+    <form ref={form} onSubmit={sendEmail} className='w-full sm:px-[10%] lg:px-[20%] 2xl:px-[25%]'> 
 
         <div>
 
