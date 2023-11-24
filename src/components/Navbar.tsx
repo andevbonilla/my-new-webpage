@@ -12,7 +12,7 @@ export const Navbar = ({lenguage}:any) => {
 
     const [asteroidsMenuOpen, setAsteroidsMenuOpen] = useState(false);
     const [showLenguageMenu, setshowLenguageMenu] = useState(false);
-    const [principalUbication, setPrincipalUbication] = useState(window.scrollY);
+    const [principalUbication, setPrincipalUbication] = useState(0);
     const [activeClass, setactiveClass] = useState(false);
     const navbar:any = useRef(null)
     
@@ -48,38 +48,45 @@ export const Navbar = ({lenguage}:any) => {
 
     }, []);
 
+    if (global && global.window) {
 
-    useEffect(() => {
-        if (asteroidsMenuOpen) return;
-        const handleViewNav = () => {
-            if (window.scrollY < 0) {
-                return;
-            }
-            let currentDisplacement = window.scrollY;
-            if(currentDisplacement >= 1 ){
-                setactiveClass(true);
-            }else{
-                setactiveClass(false);
-            }
-            if (navbar.current !== null) {
+            useEffect(() => {
+                
+                if (!global?.window) return;
+                if (asteroidsMenuOpen) return;
+                const handleViewNav = () => {
+                    if (window.scrollY < 0) {
+                        return;
+                    }
+                    let currentDisplacement = window.scrollY;
+                    if(currentDisplacement >= 1 ){
+                        setactiveClass(true);
+                    }else{
+                        setactiveClass(false);
+                    }
+                    if (navbar.current !== null) {
 
-                if (principalUbication >= currentDisplacement) {
-                    navbar.current.style.top = '0';
-                    navbar.current.style.transition = '.5s'
-                    
-                } else {
-                    navbar.current.style.top = '-400px';
-                    navbar.current.style.transition = '1s'
+                        if (principalUbication >= currentDisplacement) {
+                            navbar.current.style.top = '0';
+                            navbar.current.style.transition = '.5s'
+                            
+                        } else {
+                            navbar.current.style.top = '-400px';
+                            navbar.current.style.transition = '1s'
+                        }
+
+                        setPrincipalUbication(currentDisplacement);
+                
+                    }
                 }
+                window.addEventListener('scroll', handleViewNav);
+                return () => {
+                    window.removeEventListener('scroll', handleViewNav);
+                };
 
-                setPrincipalUbication(currentDisplacement);         
-            }
-        }
-        window.addEventListener('scroll', handleViewNav);
-        return () => {
-            window.removeEventListener('scroll', handleViewNav);
-        };
-    }, [window.scrollY]);
+            }, [window.scrollY]);
+        
+    }
 
     const openAsteroidsMenu = () => {
         setAsteroidsMenuOpen(true);
@@ -114,7 +121,7 @@ export const Navbar = ({lenguage}:any) => {
 
             <div className='flex items-center'>
 
-                <button onClick={openLenguagesMenu} type='button' className='flex items-center bg-yellow-200 rounded-full p-1 mr-3 cursor-pointer'>
+                <button onClick={openLenguagesMenu} type='button' className='flex items-center bg-yellow-200 rounded-full p-1 mr-3 lg:mr-6 cursor-pointer'>
                     <Image 
                         src={require(`@/assets/${texts.svgUrl}`)}
                         alt='spain flag'
@@ -127,7 +134,8 @@ export const Navbar = ({lenguage}:any) => {
                 <FontAwesomeIcon
                     onClick={openAsteroidsMenu} 
                     icon={faBars}
-                    className='text-white w-10 h-10 cursor-pointer' 
+                    className='text-white cursor-pointer'
+                    size='2x' 
                 />
             </div>
 

@@ -270,22 +270,22 @@ export default function Home() {
                           <Link href={"https://www.instagram.com/__andrec__/"} 
                                 target='_blank'
                                 title='instagram link'>
-                            <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
+                            <FontAwesomeIcon icon={faInstagram} className='text-white' size='2x' />
                           </Link>
                           <Link href={"https://twitter.com/AndresB64566284"} 
                                 target='_blank'
                                 title='twitter link'>
-                            <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
+                            <FontAwesomeIcon icon={faTwitter} className='text-white' size='2x' />
                           </Link>
                           <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} 
                                 target='_blank'
                                 title='linkedin link'>
-                            <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
+                            <FontAwesomeIcon icon={faLinkedin} className='text-white' size='2x' />
                           </Link>
                           <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} 
                                 target='_blank'
                                 title='github link'>
-                            <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
+                            <FontAwesomeIcon icon={faGithub} className='text-white' size='2x' />
                           </Link>
                       </div>
                       <Image 
