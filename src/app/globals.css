@@ -37,7 +37,7 @@
 /* curiosity objects */
 .international-space-station{
     animation-name: normalmove;
-    animation-duration: 5000ms;
+    animation-duration: 6000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: normal;
@@ -194,8 +194,8 @@
 }
 
 @keyframes normalmove {
-  from{transform: translateX(-30rem) translateY(-6rem);}
-  to{transform: translateX(200vw) translateY(-6rem);}
+  from{transform: translateX(-30rem) translateY(-6rem); scale: (1.5, 1.5);}
+  to{transform: translateX(200vw) translateY(-6rem); scale: (1.5, 1.5);}
 }
 
 @keyframes moonmove {

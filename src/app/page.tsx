@@ -121,7 +121,7 @@ export default function Home() {
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
                         alt="International Space Station"
-                        className='w-[30rem] h-[30rem] international-space-station'
+                        className='international-space-station'
                       />
                 </div>
 
