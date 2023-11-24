@@ -263,7 +263,7 @@ export default function Home() {
                     <ContactForm lenguage={"en"} />
                 </div>
 
-                <CuriosFact text={"At this point we are at 3800 meters deep, at this depth is the remains of the Titanic and ends the content of my website."}/>
+                <CuriosFact text={"At this point we are at 3.800 meters deep, at this depth is the remains of the Titanic and ends the content of my website."}/>
 
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>

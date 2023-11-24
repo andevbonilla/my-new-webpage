@@ -17,6 +17,7 @@ export const Navbar = ({lenguage}:any) => {
     const [texts, setTexts] = useState({
         svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
         LenguageName: "EN",
+        changeLenguageText: "Change Lenguage"
     });
     useEffect(() => {
 
@@ -24,16 +25,19 @@ export const Navbar = ({lenguage}:any) => {
         setTexts({
             svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
             LenguageName: "EN",
+            changeLenguageText: "Change Lenguage"
         })
         }else if(lenguage === "es"){
         setTexts({
             svgUrl: "flag-for-spain-svgrepo-com.svg",
             LenguageName: "ES",
+            changeLenguageText: "Cambiar Idioma"
         })
         }else {
         setTexts({
             svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
             LenguageName: "EN",
+            changeLenguageText: "Change Lenguage"
         })
         }
 
@@ -97,7 +101,7 @@ export const Navbar = ({lenguage}:any) => {
                                     
                                     <div className='bg-white p-10'>
 
-                                        <h2 className='font-bold text-xl mb-6'>Change Language</h2>
+                                        <h2 className='font-bold text-xl mb-6'>{texts.changeLenguageText}</h2>
 
                                         <Link href={"/"} className='text-black flex items-center mb-6'>
                                             <Image 

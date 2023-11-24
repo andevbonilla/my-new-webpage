@@ -259,7 +259,7 @@ export default function HomeES() {
                     <ContactForm lenguage={"es"} />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a 3800 metros de profundidad, donde se encuentran los restos del Titanic y en el final de mi sitio web."}/>
+                <CuriosFact text={"En este momento nos encontramos a 3.800 metros de profundidad, donde se encuentran los restos del Titanic y en el final de mi sitio web."}/>
 
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>

@@ -21,9 +21,7 @@ export const Vehicle = ({lenguage}:any) => {
         {
             velocity: 30,
             img: "vehicle1.png",
-            subvehicle: "Vehicle:",
             vehicle: "supercross bicycle",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "30 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 8 minutes",
@@ -31,15 +29,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 1 hour",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 12 hours",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 18 months",
         },
         {
             velocity: 90,
             img: "vehicle2.png",
-            subvehicle: "Vehicle:",
             vehicle: "Honda cb 125f",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "90 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 2.5 minutes",
@@ -47,15 +42,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 20 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 4 hours",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 180 days",
         },
         {
             velocity: 160,
             img: "vehicle3.png",
-            subvehicle: "Vehicle:",
             vehicle: "Renault Sandero Dynamic",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "160 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 1.46 minutes",
@@ -63,15 +55,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 11.5 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 2.3 hours",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 101 days",
         },
         {
             velocity: 250,
             img: "vehicle4.png",
-            subvehicle: "Vehicle:",
             vehicle: "BMW M4 competition",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "250 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 63 seconds",
@@ -79,15 +68,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 7.3 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 1.48 hours",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 65 days",
         },
         {
             velocity: 300,
             img: "vehicle5.png",
-            subvehicle: "Vehicle:",
             vehicle: "Porsche 992 GT3 rs",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "300 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 48 seconds",
@@ -95,15 +81,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 6 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 1.2 hours",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 54 days",
         },
         {
             velocity: 490,
             img: "vehicle6.png",
-            subvehicle: "Vehicle:",
             vehicle: "Bugatti Chiron Super Sport",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "490 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 30 seconds",
@@ -111,15 +94,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 3.7 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 45 minutes",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 33 days",
         },
         {
             velocity: 840,
             img: "vehicle7.png",
-            subvehicle: "Vehicle:",
             vehicle: "Boeing 737",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "840 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 16.5 seconds",
@@ -127,15 +107,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 2.2 minutes",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 26.4 minutes",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 19 days",
         },
         {
             velocity: 2600,
             img: "vehicle8.png",
-            subvehicle: "Vehicle:",
             vehicle: "f-15 eagle",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "2.600 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 5.5 seconds",
@@ -143,15 +120,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 43 seconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 8.6 minutes",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 6 days",
         },
         {
             velocity: 64500,
             img: "vehicle9.png",
-            subvehicle: "Vehicle:",
             vehicle: "Saturn V - Nasa",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "64.500 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 212 miliseconds",
@@ -159,15 +133,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 1.75 seconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 21 seconds",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 6 hours",
         },
         {
             velocity: 692000,
             img: "vehicle10.png",
-            subvehicle: "Vehicle:",
             vehicle: "Parker Solar Probe",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "692.000 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 20 miliseconds",
@@ -175,15 +146,12 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 158 miliseconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 2 seconds",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 33 minutes",
         },
         {
             velocity: 2000000,
             img: "vehicle11.png",
-            subvehicle: "Vehicle:",
             vehicle: "Caza estelar T-65 Ala-X - Stars Wars",
-            submaxSpeed: "Max-speed:",
             maxSpeed: "2.000.000 km/h",
             subtimeTitanic: "Titanic->city:",
             timeTitanic: "aprox 6.3 miliseconds",
@@ -191,7 +159,6 @@ export const Vehicle = ({lenguage}:any) => {
             timeCity: "aprox 50 miliseconds",
             subtimeAirplanes: "Airplanes->ISS:",
             timeAirplanes: "aprox 0.66 seconds",
-            subtotalTime: "Bottom of the page -> Top of the page:",
             totalTime: "aprox 11 minutes",
         },
     ]);
@@ -220,48 +187,52 @@ export const Vehicle = ({lenguage}:any) => {
 
     const [texts, setTexts] = useState({
             title: "Speed Simulator",
-            vehicleName: "Vehicle",
-            maxSpeed: "Max-Speed",
-            distance: "Bottom of the page -> Top of the page",
+            vehicleName: "Vehicle:",
+            maxSpeed: "Max-Speed:",
+            distance: "Bottom of the page -> Top of the page:",
             adviceTitle: "IMPORTANT",
-            advice: "This is a realistic speed simulation for: . So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
+            advice: "This is a realistic speed simulation. So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
             followButton: "Follow",
-            closeButton: "Close"
+            closeButton: "Close",
+            updateButton: "Update"
     });
     useEffect(() => {
 
         if (lenguage === "en") {
             setTexts({
                 title: "Speed Simulator",
-                vehicleName: "Vehicle",
-                maxSpeed: "Max-Speed",
-                distance: "Bottom of the page -> Top of the page",
+                vehicleName: "Vehicle:",
+                maxSpeed: "Max-Speed:",
+                distance: "Bottom of the page -> Top of the page:",
                 adviceTitle: "IMPORTANT",
-                advice: "This is a realistic speed simulation for: . So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
+                advice: "This is a realistic speed simulation. So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
                 followButton: "Follow",
-                closeButton: "Close"
+                closeButton: "Close",
+                updateButton: "Update"
             })
         }else if(lenguage === "es"){
             setTexts({
                 title: "Simulador de Velocidad",
-                vehicleName: "Vehiculo",
-                maxSpeed: "Maxima Velocidad",
-                distance: "Fondo de la pagina web->Inicio de la pagina web",
+                vehicleName: "Vehiculo:",
+                maxSpeed: "Maxima Velocidad:",
+                distance: "Fondo de la pagina web -> Inicio de la pagina web:",
                 adviceTitle: "IMPORTANTE",
-                advice: "Esta es una simulación de velocidad realista para: . Por lo tanto, en caso de que veas que se detiene, es porque está yendo demasiado lento para la distancia que tiene que recorrer.",
+                advice: "Esta es una simulación de velocidad realista. Por lo tanto, en caso de que veas que se detiene, es porque está yendo demasiado lento para la distancia que tiene que recorrer.",
                 followButton: "Seguir",
-                closeButton: "Cerrar"
+                closeButton: "Cerrar",
+                updateButton: "Mejorar"
             })
         }else {
             setTexts({
                 title: "Speed Simulator",
-                vehicleName: "Vehicle",
-                maxSpeed: "Max-Speed",
-                distance: "Bottom of the page -> Top of the page",
+                vehicleName: "Vehicle:",
+                maxSpeed: "Max-Speed:",
+                distance: "Bottom of the page -> Top of the page:",
                 adviceTitle: "IMPORTANT",
-                advice: "This is a realistic speed simulation for: . So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
+                advice: "This is a realistic speed simulation. So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
                 followButton: "Follow",
-                closeButton: "Close"
+                closeButton: "Close",
+                updateButton: "Update"
             })
         }
 
@@ -317,7 +288,7 @@ export const Vehicle = ({lenguage}:any) => {
             let speed = Math.abs(calculateAmountOfpixels(part1)) / calculateTime(vehicles[vindex].velocity, 3.8);
             let position =  0; // Posición inicial desde el fondo
             if (vehiclePosition === 0) {
-                position =  document.body.scrollHeight-500;
+                position =  document.body.scrollHeight-1000;
             }else{
                 position =  vehiclePosition;
             }
@@ -464,7 +435,7 @@ export const Vehicle = ({lenguage}:any) => {
                                         </button>
 
                                         {
-                                            (canUptade && vehicleIndex !== 10) && <button onClick={updateVehicle} type='button' className='bg-green-500 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>Update</button>
+                                            (canUptade && vehicleIndex !== 10) && <button onClick={updateVehicle} type='button' className='bg-green-500 py-2 px-3 text-white rounded-full -translate-y-8 text-lg'>{texts.updateButton}</button>
                                         }
 
                                         {
