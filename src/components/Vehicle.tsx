@@ -377,7 +377,8 @@ export const Vehicle = () => {
 
             {
 
-                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 lg:px-[25%]`}>            
+                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
+                                            <h2 className='font-bold text-white mb-10 text-2xl'>Speed Simulator</h2>
                                             <div className='flex'>
                                                 <p className='font-bold text-lg mr-2'>{vehicles[vehicleIndex].subvehicle}</p>
                                                 <p className='text-lg opacity-80'>{vehicles[vehicleIndex].vehicle}</p>

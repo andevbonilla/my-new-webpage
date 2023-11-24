@@ -231,8 +231,8 @@
   to{transform: translateX(200vw) translateY(10rem);}
 }
 @keyframes sharkAnimation {
-  0%{transform: translateX(150vw) translateY(-20rem);}
-  100%{transform: translateX(-100rem) translateY(-20rem);}
+  0%{transform: translateX(150vw) translateY(30rem);}
+  100%{transform: translateX(-100rem) translateY(30rem);}
 }
 
 

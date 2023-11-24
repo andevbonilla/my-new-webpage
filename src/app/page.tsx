@@ -202,14 +202,8 @@ export default function Home() {
 
               {/* my projects */}
               <div>
-                    <Project name={"FileBox"} 
-                            desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."} 
-                            link={"https://filebox.netlify.app/#/login"} 
-                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
-                            imgUrl={"filebox-interface.png"}
-                            imgStack={"filebox-stack.png"}
-                    />
-                    <div className='flex h-[10rem]'>
+                    <CuriosFact text={"We are in shallow water at this depth you can find fish such as salmon, reef fish and more."}/>
+                    <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
                               alt="yellow fishes in group"
@@ -226,7 +220,13 @@ export default function Home() {
                               className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>
-                    <CuriosFact text={"We are in shallow water at this depth you can find fish such as salmon, reef fish and more."}/>
+                    <Project name={"FileBox"} 
+                            desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."} 
+                            link={"https://filebox.netlify.app/#/login"} 
+                            github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
+                            imgUrl={"filebox-interface.png"}
+                            imgStack={"filebox-stack.png"}
+                    />
                     <Project name={"Geekepedia"} 
                             desc={"Geekipedia is a blog where you can learn how some of the most famous algorithms in computer science work, such as BFS (Breath First Search), QuickSort, Binary Search and many more."} 
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
