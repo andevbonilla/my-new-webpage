@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,6 +12,10 @@ export const Navbar = ({lenguage}:any) => {
 
     const [asteroidsMenuOpen, setAsteroidsMenuOpen] = useState(false);
     const [showLenguageMenu, setshowLenguageMenu] = useState(false);
+    const [principalUbication, setPrincipalUbication] = useState(window.scrollY);
+    const [activeClass, setactiveClass] = useState(false);
+    const navbar:any = useRef(null)
+    
     const router = useRouter();
 
     const [texts, setTexts] = useState({
@@ -19,6 +23,7 @@ export const Navbar = ({lenguage}:any) => {
         LenguageName: "EN",
         changeLenguageText: "Change Lenguage"
     });
+
     useEffect(() => {
 
         if (lenguage === "en") {
@@ -43,6 +48,44 @@ export const Navbar = ({lenguage}:any) => {
 
     }, []);
 
+    const handleViewNav = () => {
+
+      if (window.scrollY < 0) {
+        return;
+      }
+
+      let currentDisplacement = window.scrollY;
+
+      if(currentDisplacement >= 1 ){
+        setactiveClass(true);
+      }else{
+        setactiveClass(false);
+      }
+
+      if (navbar.current !== null) {
+
+        if (principalUbication >= currentDisplacement) {
+            navbar.current.style.top = '0';
+            navbar.current.style.transition = '.5s'
+            
+        } else {
+            navbar.current.style.top = '-400px';
+            navbar.current.style.transition = '1s'
+        }
+
+        setPrincipalUbication(currentDisplacement);
+            
+      }
+    }
+
+    useEffect(() => {
+        if (asteroidsMenuOpen) return;
+        window.addEventListener('scroll', handleViewNav);
+        return () => {
+            window.removeEventListener('scroll', handleViewNav);
+        };
+    }, [window.scrollY]);
+
     const openAsteroidsMenu = () => {
         setAsteroidsMenuOpen(true);
     }
@@ -65,7 +108,7 @@ export const Navbar = ({lenguage}:any) => {
   return (
     <>
 
-        <nav className='z-[998] absolute top-0 left-0 w-full flex justify-between items-center py-10 px-[15%]'>
+        <nav ref={navbar} className={`${activeClass ? "bg-gradient-to-b from-black to-transparent" : ""} z-[998] fixed top-0 left-0 w-full flex justify-between items-center py-10 px-[15%]`}>
 
             <Image 
                 src={require("@/assets/slogan.png")}
