@@ -1,16 +1,51 @@
 "use client"
-import React, { FormEvent, useRef, useState } from 'react';
+import React, { FormEvent, useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-export const ContactForm = () => {
+export const ContactForm = ({lenguage}:any) => {
 
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [messageError, setMessageError] = useState("");
   const [allowedMessages, setallowedMessages] = useState(2);
   const [sendingMessage, setSendingMessage] = useState(false);
+
+  const [texts, setTexts] = useState({
+    namePlaceholder: "Name",
+    emailPlaceholder: "Email",
+    messagePlaceholder: "Message",
+    actionButton: "Send",
+  })
+
+  useEffect(() => {
+
+    if (lenguage === "en") {
+      setTexts({
+        namePlaceholder: "Name",
+        emailPlaceholder: "Email",
+        messagePlaceholder: "Message",
+        actionButton: "Send",
+      })
+    }else if(lenguage === "es"){
+      setTexts({
+        namePlaceholder: "Nombre",
+        emailPlaceholder: "Correo",
+        messagePlaceholder: "Mensaje",
+        actionButton: "Enviar",
+      })
+    }else {
+      setTexts({
+        namePlaceholder: "Name",
+        emailPlaceholder: "Email",
+        messagePlaceholder: "Message",
+        actionButton: "Send",
+      })
+    }
+
+  }, [])
+  
 
   const form:any = useRef(null);
 
@@ -115,7 +150,7 @@ export const ContactForm = () => {
         <div>
 
             <input type="text" 
-                   placeholder='Name'
+                   placeholder={texts.namePlaceholder}
                    name='name'
                    className={`${(nameError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}
             />
@@ -128,7 +163,7 @@ export const ContactForm = () => {
         <div>
 
             <input type="email" 
-                   placeholder='Email'
+                   placeholder={texts.emailPlaceholder}
                    name='email'
                    className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}
             />
@@ -141,7 +176,7 @@ export const ContactForm = () => {
 
           <textarea name="message" 
                     rows={"5" as any} 
-                    placeholder='Message'
+                    placeholder={texts.messagePlaceholder}
                     className={`${(messageError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}>
               
           </textarea>
@@ -150,7 +185,7 @@ export const ContactForm = () => {
 
         </div>
 
-        <button type='submit' className='mt-8 w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]'>Send</button>
+        <button type='submit' className='mt-8 w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]'>{texts.actionButton}</button>
 
     </form>
   )
