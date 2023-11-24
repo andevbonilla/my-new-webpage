@@ -19,7 +19,7 @@ export default function HomeES() {
     <>
       
       <Navbar lenguage={"es"}/>
-      <Vehicle />
+      <Vehicle lenguage={"es"}/>
       <main className='overflow-x-hidden z-20'>
           
           <div className='gradient-background'>
@@ -91,7 +91,7 @@ export default function HomeES() {
                             <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
-                                ¿Alguna vez has hecho clic en "Aceptar política de privacidad" y/o "Términos de uso" sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
+                                ¿Alguna vez has hecho clic en &quotAceptar política de privacidad&quot y/o &quotTérminos de uso&quot sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
@@ -134,6 +134,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
+                            buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Fansive"} 
                             desc={"Fansive es una startup creada por mí, La cual es una plataforma para contenido exclusivo. Esta aplicación cuenta con todas las herramientas necesarias para que los creadores de contenido ofrezcan el mejor contenido a sus suscriptores, como transmisiones en vivo, historias, chats grupales, chats privados, publicaciones, almacenamiento de archivos y mucho más."} 
@@ -141,6 +142,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
+                            buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Virtual Board"} 
                             desc={"Virtual Board es una aplicación web creada sin utilizar bibliotecas que simula un pizarrón de aula, lo que te permite dibujar, borrar, crear figuras, arrastrar y soltar, rotar y muchas otras funciones. Esta aplicación utiliza trigonometría y álgebra para resolver algunas de las funcionalidades en el pizarrón virtual."} 
@@ -148,6 +150,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
+                            buttonText={"Ver Proyecto"}
                     />
                 </div>
 
@@ -222,6 +225,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
+                            buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Geekepedia"} 
                             desc={"Geekipedia es un blog donde puedes aprender cómo funcionan algunos de los algoritmos más famosos en ciencias de la computación, como BFS (Búsqueda en Anchura), QuickSort, Búsqueda Binaria y muchos más."} 
@@ -229,6 +233,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
+                            buttonText={"Ver Proyecto"}
                     />
                     <Project name={"thePokedex"} 
                             desc={"thePokedex es una aplicación con temas claro y oscuro en la que puedes encontrar y buscar información sobre todos los Pokémon existentes. Además, es compatible con dispositivos Android e iOS."} 
@@ -236,6 +241,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
+                            buttonText={"Ver Proyecto"}
                     />
                     <div className='flex h-[18rem]'>
                         <Image 

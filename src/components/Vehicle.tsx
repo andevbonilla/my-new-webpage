@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, {useEffect, useState, useRef} from 'react';
 
-export const Vehicle = () => {
+export const Vehicle = ({lenguage}:any) => {
 
     const [counterTime, setCounterTime] = useState(5); // in seconds
     const [vehicleIndex, setvehicleIndex] = useState(0);
@@ -218,7 +218,52 @@ export const Vehicle = () => {
       
     }, [canUptade]);
 
+    const [texts, setTexts] = useState({
+            title: "Speed Simulator",
+            vehicleName: "Vehicle",
+            maxSpeed: "Max-Speed",
+            distance: "Bottom of the page -> Top of the page",
+            adviceTitle: "IMPORTANT",
+            advice: "This is a realistic speed simulation for: . So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
+            followButton: "Follow",
+            closeButton: "Close"
+    });
     useEffect(() => {
+
+        if (lenguage === "en") {
+            setTexts({
+                title: "Speed Simulator",
+                vehicleName: "Vehicle",
+                maxSpeed: "Max-Speed",
+                distance: "Bottom of the page -> Top of the page",
+                adviceTitle: "IMPORTANT",
+                advice: "This is a realistic speed simulation for: . So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
+                followButton: "Follow",
+                closeButton: "Close"
+            })
+        }else if(lenguage === "es"){
+            setTexts({
+                title: "Simulador de Velocidad",
+                vehicleName: "Vehiculo",
+                maxSpeed: "Maxima Velocidad",
+                distance: "Fondo de la pagina web->Inicio de la pagina web",
+                adviceTitle: "IMPORTANTE",
+                advice: "Esta es una simulación de velocidad realista para: . Por lo tanto, en caso de que veas que se detiene, es porque está yendo demasiado lento para la distancia que tiene que recorrer.",
+                followButton: "Seguir",
+                closeButton: "Cerrar"
+            })
+        }else {
+            setTexts({
+                title: "Speed Simulator",
+                vehicleName: "Vehicle",
+                maxSpeed: "Max-Speed",
+                distance: "Bottom of the page -> Top of the page",
+                adviceTitle: "IMPORTANT",
+                advice: "This is a realistic speed simulation for: . So in case you see it stopped it is because it is going too slow for the distance it has to travel.",
+                followButton: "Follow",
+                closeButton: "Close"
+            })
+        }
 
         let isScrolling:any;
         document.addEventListener('scroll', function () {
@@ -380,25 +425,25 @@ export const Vehicle = () => {
                    showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
                                             <h2 className='font-bold text-white mb-10 text-2xl'>Speed Simulator</h2>
                                             <div className='flex'>
-                                                <p className='font-bold text-lg mr-2'>{vehicles[vehicleIndex].subvehicle}</p>
+                                                <p className='font-bold text-lg mr-2'>{texts.vehicleName}</p>
                                                 <p className='text-lg opacity-80'>{vehicles[vehicleIndex].vehicle}</p>
                                             </div>
                                             <div className='flex mt-6'>
-                                                <p className='font-bold text-lg mr-2'>{vehicles[vehicleIndex].submaxSpeed}</p>
+                                                <p className='font-bold text-lg mr-2'>{texts.maxSpeed}</p>
                                                 <p className='text-lg opacity-80'>{vehicles[vehicleIndex].maxSpeed}</p>
                                             </div>
                                             <div className={`${(vehiclePart === 4) ? "bg-green-400 bg-opacity-50 p-2" : ""} flex mt-6`}>
-                                                <p className="font-bold text-lg mr-2">{vehicles[vehicleIndex].subtotalTime}</p>
+                                                <p className="font-bold text-lg mr-2">{texts.distance}</p>
                                                 <p className='text-lg opacity-80'>{vehicles[vehicleIndex].totalTime}</p>
                                             </div>
                                             
                                             <div>
-                                                <p className='font-bold text-lg mt-6'>IMPORTANT</p>
-                                                <p className='text-lg opacity-80 mt-2'>This is a realistic speed simulation for: {vehicles[vehicleIndex].vehicle}. So in case you see it stopped it is because it is going too slow for the distance it has to travel.</p>
+                                                <p className='font-bold text-lg mt-6'>{texts.adviceTitle}</p>
+                                                <p className='text-lg opacity-80 mt-2'>{texts.advice}.</p>
                                             </div>
                                             <div className='w-full flex justify-end items-center mt-10'>
-                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold mr-6' type='button'>Follow</button>
-                                                <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>Close</button>
+                                                <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold mr-6' type='button'>{texts.followButton}</button>
+                                                <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>{texts.closeButton}</button>
                                             </div>
                                         </div>
                 

@@ -5,7 +5,7 @@ import React from 'react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const Project = ({name, desc, link, github, imgUrl, imgStack}:any) => {
+export const Project = ({name, desc, link, github, imgUrl, imgStack, buttonText}:any) => {
   return (
     <div className='mt-12 sm:mx-[15%] md:mx-[25%] lg:flex lg:items-center lg:w-full lg:mx-0'>
         <Image 
@@ -27,7 +27,7 @@ export const Project = ({name, desc, link, github, imgUrl, imgStack}:any) => {
             </div>
 
             <div className='flex justify-between items-center mt-10 lg:mt-5'>
-                <Link target='_blank' className='text-white font-bold text-lg underline decoration-yellow-200 underline-offset-8 decoration-8' href={link}>View Project</Link>
+                <Link target='_blank' className='text-white font-bold text-lg underline decoration-yellow-200 underline-offset-8 decoration-8' href={link}>{buttonText}</Link>
                 <Link title='Github repository Link' target='_blank' href={github}>
                     <FontAwesomeIcon icon={faGithub} className='w-10 h-10 text-white' />
                 </Link>
