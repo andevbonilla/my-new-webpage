@@ -48,45 +48,45 @@ export const Navbar = ({lenguage}:any) => {
 
     }, []);
 
-    if (global && global.window) {
+    // if (global && global.window) {
 
-            useEffect(() => {
+    //         useEffect(() => {
                 
-                if (!global?.window) return;
-                if (asteroidsMenuOpen) return;
-                const handleViewNav = () => {
-                    if (window.scrollY < 0) {
-                        return;
-                    }
-                    let currentDisplacement = window.scrollY;
-                    if(currentDisplacement >= 1 ){
-                        setactiveClass(true);
-                    }else{
-                        setactiveClass(false);
-                    }
-                    if (navbar.current !== null) {
+    //             if (!global?.window) return;
+    //             if (asteroidsMenuOpen) return;
+    //             const handleViewNav = () => {
+    //                 if (window.scrollY < 0) {
+    //                     return;
+    //                 }
+    //                 let currentDisplacement = window.scrollY;
+    //                 if(currentDisplacement >= 1 ){
+    //                     setactiveClass(true);
+    //                 }else{
+    //                     setactiveClass(false);
+    //                 }
+    //                 if (navbar.current !== null) {
 
-                        if (principalUbication >= currentDisplacement) {
-                            navbar.current.style.top = '0';
-                            navbar.current.style.transition = '.5s'
+    //                     if (principalUbication >= currentDisplacement) {
+    //                         navbar.current.style.top = '0';
+    //                         navbar.current.style.transition = '.5s'
                             
-                        } else {
-                            navbar.current.style.top = '-400px';
-                            navbar.current.style.transition = '1s'
-                        }
+    //                     } else {
+    //                         navbar.current.style.top = '-400px';
+    //                         navbar.current.style.transition = '1s'
+    //                     }
 
-                        setPrincipalUbication(currentDisplacement);
+    //                     setPrincipalUbication(currentDisplacement);
                 
-                    }
-                }
-                window.addEventListener('scroll', handleViewNav);
-                return () => {
-                    window.removeEventListener('scroll', handleViewNav);
-                };
+    //                 }
+    //             }
+    //             window.addEventListener('scroll', handleViewNav);
+    //             return () => {
+    //                 window.removeEventListener('scroll', handleViewNav);
+    //             };
 
-            }, [window.scrollY]);
+    //         }, [window.scrollY]);
         
-    }
+    // }
 
     const openAsteroidsMenu = () => {
         setAsteroidsMenuOpen(true);
