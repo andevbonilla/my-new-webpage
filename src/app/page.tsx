@@ -19,7 +19,7 @@ export default function Home() {
     <>
       
       <Navbar lenguage={"en"}/>
-      <Vehicle />
+      <Vehicle lenguage={"en"}/>
       <main className='overflow-x-hidden z-20'>
           
           <div className='gradient-background'>
