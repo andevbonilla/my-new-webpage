@@ -12,7 +12,6 @@ export const Navbar = ({lenguage}:any) => {
 
     const [asteroidsMenuOpen, setAsteroidsMenuOpen] = useState(false);
     const [showLenguageMenu, setshowLenguageMenu] = useState(false);
-    const [principalUbication, setPrincipalUbication] = useState(0);
     const [activeClass, setactiveClass] = useState(false);
     const navbar:any = useRef(null)
     
@@ -24,43 +23,19 @@ export const Navbar = ({lenguage}:any) => {
         changeLenguageText: "Change Lenguage"
     });
 
-    useEffect(() => {
+    let principalUbication = 0;
+    const handleViewNav = () => {
 
-        if (lenguage === "en") {
-        setTexts({
-            svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
-            LenguageName: "EN",
-            changeLenguageText: "Change Lenguage"
-        })
-        }else if(lenguage === "es"){
-        setTexts({
-            svgUrl: "flag-for-spain-svgrepo-com.svg",
-            LenguageName: "ES",
-            changeLenguageText: "Cambiar Idioma"
-        })
-        }else {
-        setTexts({
-            svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
-            LenguageName: "EN",
-            changeLenguageText: "Change Lenguage"
-        })
-        }
-
-    }, []);
-
-    
-
-    if (typeof window !== 'undefined' && window) {
-
-            useEffect(() => {
-                
-                if (!global?.window) return;
-                if (asteroidsMenuOpen) return;
-                const handleViewNav = () => {
+                    if (!global?.window) return;
+                    if (asteroidsMenuOpen) return;
                     if (window.scrollY < 0) {
                         return;
                     }
+
                     let currentDisplacement = window.scrollY;
+
+                    console.log(currentDisplacement)
+
                     if(currentDisplacement >= 1 ){
                         setactiveClass(true);
                     }else{
@@ -77,20 +52,41 @@ export const Navbar = ({lenguage}:any) => {
                             navbar.current.style.transition = '1s'
                         }
 
-                        setPrincipalUbication(currentDisplacement);
+                        principalUbication = currentDisplacement;
                 
                     }
-                }
-                window.addEventListener('scroll', handleViewNav);
-                return () => {
-                    window.removeEventListener('scroll', handleViewNav);
-                };
-
-            }, [window.scrollY]);
-
     }
 
+    useEffect(() => {
 
+        if (lenguage === "en") {
+            setTexts({
+                svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
+                LenguageName: "EN",
+                changeLenguageText: "Change Lenguage"
+            })
+        }else if(lenguage === "es"){
+            setTexts({
+                svgUrl: "flag-for-spain-svgrepo-com.svg",
+                LenguageName: "ES",
+                changeLenguageText: "Cambiar Idioma"
+            })
+        }else {
+            setTexts({
+                svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
+                LenguageName: "EN",
+                changeLenguageText: "Change Lenguage"
+            })
+        }
+
+        document.addEventListener('scroll', handleViewNav);
+        return () => {
+            document.removeEventListener('scroll', handleViewNav);
+        };
+
+    }, []);
+
+    
     const openAsteroidsMenu = () => {
         setAsteroidsMenuOpen(true);
     }
