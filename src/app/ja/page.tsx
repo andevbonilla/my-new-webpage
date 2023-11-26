@@ -34,7 +34,7 @@ export default function HomeES() {
                     <div className='mb-10 md:w-[50%]'>
                             <h1 className='text-white font-bold text-[1.6rem] um:text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
                             <div className='flex text-white'>
-                                <TypingAnimation stringList={['Desarrollador de software', 'Emprendedor', 'Deportista']}
+                                <TypingAnimation stringList={['ソフトウェア開発者', '起業家', 'アスリート']}
                                                  wrapper="h2"/>
                             </div>
                             
@@ -55,11 +55,11 @@ export default function HomeES() {
                     <div className='flex w-full justify-center items-center' id='about'>
                         <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SOBRE MI</h2>
                     </div>
-                    <p className='text-white text-left text-xl leading-10'>¡Hola! 👋 ¿Cómo estás? Mi nombre es Andrés Bonilla. Soy estudiante, desarrollador de software y emprendedor. Me encanta crear proyectos tecnológicos; lo hago desde los 16 años, cuando comencé con mi primera compañía tecnológica llamada Fansive. Disfruto de todo lo relacionado con la ciencia, la tecnología, el deporte, los autos, la música, pero sobre todo, ¡el helado! 😄
+                    <p className='text-white text-left text-xl leading-10'>こんにちは！👋 はじめまして、アンドレス・ボニーリャです。学生、ソフトウェア開発者、起業家です。16歳のときにFansiveという最初の会社を立ち上げて以来、技術プロジェクトを作るのが大好きです。科学、テクノロジー、スポーツ、車、音楽、そして何よりもアイスクリームが好きです！😄
                     </p>
                 </div>
 
-                <CuriosFact text={"Estamos a 384,400 km sobre el nivel del mar; a esta altitud, la luna está orbitando la Tierra. Espera un poco y seguramente la verás."}/>
+                <CuriosFact text={"私たちは海抜384,400kmにいる。この高度で、月は地球の周りを回っている。少し待てば見えるだろう。"}/>
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
@@ -73,7 +73,7 @@ export default function HomeES() {
                 <div className='w-full'>
                   
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS NEGOCIOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>マイ・ビジネス</h2>
                     </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
@@ -91,11 +91,11 @@ export default function HomeES() {
                             <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
-                                ¿Alguna vez has hecho clic en &quot;Aceptar política de privacidad&quot; y/o &quot;Términos de uso&quot; sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
+                                プライバシーポリシーや利用規約が長くてわかりにくいので、読まずにクリックしたことはありませんか？Simplitermsは、ワンクリックでポリシーを要約してくれるGoogleの拡張機能です。
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
-                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>Ver Mas</Link>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>もっと見る</Link>
                             </div>
 
                         </div>
@@ -107,12 +107,12 @@ export default function HomeES() {
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>HABILIDADES</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>スキル</h2>
                     </div>
                     <Skills />
                 </div>
 
-                <CuriosFact text={"En este momento, estamos a 400 kilómetros sobre el nivel del mar. A esta altitud se encuentra la Estación Espacial Internacional (EEI)."}/>
+                <CuriosFact text={"現在、私たちは海抜400キロにいる。この高度に国際宇宙ステーション（ISS）がある。"}/>
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
@@ -125,11 +125,11 @@ export default function HomeES() {
                 {/* my projects */}
                 <div id='projects'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS PROYECTOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>マイ・プロジェクト</h2>
                     </div>
 
                     <Project name={"YourDreamCar"} 
-                            desc={"YourDreamCar es una página web que diseñé para una empresa que estoy desarrollando con mi mejor amigo David. Ofrecemos servicios de vinilado, polarizacion de ventanas y muchos más. #YourDreamCar"} 
+                            desc={"YourDreamCarは、私が親友のデビッドと一緒に開発している会社のためにデザインしたウェブサイトです。カーラップサービスやウィンドウティントなど、様々なサービスを提供しています。#ユアドリームカー"} 
                             link={"https://www.yourdreamcar.ca/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
@@ -137,7 +137,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Fansive"} 
-                            desc={"Fansive es una startup creada por mí, La cual es una plataforma para contenido exclusivo. Esta aplicación cuenta con todas las herramientas necesarias para que los creadores de contenido ofrezcan el mejor contenido a sus suscriptores, como transmisiones en vivo, historias, chats grupales, chats privados, publicaciones, almacenamiento de archivos y mucho más."} 
+                            desc={"Fansiveは私が作ったスタートアップで、独占コンテンツのプラットフォームだ。このアプリには、ライブストリーム、ストーリー、グループチャット、プライベートチャット、パブリッシング、ファイルストレージなど、コンテンツクリエイターが最高のコンテンツを購読者に提供するために必要なツールがすべて揃っている。"} 
                             link={"https://fansive.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
@@ -145,7 +145,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Virtual Board"} 
-                            desc={"Virtual Board es una aplicación web creada sin utilizar bibliotecas que simula un pizarrón de aula, lo que te permite dibujar, borrar, crear figuras, arrastrar y soltar, rotar y muchas otras funciones. Esta aplicación utiliza trigonometría y álgebra para resolver algunas de las funcionalidades en el pizarrón virtual."} 
+                            desc={"Virtual Boardは、教室の黒板をシミュレートし、描画、消去、図形の作成、ドラッグ＆ドロップ、回転、その他多くの機能を可能にする、ライブラリを使用せずに作成されたWebアプリケーションです。このアプリケーションは、バーチャルボード上の機能の一部を解くために三角法と代数を使用します。"} 
                             link={"https://super-virtual-board.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
@@ -154,7 +154,7 @@ export default function HomeES() {
                     />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a una altitud de 30,000 metros, altura a la que la mayoría de los aviones comerciales suelen volar hoy en día."}/>
+                <CuriosFact text={"現在、私たちは高度30,000メートルにおり、これは現在ほとんどの民間旅客機が飛行している高度である。"}/>
                 <div id="part2" className='flex'>
                   <Image 
                         src={require("@/assets/vehicle7.png")}
@@ -201,7 +201,7 @@ export default function HomeES() {
 
               {/* my projects */}
               <div>
-                    <CuriosFact text={"Nos encontramos en aguas poco profundas, a esta profundidad se pueden encontrar peces como el salmón, peces de arrecife y otros más."}/>
+                    <CuriosFact text={"この水深では、サーモンやリーフフィッシュなどの魚を見ることができる。"}/>
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
@@ -220,7 +220,7 @@ export default function HomeES() {
                         />
                     </div>
                     <Project name={"FileBox"} 
-                            desc={"fileBox es una aplicación creada por mí, muy similar a Dropbox, Google Drive u otras similares, en la cual cualquiera puede cargar archivos, descargarlos, crear carpetas y realizar muchas otras funciones."} 
+                            desc={"fileBoxは私が作ったアプリケーションで、DropboxやGoogle Driveなどによく似ており、誰でもファイルをアップロードしたり、ダウンロードしたり、フォルダを作成したり、その他多くの機能を実行することができる。"} 
                             link={"https://filebox.netlify.app/#/login"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
@@ -228,7 +228,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Geekepedia"} 
-                            desc={"Geekipedia es un blog donde puedes aprender cómo funcionan algunos de los algoritmos más famosos en ciencias de la computación, como BFS (Búsqueda en Anchura), QuickSort, Búsqueda Binaria y muchos más."} 
+                            desc={"Geekipediaは、BFS(Breadth Search)、QuickSort、Binary Searchなど、コンピュータサイエンスで最も有名なアルゴリズムの仕組みを学べるブログです。"} 
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
@@ -236,7 +236,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"thePokedex"} 
-                            desc={"thePokedex es una aplicación con temas claro y oscuro en la que puedes encontrar y buscar información sobre todos los Pokémon existentes. Además, es compatible con dispositivos Android e iOS."} 
+                            desc={"thePokedexは光と闇をテーマにしたアプリで、現存する全てのポケモンの情報を検索することができます。また、AndroidとiOSデバイスに対応しています。"} 
                             link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
@@ -254,12 +254,12 @@ export default function HomeES() {
 
                 <div className='px-[13%]'>
                     <div className='flex w-full justify-center items-center' id='contact'>
-                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>CONTACTO</h2>
+                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>コンタクト</h2>
                     </div>
-                    <ContactForm lenguage={"es"} />
+                    <ContactForm lenguage={"ja"} />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a 3.800 metros de profundidad, donde se encuentran los restos del Titanic y en el final de mi sitio web."}/>
+                <CuriosFact text={"現在、私たちはタイタニック号の沈没船のある水深3,800メートルにおり、私のウェブサイトの最後にある。"}/>
 
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>

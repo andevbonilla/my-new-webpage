@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faGlobe, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 
@@ -26,36 +26,34 @@ export const Navbar = ({lenguage}:any) => {
     let principalUbication = 0;
     const handleViewNav = () => {
 
-                    if (!global?.window) return;
-                    if (asteroidsMenuOpen) return;
-                    if (window.scrollY < 0) {
-                        return;
-                    }
+        if (!global?.window) return;
+        if (asteroidsMenuOpen) return;
+        if (window.scrollY < 0) {
+            return;
+        };
 
-                    let currentDisplacement = window.scrollY;
+        let currentDisplacement = window.scrollY;
 
-                    console.log(currentDisplacement)
 
-                    if(currentDisplacement >= 1 ){
-                        setactiveClass(true);
-                    }else{
-                        setactiveClass(false);
-                    }
-                    if (navbar.current !== null) {
+        if(currentDisplacement >= 1 ){
+            setactiveClass(true);
+        }else{
+            setactiveClass(false);
+        };
+        if (navbar.current !== null) {
 
-                        if (principalUbication >= currentDisplacement) {
-                            navbar.current.style.top = '0';
-                            navbar.current.style.transition = '.5s'
-                            
-                        } else {
-                            navbar.current.style.top = '-400px';
-                            navbar.current.style.transition = '1s'
-                        }
+            if (principalUbication >= currentDisplacement) {
+                navbar.current.style.top = '0';
+                navbar.current.style.transition = '.5s';            
+            } else {
+                navbar.current.style.top = '-400px';
+                navbar.current.style.transition = '1s';
+            }
 
-                        principalUbication = currentDisplacement;
+            principalUbication = currentDisplacement;
                 
-                    }
-    }
+        };
+    };
 
     useEffect(() => {
 
@@ -70,6 +68,30 @@ export const Navbar = ({lenguage}:any) => {
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "ES",
                 changeLenguageText: "Cambiar Idioma"
+            })
+        }else if(lenguage === "fr"){
+            setTexts({
+                svgUrl: "flag-for-spain-svgrepo-com.svg",
+                LenguageName: "FR",
+                changeLenguageText: "Changer de langue"
+            })
+        }else if(lenguage === "ch"){
+            setTexts({
+                svgUrl: "flag-for-spain-svgrepo-com.svg",
+                LenguageName: "CH",
+                changeLenguageText: "更改语言"
+            })
+        }else if(lenguage === "hi"){
+            setTexts({
+                svgUrl: "flag-for-spain-svgrepo-com.svg",
+                LenguageName: "HI",
+                changeLenguageText: "भाषा बदलें"
+            })
+        }else if(lenguage === "ja"){
+            setTexts({
+                svgUrl: "flag-for-spain-svgrepo-com.svg",
+                LenguageName: "JA",
+                changeLenguageText: "言語の変更"
             })
         }else {
             setTexts({
@@ -89,21 +111,24 @@ export const Navbar = ({lenguage}:any) => {
     
     const openAsteroidsMenu = () => {
         setAsteroidsMenuOpen(true);
-    }
+    };
 
     const closeAsteroidsMenu = () => {
         setAsteroidsMenuOpen(false);
-    }
+    };
 
     const clickOnAsteroid = (link:string) => {
         setAsteroidsMenuOpen(false);
         router.push(link);
-    }
+    };
 
     const openLenguagesMenu = () => {
         setshowLenguageMenu(true);
-    }
+    };
 
+    const closeLenguagesMenu = () => {
+        setshowLenguageMenu(false);
+    };
 
 
   return (
@@ -120,14 +145,9 @@ export const Navbar = ({lenguage}:any) => {
 
             <div className='flex items-center'>
 
-                <button onClick={openLenguagesMenu} type='button' className='flex items-center bg-yellow-200 rounded-full p-1 mr-3 lg:mr-6 cursor-pointer'>
-                    <Image 
-                        src={require(`@/assets/${texts.svgUrl}`)}
-                        alt='spain flag'
-                        width={30}
-                        height={30}
-                    />
-                    <p className='text-black font-bold mx-1'>{texts.LenguageName}</p>
+                <button onClick={openLenguagesMenu} type='button' className='flex items-center mr-3 lg:mr-6 cursor-pointer'>
+                    <FontAwesomeIcon icon={faGlobe} size='2x' className='text-white'/>
+                    <p className='text-white font-bold ml-3'>{texts.LenguageName}</p>
                 </button>
 
                 <FontAwesomeIcon
@@ -142,9 +162,9 @@ export const Navbar = ({lenguage}:any) => {
 
         {/* change the lenguage part */}
         {
-            showLenguageMenu && <div className='z-[999] fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50 flex items-center justify-center'>
-                                    
-                                    <div className='bg-white p-10'>
+            showLenguageMenu && <div className='flex justify-center items-center h-screen fixed w-full top-0 left-0 z-[999]'>
+                                   <div onClick={closeLenguagesMenu} className='cursor-pointer z-[1000] fixed top-0 left-0 w-full h-screen bg-black bg-opacity-50'></div>
+                                   <div className='bg-white p-10 z-[1001]'>
 
                                         <h2 className='font-bold text-xl mb-6'>{texts.changeLenguageText}</h2>
 
@@ -167,10 +187,50 @@ export const Navbar = ({lenguage}:any) => {
                                             />
                                             <p className='ml-2 text-xl'>Español</p>
                                         </Link>
+
+                                        <Link href={"/ja"} className='text-black flex items-center mb-6'>
+                                            <Image 
+                                                src={require("@/assets/flag-for-flag-japan-svgrepo-com.svg")}
+                                                alt='spain flag'
+                                                width={40}
+                                                height={40}
+                                            />
+                                            <p className='ml-2 text-xl'>日本語</p>
+                                        </Link>
+
+                                        <Link href={"/fr"} className='text-black flex items-center mb-6'>
+                                            <Image 
+                                                src={require("@/assets/flag-for-flag-st-martin-svgrepo-com.svg")}
+                                                alt='spain flag'
+                                                width={40}
+                                                height={40}
+                                            />
+                                            <p className='ml-2 text-xl'>Français</p>
+                                        </Link>
+
+                                        <Link href={"/ch"} className='text-black flex items-center mb-6'>
+                                            <Image 
+                                                src={require("@/assets/flag-for-flag-china-svgrepo-com.svg")}
+                                                alt='spain flag'
+                                                width={40}
+                                                height={40}
+                                            />
+                                            <p className='ml-2 text-xl'>中文 {"("}简体{")"}</p>
+                                        </Link>
+
+                                        <Link href={"/hi"} className='text-black flex items-center mb-6'>
+                                            <Image 
+                                                src={require("@/assets/flag-for-flag-india-svgrepo-com.svg")}
+                                                alt='spain flag'
+                                                width={40}
+                                                height={40}
+                                            />
+                                            <p className='ml-2 text-xl'>हिंदी</p>
+                                        </Link>
                                         
                                     </div>
-                                    
                                 </div>
+            
         }
 
         {

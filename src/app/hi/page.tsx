@@ -34,7 +34,7 @@ export default function HomeES() {
                     <div className='mb-10 md:w-[50%]'>
                             <h1 className='text-white font-bold text-[1.6rem] um:text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
                             <div className='flex text-white'>
-                                <TypingAnimation stringList={['Desarrollador de software', 'Emprendedor', 'Deportista']}
+                                <TypingAnimation stringList={['सॉफ्टवेयर डेवलपर', 'उद्यमी', 'खिलाड़ी']}
                                                  wrapper="h2"/>
                             </div>
                             
@@ -55,11 +55,11 @@ export default function HomeES() {
                     <div className='flex w-full justify-center items-center' id='about'>
                         <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SOBRE MI</h2>
                     </div>
-                    <p className='text-white text-left text-xl leading-10'>¡Hola! 👋 ¿Cómo estás? Mi nombre es Andrés Bonilla. Soy estudiante, desarrollador de software y emprendedor. Me encanta crear proyectos tecnológicos; lo hago desde los 16 años, cuando comencé con mi primera compañía tecnológica llamada Fansive. Disfruto de todo lo relacionado con la ciencia, la tecnología, el deporte, los autos, la música, pero sobre todo, ¡el helado! 😄
+                    <p className='text-white text-left text-xl leading-10'>नमस्ते! 👋आप कैसे हैं? मेरा नाम एन्ड्रेस बोनिला है। मैं एक छात्र, सॉफ्टवेयर डेवलपर और उद्यमी हूं। मुझे तकनीकी परियोजनाएँ बनाना पसंद है; मैं इसे तब से कर रहा हूं जब मैं 16 साल का था, जब मैंने फैनसिव नाम से अपनी पहली तकनीकी कंपनी शुरू की थी। मैं विज्ञान, प्रौद्योगिकी, खेल, कार, संगीत से संबंधित हर चीज का आनंद लेता हूं, लेकिन सबसे ऊपर, आइसक्रीम! 😄
                     </p>
                 </div>
 
-                <CuriosFact text={"Estamos a 384,400 km sobre el nivel del mar; a esta altitud, la luna está orbitando la Tierra. Espera un poco y seguramente la verás."}/>
+                <CuriosFact text={"हम समुद्र तल से 384,400 किमी ऊपर हैं; इस ऊंचाई पर चंद्रमा पृथ्वी की परिक्रमा कर रहा है। थोड़ा इंतजार करें और आप इसे जरूर देखेंगे."}/>
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
@@ -73,7 +73,7 @@ export default function HomeES() {
                 <div className='w-full'>
                   
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS NEGOCIOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>मेरा व्यापार</h2>
                     </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
@@ -91,11 +91,11 @@ export default function HomeES() {
                             <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
-                                ¿Alguna vez has hecho clic en &quot;Aceptar política de privacidad&quot; y/o &quot;Términos de uso&quot; sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
+                               क्या आपने कभी गोपनीयता नीति और/या उपयोग की शर्तों को पढ़े बिना स्वीकार करें पर क्लिक किया है क्योंकि वे बहुत लंबी हैं और उन्हें समझना मुश्किल है? सिंपलीटर्म्स एक Google एक्सटेंशन है जो एक क्लिक से नीतियों का सारांश प्रस्तुत करता है ताकि आपको उन्हें आँख बंद करके दोबारा स्वीकार न करना पड़े।
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
-                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>Ver Mas</Link>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>और देखें</Link>
                             </div>
 
                         </div>
@@ -107,12 +107,12 @@ export default function HomeES() {
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>HABILIDADES</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>कौशल</h2>
                     </div>
                     <Skills />
                 </div>
 
-                <CuriosFact text={"En este momento, estamos a 400 kilómetros sobre el nivel del mar. A esta altitud se encuentra la Estación Espacial Internacional (EEI)."}/>
+                <CuriosFact text={"अभी हम समुद्र तल से 400 किलोमीटर ऊपर हैं। इसी ऊंचाई पर अंतरराष्ट्रीय अंतरिक्ष स्टेशन (आईएसएस) है।"}/>
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
@@ -125,11 +125,11 @@ export default function HomeES() {
                 {/* my projects */}
                 <div id='projects'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS PROYECTOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>मेरी परियोजनाएं</h2>
                     </div>
 
                     <Project name={"YourDreamCar"} 
-                            desc={"YourDreamCar es una página web que diseñé para una empresa que estoy desarrollando con mi mejor amigo David. Ofrecemos servicios de vinilado, polarizacion de ventanas y muchos más. #YourDreamCar"} 
+                            desc={"योरड्रीमकार एक वेबसाइट है जिसे मैंने एक कंपनी के लिए डिज़ाइन किया है जिसे मैं अपने सबसे अच्छे दोस्त डेविड के साथ विकसित कर रहा हूं। हम विनाइल सेवाएँ, विंडो टिंटिंग और बहुत कुछ प्रदान करते हैं। #आपकी सपनों की कार"} 
                             link={"https://www.yourdreamcar.ca/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
@@ -137,7 +137,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Fansive"} 
-                            desc={"Fansive es una startup creada por mí, La cual es una plataforma para contenido exclusivo. Esta aplicación cuenta con todas las herramientas necesarias para que los creadores de contenido ofrezcan el mejor contenido a sus suscriptores, como transmisiones en vivo, historias, chats grupales, chats privados, publicaciones, almacenamiento de archivos y mucho más."} 
+                            desc={"फैनसिव मेरे द्वारा बनाया गया एक स्टार्टअप है, जो एक्सक्लूसिव कंटेंट के लिए एक प्लेटफॉर्म है। इस ऐप में सामग्री निर्माताओं के लिए अपने ग्राहकों को सर्वोत्तम सामग्री प्रदान करने के लिए सभी आवश्यक उपकरण हैं, जैसे लाइव स्ट्रीम, कहानियां, समूह चैट, निजी चैट, पोस्ट, फ़ाइल भंडारण और बहुत कुछ।"} 
                             link={"https://fansive.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
@@ -145,7 +145,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Virtual Board"} 
-                            desc={"Virtual Board es una aplicación web creada sin utilizar bibliotecas que simula un pizarrón de aula, lo que te permite dibujar, borrar, crear figuras, arrastrar y soltar, rotar y muchas otras funciones. Esta aplicación utiliza trigonometría y álgebra para resolver algunas de las funcionalidades en el pizarrón virtual."} 
+                            desc={"वर्चुअलबोर्ड एक लाइब्रेरी-मुक्त वेब ऐप है जो एक कक्षा व्हाइटबोर्ड का अनुकरण करता है, जो आपको चित्र बनाने, मिटाने, आकार बनाने, खींचने और छोड़ने, घुमाने और कई अन्य सुविधाओं की अनुमति देता है। यह एप्लिकेशन वर्चुअल व्हाइटबोर्ड पर कुछ कार्यक्षमताओं को हल करने के लिए त्रिकोणमिति और बीजगणित का उपयोग करता है।"} 
                             link={"https://super-virtual-board.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
@@ -154,7 +154,7 @@ export default function HomeES() {
                     />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a una altitud de 30,000 metros, altura a la que la mayoría de los aviones comerciales suelen volar hoy en día."}/>
+                <CuriosFact text={"वर्तमान में हम 30,000 मीटर की ऊंचाई पर हैं, वह ऊंचाई जिस पर आज अधिकांश वाणिज्यिक विमान आमतौर पर उड़ान भरते हैं।"}/>
                 <div id="part2" className='flex'>
                   <Image 
                         src={require("@/assets/vehicle7.png")}
@@ -201,7 +201,7 @@ export default function HomeES() {
 
               {/* my projects */}
               <div>
-                    <CuriosFact text={"Nos encontramos en aguas poco profundas, a esta profundidad se pueden encontrar peces como el salmón, peces de arrecife y otros más."}/>
+                    <CuriosFact text={"हम उथले पानी में हैं, इस गहराई पर आप सैल्मन, रीफ मछली और अन्य जैसी मछलियाँ पा सकते हैं।"}/>
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
@@ -220,7 +220,7 @@ export default function HomeES() {
                         />
                     </div>
                     <Project name={"FileBox"} 
-                            desc={"fileBox es una aplicación creada por mí, muy similar a Dropbox, Google Drive u otras similares, en la cual cualquiera puede cargar archivos, descargarlos, crear carpetas y realizar muchas otras funciones."} 
+                            desc={"फाइलबॉक्स मेरे द्वारा बनाया गया एक एप्लिकेशन है, जो ड्रॉपबॉक्स, गूगल ड्राइव या अन्य समान के समान है, जिसमें कोई भी फाइल अपलोड कर सकता है, उन्हें डाउनलोड कर सकता है, फ़ोल्डर्स बना सकता है और कई अन्य कार्य कर सकता है।"} 
                             link={"https://filebox.netlify.app/#/login"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
@@ -228,7 +228,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Geekepedia"} 
-                            desc={"Geekipedia es un blog donde puedes aprender cómo funcionan algunos de los algoritmos más famosos en ciencias de la computación, como BFS (Búsqueda en Anchura), QuickSort, Búsqueda Binaria y muchos más."} 
+                            desc={"गीकीपीडिया एक ब्लॉग है जहां आप सीख सकते हैं कि कंप्यूटर विज्ञान में कुछ सबसे प्रसिद्ध एल्गोरिदम कैसे काम करते हैं, जैसे कि बीएफएस (ब्रेडथ सर्च), क्विकसॉर्ट, बाइनरी सर्च और कई अन्य।"} 
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
@@ -236,7 +236,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"thePokedex"} 
-                            desc={"thePokedex es una aplicación con temas claro y oscuro en la que puedes encontrar y buscar información sobre todos los Pokémon existentes. Además, es compatible con dispositivos Android e iOS."} 
+                            desc={"पोकेडेक्स प्रकाश और अंधेरे थीम वाला एक एप्लिकेशन है जहां आप सभी मौजूदा पोकेमोन के बारे में जानकारी पा सकते हैं और खोज सकते हैं। इसके अतिरिक्त, यह Android और iOS उपकरणों के साथ संगत है।"} 
                             link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
@@ -254,12 +254,12 @@ export default function HomeES() {
 
                 <div className='px-[13%]'>
                     <div className='flex w-full justify-center items-center' id='contact'>
-                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>CONTACTO</h2>
+                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>संपर्क</h2>
                     </div>
-                    <ContactForm lenguage={"es"} />
+                    <ContactForm lenguage={"hi"} />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a 3.800 metros de profundidad, donde se encuentran los restos del Titanic y en el final de mi sitio web."}/>
+                <CuriosFact text={"इस समय हम 3,800 मीटर गहराई पर हैं, जहां टाइटैनिक के अवशेष स्थित हैं और मेरी वेबसाइट के अंत में हैं।"}/>
 
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>

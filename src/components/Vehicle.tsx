@@ -222,6 +222,54 @@ export const Vehicle = ({lenguage}:any) => {
                 closeButton: "Cerrar",
                 updateButton: "Mejorar"
             })
+        }else if(lenguage === "ch"){
+            setTexts({
+                title: "速度模拟器",
+                vehicleName: "车辆：",
+                maxSpeed: "最大速度：",
+                distance: "网页背景 -> 网页顶部：",
+                adviceTitle: "重要事项",
+                advice: "这是一种真实的速度模拟。因此，如果你看到它停了下来，那是因为它的速度太慢，无法满足它的行驶距离。",
+                followButton: "跟进",
+                closeButton: "关闭",
+                updateButton: "改进"
+            })
+        }else if(lenguage === "hi"){
+            setTexts({
+                title: "स्पीड सिम्युलेटर",
+                vehicleName: "वाहन:",
+                maxSpeed: "अधिकतम गति:",
+                distance: "वेब पेज की पृष्ठभूमि -> वेब पेज का मुखपृष्ठ:",
+                adviceTitle: "महत्वपूर्ण",
+                advice: "यह एक यथार्थवादी गति अनुकरण है. इसलिए, यदि आप इसे रुकते हुए देखते हैं, तो इसका कारण यह है कि यह जितनी दूरी तय करनी है, उसके हिसाब से यह बहुत धीमी गति से चल रही है।",
+                followButton: "जारी रखना",
+                closeButton: "बंद करना",
+                updateButton: "सुधार"
+            })
+        }else if(lenguage === "fr"){
+            setTexts({
+                title: "Simulateur de vitesse",
+                vehicleName: "Véhicule:",
+                maxSpeed: "Vitesse maximale:",
+                distance: "Arrière-plan de la page web -> Haut de la page web:",
+                adviceTitle: "IMPORTANT",
+                advice: "Il s'agit d'une simulation de vitesse réaliste. Par conséquent, si vous voyez qu'il s'arrête, c'est parce qu'il va trop lentement par rapport à la distance qu'il doit parcourir.",
+                followButton: "Suivre",
+                closeButton: "Fermer",
+                updateButton: "Améliorer"
+            })
+        }else if(lenguage === "ja"){
+            setTexts({
+                title: "Simulador de Velocidad",
+                vehicleName: "Vehiculo:",
+                maxSpeed: "Maxima Velocidad:",
+                distance: "Fondo de la pagina web -> Inicio de la pagina web:",
+                adviceTitle: "IMPORTANTE",
+                advice: "Esta es una simulación de velocidad realista. Por lo tanto, en caso de que veas que se detiene, es porque está yendo demasiado lento para la distancia que tiene que recorrer.",
+                followButton: "Seguir",
+                closeButton: "Cerrar",
+                updateButton: "Mejorar"
+            })
         }else {
             setTexts({
                 title: "Speed Simulator",

@@ -18,8 +18,8 @@ export default function HomeES() {
   return (
     <>
       
-      <Navbar lenguage={"es"}/>
-      <Vehicle lenguage={"es"}/>
+      <Navbar lenguage={"ch"}/>
+      <Vehicle lenguage={"ch"}/>
       <main className='overflow-x-hidden z-20'>
           
           <div className='gradient-background'>
@@ -34,7 +34,7 @@ export default function HomeES() {
                     <div className='mb-10 md:w-[50%]'>
                             <h1 className='text-white font-bold text-[1.6rem] um:text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
                             <div className='flex text-white'>
-                                <TypingAnimation stringList={['Desarrollador de software', 'Emprendedor', 'Deportista']}
+                                <TypingAnimation stringList={['软件开发人员', '企业家', '运动员']}
                                                  wrapper="h2"/>
                             </div>
                             
@@ -53,13 +53,13 @@ export default function HomeES() {
                 {/* about me */}
                 <div className='px-[15%]'>
                     <div className='flex w-full justify-center items-center' id='about'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SOBRE MI</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>关于我</h2>
                     </div>
-                    <p className='text-white text-left text-xl leading-10'>¡Hola! 👋 ¿Cómo estás? Mi nombre es Andrés Bonilla. Soy estudiante, desarrollador de software y emprendedor. Me encanta crear proyectos tecnológicos; lo hago desde los 16 años, cuando comencé con mi primera compañía tecnológica llamada Fansive. Disfruto de todo lo relacionado con la ciencia, la tecnología, el deporte, los autos, la música, pero sobre todo, ¡el helado! 😄
+                    <p className='text-white text-left text-xl leading-10'>你好！ 👋 我叫安德烈斯-博尼利亚。我是一名学生、软件开发人员和企业家。我喜欢创建技术项目；从 16 岁开始，我就一直从事这项工作，当时我创办了自己的第一家技术公司，名为 Fansive。我喜欢与科学、技术、体育、汽车、音乐有关的一切，但最喜欢冰淇淋！😄
                     </p>
                 </div>
 
-                <CuriosFact text={"Estamos a 384,400 km sobre el nivel del mar; a esta altitud, la luna está orbitando la Tierra. Espera un poco y seguramente la verás."}/>
+                <CuriosFact text={"我们现在位于海拔 384 400 公里处；在这个高度，月球正在绕地球运行。再等一会儿，你可能就能看到它了。"}/>
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
@@ -73,7 +73,7 @@ export default function HomeES() {
                 <div className='w-full'>
                   
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS NEGOCIOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>我的业务</h2>
                     </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
@@ -91,11 +91,11 @@ export default function HomeES() {
                             <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
-                                ¿Alguna vez has hecho clic en &quot;Aceptar política de privacidad&quot; y/o &quot;Términos de uso&quot; sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
+                                你是否曾经因为隐私政策和/或使用条款太长且难以理解，而没有阅读就点击了接受？Simpliterms 是一款谷歌扩展工具，只需点击一下就能总结出相关政策，这样你就不必再盲目地接受它们了。
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
-                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>Ver Mas</Link>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>查看更多</Link>
                             </div>
 
                         </div>
@@ -107,12 +107,12 @@ export default function HomeES() {
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>HABILIDADES</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>技能</h2>
                     </div>
                     <Skills />
                 </div>
 
-                <CuriosFact text={"En este momento, estamos a 400 kilómetros sobre el nivel del mar. A esta altitud se encuentra la Estación Espacial Internacional (EEI)."}/>
+                <CuriosFact text={"此刻，我们在海拔 400 公里的高空。在这个高度上就是国际空间站。"}/>
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
@@ -129,7 +129,7 @@ export default function HomeES() {
                     </div>
 
                     <Project name={"YourDreamCar"} 
-                            desc={"YourDreamCar es una página web que diseñé para una empresa que estoy desarrollando con mi mejor amigo David. Ofrecemos servicios de vinilado, polarizacion de ventanas y muchos más. #YourDreamCar"} 
+                            desc={"YourDreamCar 是我为一家公司设计的网站，这家公司是我和好友大卫共同开发的。我们提供汽车包装服务、车窗着色等。#你的梦想之车"} 
                             link={"https://www.yourdreamcar.ca/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
@@ -137,7 +137,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Fansive"} 
-                            desc={"Fansive es una startup creada por mí, La cual es una plataforma para contenido exclusivo. Esta aplicación cuenta con todas las herramientas necesarias para que los creadores de contenido ofrezcan el mejor contenido a sus suscriptores, como transmisiones en vivo, historias, chats grupales, chats privados, publicaciones, almacenamiento de archivos y mucho más."} 
+                            desc={"Fansive 是我创建的一家初创公司，是一个提供独家内容的平台。这款应用程序为内容创作者提供了所有必要的工具，如直播流、故事、群聊、私聊、发布、文件存储等，以便为订阅者提供最好的内容。"} 
                             link={"https://fansive.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
@@ -145,7 +145,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Virtual Board"} 
-                            desc={"Virtual Board es una aplicación web creada sin utilizar bibliotecas que simula un pizarrón de aula, lo que te permite dibujar, borrar, crear figuras, arrastrar y soltar, rotar y muchas otras funciones. Esta aplicación utiliza trigonometría y álgebra para resolver algunas de las funcionalidades en el pizarrón virtual."} 
+                            desc={"虚拟黑板是一款无需使用库即可创建的网络应用程序，它可以模拟教室黑板，允许您绘图、擦除、创建形状、拖放、旋转和许多其他功能。该应用程序使用三角学和代数学来解决虚拟黑板上的一些功能问题。"} 
                             link={"https://super-virtual-board.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
@@ -154,7 +154,7 @@ export default function HomeES() {
                     />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a una altitud de 30,000 metros, altura a la que la mayoría de los aviones comerciales suelen volar hoy en día."}/>
+                <CuriosFact text={"目前，我们的飞行高度为 3 万米，这是当今大多数商用客机的飞行高度。"}/>
                 <div id="part2" className='flex'>
                   <Image 
                         src={require("@/assets/vehicle7.png")}
@@ -201,7 +201,7 @@ export default function HomeES() {
 
               {/* my projects */}
               <div>
-                    <CuriosFact text={"Nos encontramos en aguas poco profundas, a esta profundidad se pueden encontrar peces como el salmón, peces de arrecife y otros más."}/>
+                    <CuriosFact text={"我们在浅水区，在这个深度可以找到鲑鱼、珊瑚鱼等鱼类。"}/>
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
@@ -220,7 +220,7 @@ export default function HomeES() {
                         />
                     </div>
                     <Project name={"FileBox"} 
-                            desc={"fileBox es una aplicación creada por mí, muy similar a Dropbox, Google Drive u otras similares, en la cual cualquiera puede cargar archivos, descargarlos, crear carpetas y realizar muchas otras funciones."} 
+                            desc={"fileBox 是我创建的一个应用程序，与 Dropbox、Google Drive 或其他类似程序非常相似，任何人都可以在其中上传文件、下载文件、创建文件夹并执行许多其他功能。"} 
                             link={"https://filebox.netlify.app/#/login"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
@@ -228,7 +228,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"Geekepedia"} 
-                            desc={"Geekipedia es un blog donde puedes aprender cómo funcionan algunos de los algoritmos más famosos en ciencias de la computación, como BFS (Búsqueda en Anchura), QuickSort, Búsqueda Binaria y muchos más."} 
+                            desc={"Geekipedia 是一个博客，在这里你可以了解计算机科学中一些最著名算法的工作原理，如 BFS（广度搜索）、QuickSort、二进制搜索等。"} 
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
@@ -236,7 +236,7 @@ export default function HomeES() {
                             buttonText={"Ver Proyecto"}
                     />
                     <Project name={"thePokedex"} 
-                            desc={"thePokedex es una aplicación con temas claro y oscuro en la que puedes encontrar y buscar información sobre todos los Pokémon existentes. Además, es compatible con dispositivos Android e iOS."} 
+                            desc={"ThePokedex 是一款以明暗为主题的应用程序，您可以在其中查找和搜索所有现有神奇宝贝的信息。它还兼容安卓和 iOS 设备。"} 
                             link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
@@ -254,12 +254,12 @@ export default function HomeES() {
 
                 <div className='px-[13%]'>
                     <div className='flex w-full justify-center items-center' id='contact'>
-                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>CONTACTO</h2>
+                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>联系</h2>
                     </div>
-                    <ContactForm lenguage={"es"} />
+                    <ContactForm lenguage={"ch"} />
                 </div>
 
-                <CuriosFact text={"En este momento nos encontramos a 3.800 metros de profundidad, donde se encuentran los restos del Titanic y en el final de mi sitio web."}/>
+                <CuriosFact text={"目前，我们在 3 800 米深处，也就是泰坦尼克号残骸所在的地方，也是我网站的尽头。"}/>
 
                 <div className='titanic mt-20'>
                       <div className='flex justify-center items-center mb-24'>

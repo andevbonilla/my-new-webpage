@@ -35,6 +35,34 @@ export const ContactForm = ({lenguage}:any) => {
         messagePlaceholder: "Mensaje",
         actionButton: "Enviar",
       })
+    }else if(lenguage === "fr"){
+      setTexts({
+        namePlaceholder: "Nom",
+        emailPlaceholder: "Courriel",
+        messagePlaceholder: "Message",
+        actionButton: "Envoyer",
+      })
+    }else if(lenguage === "hi"){
+      setTexts({
+        namePlaceholder: "नाम",
+        emailPlaceholder: "मेल",
+        messagePlaceholder: "संदेश",
+        actionButton: "भेजना",
+      })
+    }else if(lenguage === "ch"){
+      setTexts({
+        namePlaceholder: "名称",
+        emailPlaceholder: "电子邮件",
+        messagePlaceholder: "留言",
+        actionButton: "发送",
+      })
+    }else if(lenguage === "ja"){
+      setTexts({
+        namePlaceholder: "名称",
+        emailPlaceholder: "電子メール",
+        messagePlaceholder: "メッセージ",
+        actionButton: "送信",
+      })
     }else {
       setTexts({
         namePlaceholder: "Name",
