@@ -18,8 +18,8 @@ export default function HomeES() {
   return (
     <>
       
-      <Navbar lenguage={"es"}/>
-      <Vehicle lenguage={"es"}/>
+      <Navbar lenguage={"hi"}/>
+      <Vehicle lenguage={"hi"}/>
       <main className='overflow-x-hidden z-20'>
           
           <div className='gradient-background'>
@@ -53,7 +53,7 @@ export default function HomeES() {
                 {/* about me */}
                 <div className='px-[15%]'>
                     <div className='flex w-full justify-center items-center' id='about'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SOBRE MI</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>मेरे बारे में</h2>
                     </div>
                     <p className='text-white text-left text-xl leading-10'>नमस्ते! 👋आप कैसे हैं? मेरा नाम एन्ड्रेस बोनिला है। मैं एक छात्र, सॉफ्टवेयर डेवलपर और उद्यमी हूं। मुझे तकनीकी परियोजनाएँ बनाना पसंद है; मैं इसे तब से कर रहा हूं जब मैं 16 साल का था, जब मैंने फैनसिव नाम से अपनी पहली तकनीकी कंपनी शुरू की थी। मैं विज्ञान, प्रौद्योगिकी, खेल, कार, संगीत से संबंधित हर चीज का आनंद लेता हूं, लेकिन सबसे ऊपर, आइसक्रीम! 😄
                     </p>

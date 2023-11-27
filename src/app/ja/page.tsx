@@ -18,8 +18,8 @@ export default function HomeES() {
   return (
     <>
       
-      <Navbar lenguage={"es"}/>
-      <Vehicle lenguage={"es"}/>
+      <Navbar lenguage={"ja"}/>
+      <Vehicle lenguage={"ja"}/>
       <main className='overflow-x-hidden z-20'>
           
           <div className='gradient-background'>
