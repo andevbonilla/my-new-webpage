@@ -20,7 +20,11 @@ export const Navbar = ({lenguage}:any) => {
     const [texts, setTexts] = useState({
         svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
         LenguageName: "EN",
-        changeLenguageText: "Change Lenguage"
+        changeLenguageText: "Change Lenguage",
+        projectAsteroid: "",
+        contactAsteroid: "",
+        aboutAsteroid: "",
+        bussinessAsteroid: "",
     });
 
     let principalUbication = 0;
@@ -61,43 +65,71 @@ export const Navbar = ({lenguage}:any) => {
             setTexts({
                 svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
                 LenguageName: "EN",
-                changeLenguageText: "Change Lenguage"
+                changeLenguageText: "Change Lenguage",
+                projectAsteroid: "PROJECTS",
+                contactAsteroid: "CONTACT",
+                aboutAsteroid: "ABOUT",
+                bussinessAsteroid: "BUSINESS",
             })
         }else if(lenguage === "es"){
             setTexts({
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "ES",
-                changeLenguageText: "Cambiar Idioma"
+                changeLenguageText: "Cambiar Idioma",
+                projectAsteroid: "PROYECTOS",
+                contactAsteroid: "CONTACTO",
+                aboutAsteroid: "SOBRE MI",
+                bussinessAsteroid: "NEGOCIOS",
             })
         }else if(lenguage === "fr"){
             setTexts({
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "FR",
-                changeLenguageText: "Changer de langue"
+                changeLenguageText: "Changer de langue",
+                projectAsteroid: "PROJETS",
+                contactAsteroid: "CONTACT",
+                aboutAsteroid: "SUR MI",
+                bussinessAsteroid: "ENTREPRISE",
             })
         }else if(lenguage === "ch"){
             setTexts({
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "CH",
-                changeLenguageText: "更改语言"
+                changeLenguageText: "更改语言",
+                projectAsteroid: "项目",
+                contactAsteroid: "接触",
+                aboutAsteroid: "关于我",
+                bussinessAsteroid: "商业",
             })
         }else if(lenguage === "hi"){
             setTexts({
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "HI",
-                changeLenguageText: "भाषा बदलें"
+                changeLenguageText: "भाषा बदलें",
+                projectAsteroid: "परियोजनाओं",
+                contactAsteroid: "संपर्क",
+                aboutAsteroid: "मेरे बारे में",
+                bussinessAsteroid: "व्यापार",
             })
         }else if(lenguage === "ja"){
             setTexts({
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "JA",
-                changeLenguageText: "言語の変更"
+                changeLenguageText: "言語の変更",
+                projectAsteroid: "",
+                contactAsteroid: "",
+                aboutAsteroid: "",
+                bussinessAsteroid: "",
             })
         }else {
             setTexts({
                 svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
                 LenguageName: "EN",
-                changeLenguageText: "Change Lenguage"
+                changeLenguageText: "Change Lenguage",
+                projectAsteroid: "プロジェクト",
+                contactAsteroid: "接触",
+                aboutAsteroid: "私について",
+                bussinessAsteroid: "仕事",
             })
         }
 
@@ -246,15 +278,19 @@ export const Navbar = ({lenguage}:any) => {
                                         <div className='overflow-hidden'>
 
                                             <button onClick={()=>clickOnAsteroid("/#about")} className='w-[7rem] h-[7rem] flex justify-center items-center mb-8 asteroid' id='asteroid'>
-                                                <p className='font-bold text-white text-2xl'>ABOUT</p>
+                                                <p className='font-bold text-white text-2xl'>{texts.aboutAsteroid}</p>
                                             </button>
 
                                             <button onClick={()=>clickOnAsteroid("/#projects")} className='w-[10rem] h-[10rem] flex justify-center items-center mb-12 asteroid1' id='asteroid1'>
-                                                <p className='font-bold text-white text-2xl'>PROJECTS</p>                         
+                                                <p className='font-bold text-white text-2xl'>{texts.bussinessAsteroid}</p>                         
                                             </button>
 
-                                            <button onClick={()=>clickOnAsteroid("/#contact")} className='w-[8rem] h-[8rem] flex justify-center items-center mb-12 asteroid2' id='asteroid2'>
-                                                <p className='font-bold text-white text-2xl'>CONTACT</p>
+                                            <button onClick={()=>clickOnAsteroid("/#projects")} className='w-[10rem] h-[10rem] flex justify-center items-center mb-12 asteroid1' id='asteroid2'>
+                                                <p className='font-bold text-white text-2xl'>{texts.projectAsteroid}</p>                         
+                                            </button>
+
+                                            <button onClick={()=>clickOnAsteroid("/#contact")} className='w-[8rem] h-[8rem] flex justify-center items-center mb-12 asteroid3' id='asteroid3'>
+                                                <p className='font-bold text-white text-2xl'>{texts.contactAsteroid}</p>
                                             </button>
 
                                         </div>

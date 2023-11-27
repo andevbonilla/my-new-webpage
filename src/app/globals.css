@@ -13,6 +13,9 @@
   #asteroid2{
       animation-duration: 36100ms;
   }
+  #asteroid3{
+      animation-duration: 36100ms;
+  }
 }
 
 /* stars */
@@ -144,6 +147,18 @@
     animation-direction: normal;
 }
 
+.asteroid3{
+    background-image: url("../assets/asteroid.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation-name: moveLastAsteroid;
+    animation-duration: 9100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 .stars {
     display: flex;
     flex-direction: column;
@@ -239,6 +254,11 @@
 @keyframes move {
   from{transform: translateX(-10rem) rotate(300deg);}
   to{transform: translateX(150vw) rotate(450deg);}
+}
+
+@keyframes moveLastAsteroid {
+  from{transform: translateX(-20rem) rotate(300deg) translateY(-10rem);}
+  to{transform: translateX(150vw) rotate(450deg) translateY(-10rem);}
 }
 
 @keyframes float {

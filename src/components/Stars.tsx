@@ -6,7 +6,7 @@ export const StarsBackground = ({children}:any) => {
     const starElem:any = useRef(null);
 
     const hideStars = () => {
-
+                if (starElem === null) return;
                 const totalHeight = Math.max(
                     document.body.scrollHeight,
                     document.documentElement.scrollHeight
