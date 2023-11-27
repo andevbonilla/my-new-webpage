@@ -55,7 +55,7 @@ export default function HomeES() {
                     <div className='flex w-full justify-center items-center' id='about'>
                         <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>À PROPOS DE MOI</h2>
                     </div>
-                    <p className='text-white text-left text-xl leading-10'>Bonjour 👋 Comment vas-tu ? Je m'appelle Andrés Bonilla. Je suis étudiant, développeur de logiciels et entrepreneur. J'adore créer des projets technologiques ; je le fais depuis l'âge de 16 ans, lorsque j'ai créé ma première entreprise technologique appelée Fansive. J'aime tout ce qui touche à la science, à la technologie, au sport, aux voitures, à la musique, mais surtout à la crème glacée ! 😄
+                    <p className='text-white text-left text-xl leading-10'>Bonjour 👋 Comment vas-tu ? Je m&apos;appelle Andrés Bonilla. Je suis étudiant, développeur de logiciels et entrepreneur. J&apos;adore créer des projets technologiques ; je le fais depuis l&apos;âge de 16 ans, lorsque j&apos;ai créé ma première entreprise technologique appelée Fansive. J&apos;aime tout ce qui touche à la science, à la technologie, au sport, aux voitures, à la musique, mais surtout à la crème glacée ! 😄
                     </p>
                 </div>
 
@@ -91,7 +91,7 @@ export default function HomeES() {
                             <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
-                                Avez-vous déjà cliqué sur Accepter la politique de confidentialité et/ou les conditions d'utilisation sans les lire parce qu'elles étaient trop longues et difficiles à comprendre ? Simpliterms est une extension Google qui résume les politiques en un seul clic afin que vous n'ayez plus à les accepter à l'aveuglette.
+                                Avez-vous déjà cliqué sur Accepter la politique de confidentialité et/ou les conditions d&apos;utilisation sans les lire parce qu&apos;elles étaient trop longues et difficiles à comprendre ? Simpliterms est une extension Google qui résume les politiques en un seul clic afin que vous n&apos;ayez plus à les accepter à l&apos;aveuglette.
                             </p>
 
                             <div className='px-[13%] lg:px-0'>

@@ -260,15 +260,15 @@ export const Vehicle = ({lenguage}:any) => {
             })
         }else if(lenguage === "ja"){
             setTexts({
-                title: "Simulador de Velocidad",
-                vehicleName: "Vehiculo:",
-                maxSpeed: "Maxima Velocidad:",
-                distance: "Fondo de la pagina web -> Inicio de la pagina web:",
-                adviceTitle: "IMPORTANTE",
-                advice: "Esta es una simulación de velocidad realista. Por lo tanto, en caso de que veas que se detiene, es porque está yendo demasiado lento para la distancia que tiene que recorrer.",
-                followButton: "Seguir",
-                closeButton: "Cerrar",
-                updateButton: "Mejorar"
+                title: "スピードシミュレーター",
+                vehicleName: "車だ：",
+                maxSpeed: "最高速度:",
+                distance: "ウェブページの背景→ウェブページのトップ：",
+                adviceTitle: "重要",
+                advice: "これは現実的なスピードシミュレーションである。したがって、万が一止まってしまった場合は、移動距離に対してスピードが遅すぎるためです。",
+                followButton: "フォロー",
+                closeButton: "閉じる",
+                updateButton: "改善"
             })
         }else {
             setTexts({
