@@ -42,7 +42,7 @@ export default function HomeES() {
                     <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
-                                alt='Andres Bonilla in a tesla roadster'
+                                alt='Andres Bonilla en un tesla roadster'
                                 width={350} 
                                 height={350}
                                 className='absolute w-full floating'
@@ -63,7 +63,7 @@ export default function HomeES() {
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
-                        alt="moon picture"
+                        alt="imagen de la luna"
                         className='absolute moon'
                       />
                 </div>
@@ -116,7 +116,7 @@ export default function HomeES() {
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
-                        alt="International Space Station"
+                        alt="Estacion Espaacial internacional"
                         className='international-space-station'
                       />
                 </div>
@@ -163,12 +163,12 @@ export default function HomeES() {
                       />
                   <Image 
                         src={require("@/assets/vehicle8.png")}
-                        alt="militar airplane"
+                        alt="avion militar"
                         className='w-[12rem] h-[6rem] lg:w-[15rem] lg:h-[8rem] plane2'
                       />
                   <Image 
                         src={require("@/assets/airplane3-icon.png")}
-                        alt="private jet"
+                        alt="avion privado"
                         className='w-[7rem] h-[7rem] lg:w-[15rem] lg:h-[10rem] plane3'
                       />
                 </div>
@@ -179,7 +179,7 @@ export default function HomeES() {
                 <div className='city scale-150 lg:scale-100' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
-                        alt="singapur city"
+                        alt="ciudad de singapur"
                         className='w-full scale-150 -translate-x-6'
                       />
                 </div>
@@ -194,7 +194,7 @@ export default function HomeES() {
               <div className='flex h-[10rem]'>
                   <Image 
                         src={require("@/assets/fish-group-1-icon.png")}
-                        alt="yellow fishes in group"
+                        alt="grupo de peces amarillos"
                         className='w-[10rem] h-[10rem] fish-group'
                       />
               </div>
@@ -205,17 +205,17 @@ export default function HomeES() {
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
-                              alt="yellow fishes in group"
+                              alt="grupo de peces amarillos"
                               className='w-[6rem] h-[6rem] fish-group delay-300'
                             />
                         <Image 
                               src={require("@/assets/fish-group-2-icon.png")}
-                              alt="salmon fish swimming"
+                              alt="pez salmon nadando"
                               className='w-[8rem] h-[8rem] fish-group-2'
                         />
                         <Image 
                               src={require("@/assets/fish-group-3-icon.png")}
-                              alt="shark swimming"
+                              alt="tiburon nadando"
                               className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>
@@ -246,7 +246,7 @@ export default function HomeES() {
                     <div className='flex h-[18rem]'>
                         <Image 
                               src={require("@/assets/tentaculos.gif")}
-                              alt="kraken tentaculus"
+                              alt="Tentaculos del kraken"
                               className='w-[30rem] h-[30rem] rotate-[75deg] -translate-x-20'
                             />
                     </div>
@@ -265,28 +265,28 @@ export default function HomeES() {
                       <div className='flex justify-center items-center mb-24'>
                           <Link href={"https://www.instagram.com/__andrec__/"} 
                                 target='_blank'
-                                title='instagram link'>
+                                title='link de instagram'>
                             <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://twitter.com/AndresB64566284"} 
                                 target='_blank'
-                                title='twitter link'>
+                                title='link de twitter'>
                             <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"} 
                                 target='_blank'
-                                title='linkedin link'>
+                                title='link de linkedIn'>
                             <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                           </Link>
                           <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"} 
                                 target='_blank'
-                                title='github link'>
+                                title='link de github'>
                             <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
                           </Link>
                       </div>
                       <Image 
                         src={require("@/assets/titanic.png")}
-                        alt="titanic in the deep of the sea"
+                        alt="titanic en el fondo del mar"
                         className='w-full scale-150 lg:scale-[1.4] -translate-x-6 mt-[15rem]'
                       />
                 </div>

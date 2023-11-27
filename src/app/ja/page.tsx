@@ -63,7 +63,7 @@ export default function HomeES() {
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
-                        alt="moon picture"
+                        alt="月の絵"
                         className='absolute moon'
                       />
                 </div>
@@ -116,7 +116,7 @@ export default function HomeES() {
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
-                        alt="International Space Station"
+                        alt="国際宇宙ステーション"
                         className='international-space-station'
                       />
                 </div>
@@ -163,12 +163,12 @@ export default function HomeES() {
                       />
                   <Image 
                         src={require("@/assets/vehicle8.png")}
-                        alt="militar airplane"
+                        alt="軍用機"
                         className='w-[12rem] h-[6rem] lg:w-[15rem] lg:h-[8rem] plane2'
                       />
                   <Image 
                         src={require("@/assets/airplane3-icon.png")}
-                        alt="private jet"
+                        alt="プライベートジェット"
                         className='w-[7rem] h-[7rem] lg:w-[15rem] lg:h-[10rem] plane3'
                       />
                 </div>
@@ -179,7 +179,7 @@ export default function HomeES() {
                 <div className='city scale-150 lg:scale-100' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
-                        alt="singapur city"
+                        alt="シンガプール市"
                         className='w-full scale-150 -translate-x-6'
                       />
                 </div>
@@ -194,7 +194,7 @@ export default function HomeES() {
               <div className='flex h-[10rem]'>
                   <Image 
                         src={require("@/assets/fish-group-1-icon.png")}
-                        alt="yellow fishes in group"
+                        alt="黄色い魚の群れ"
                         className='w-[10rem] h-[10rem] fish-group'
                       />
               </div>
@@ -205,17 +205,17 @@ export default function HomeES() {
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
-                              alt="yellow fishes in group"
+                              alt="黄色い魚の群れ"
                               className='w-[6rem] h-[6rem] fish-group delay-300'
                             />
                         <Image 
                               src={require("@/assets/fish-group-2-icon.png")}
-                              alt="salmon fish swimming"
+                              alt="サーモン・フィッシュ・スイミング"
                               className='w-[8rem] h-[8rem] fish-group-2'
                         />
                         <Image 
                               src={require("@/assets/fish-group-3-icon.png")}
-                              alt="shark swimming"
+                              alt="サメ遊泳"
                               className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>

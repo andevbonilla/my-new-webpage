@@ -42,7 +42,7 @@ export default function HomeES() {
                     <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
-                                alt='Andres Bonilla in a tesla roadster'
+                                alt='टेस्ला रोडस्टर में एंड्रेस बोनिला'
                                 width={350} 
                                 height={350}
                                 className='absolute w-full floating'
@@ -63,7 +63,7 @@ export default function HomeES() {
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
-                        alt="moon picture"
+                        alt="चाँद की तस्वीर"
                         className='absolute moon'
                       />
                 </div>
@@ -129,7 +129,7 @@ export default function HomeES() {
                     </div>
 
                     <Project name={"YourDreamCar"} 
-                            desc={"योरड्रीमकार एक वेबसाइट है जिसे मैंने एक कंपनी के लिए डिज़ाइन किया है जिसे मैं अपने सबसे अच्छे दोस्त डेविड के साथ विकसित कर रहा हूं। हम विनाइल सेवाएँ, विंडो टिंटिंग और बहुत कुछ प्रदान करते हैं। #आपकी सपनों की कार"} 
+                            desc={"YourDreamCar एक वेबसाइट है जिसे मैंने एक कंपनी के लिए डिज़ाइन किया है जिसे मैं अपने सबसे अच्छे दोस्त डेविड के साथ विकसित कर रहा हूं। हम विनाइल सेवाएँ, विंडो टिंटिंग और बहुत कुछ प्रदान करते हैं। #आपकी सपनों की कार"} 
                             link={"https://www.yourdreamcar.ca/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
@@ -137,7 +137,7 @@ export default function HomeES() {
                             buttonText={"प्रोजेक्ट देखें"}
                     />
                     <Project name={"Fansive"} 
-                            desc={"फैनसिव मेरे द्वारा बनाया गया एक स्टार्टअप है, जो एक्सक्लूसिव कंटेंट के लिए एक प्लेटफॉर्म है। इस ऐप में सामग्री निर्माताओं के लिए अपने ग्राहकों को सर्वोत्तम सामग्री प्रदान करने के लिए सभी आवश्यक उपकरण हैं, जैसे लाइव स्ट्रीम, कहानियां, समूह चैट, निजी चैट, पोस्ट, फ़ाइल भंडारण और बहुत कुछ।"} 
+                            desc={"Fansive मेरे द्वारा बनाया गया एक स्टार्टअप है, जो एक्सक्लूसिव कंटेंट के लिए एक प्लेटफॉर्म है। इस ऐप में सामग्री निर्माताओं के लिए अपने ग्राहकों को सर्वोत्तम सामग्री प्रदान करने के लिए सभी आवश्यक उपकरण हैं, जैसे लाइव स्ट्रीम, कहानियां, समूह चैट, निजी चैट, पोस्ट, फ़ाइल भंडारण और बहुत कुछ।"} 
                             link={"https://fansive.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
@@ -163,12 +163,12 @@ export default function HomeES() {
                       />
                   <Image 
                         src={require("@/assets/vehicle8.png")}
-                        alt="militar airplane"
+                        alt="सैन्य हवाई जहाज"
                         className='w-[12rem] h-[6rem] lg:w-[15rem] lg:h-[8rem] plane2'
                       />
                   <Image 
                         src={require("@/assets/airplane3-icon.png")}
-                        alt="private jet"
+                        alt="निजी जेट"
                         className='w-[7rem] h-[7rem] lg:w-[15rem] lg:h-[10rem] plane3'
                       />
                 </div>
@@ -179,7 +179,7 @@ export default function HomeES() {
                 <div className='city scale-150 lg:scale-100' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
-                        alt="singapur city"
+                        alt="सिंगापुर शहर"
                         className='w-full scale-150 -translate-x-6'
                       />
                 </div>
@@ -194,7 +194,7 @@ export default function HomeES() {
               <div className='flex h-[10rem]'>
                   <Image 
                         src={require("@/assets/fish-group-1-icon.png")}
-                        alt="yellow fishes in group"
+                        alt="समूह में पीली मछली"
                         className='w-[10rem] h-[10rem] fish-group'
                       />
               </div>
@@ -205,17 +205,17 @@ export default function HomeES() {
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
-                              alt="yellow fishes in group"
+                              alt="समूह में पीली मछली"
                               className='w-[6rem] h-[6rem] fish-group delay-300'
                             />
                         <Image 
                               src={require("@/assets/fish-group-2-icon.png")}
-                              alt="salmon fish swimming"
+                              alt="सैल्मन मछली तैराकी"
                               className='w-[8rem] h-[8rem] fish-group-2'
                         />
                         <Image 
                               src={require("@/assets/fish-group-3-icon.png")}
-                              alt="shark swimming"
+                              alt="शार्क तैराकी"
                               className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>

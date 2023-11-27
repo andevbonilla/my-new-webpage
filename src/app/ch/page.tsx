@@ -42,7 +42,7 @@ export default function HomeES() {
                     <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
-                                alt='Andres Bonilla in a tesla roadster'
+                                alt='安德烈斯·博尼拉 (Andres Bonilla) 驾驶特斯拉跑车'
                                 width={350} 
                                 height={350}
                                 className='absolute w-full floating'
@@ -63,7 +63,7 @@ export default function HomeES() {
                 <div className='lg:h-[35rem] flex relative h-[20rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
-                        alt="moon picture"
+                        alt="月亮图片"
                         className='absolute moon'
                       />
                 </div>
@@ -116,7 +116,7 @@ export default function HomeES() {
                 <div id="part3" className='flex'>
                   <Image 
                         src={require("@/assets/space-station-icon.png")}
-                        alt="International Space Station"
+                        alt="国际空间站"
                         className='international-space-station'
                       />
                 </div>
@@ -163,12 +163,12 @@ export default function HomeES() {
                       />
                   <Image 
                         src={require("@/assets/vehicle8.png")}
-                        alt="militar airplane"
+                        alt="军用飞机"
                         className='w-[12rem] h-[6rem] lg:w-[15rem] lg:h-[8rem] plane2'
                       />
                   <Image 
                         src={require("@/assets/airplane3-icon.png")}
-                        alt="private jet"
+                        alt="私人飞机"
                         className='w-[7rem] h-[7rem] lg:w-[15rem] lg:h-[10rem] plane3'
                       />
                 </div>
@@ -179,7 +179,7 @@ export default function HomeES() {
                 <div className='city scale-150 lg:scale-100' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
-                        alt="singapur city"
+                        alt="新加坡市"
                         className='w-full scale-150 -translate-x-6'
                       />
                 </div>
@@ -194,7 +194,7 @@ export default function HomeES() {
               <div className='flex h-[10rem]'>
                   <Image 
                         src={require("@/assets/fish-group-1-icon.png")}
-                        alt="yellow fishes in group"
+                        alt="黄色的鱼群"
                         className='w-[10rem] h-[10rem] fish-group'
                       />
               </div>
@@ -205,17 +205,17 @@ export default function HomeES() {
                     <div className='flex'>
                         <Image 
                               src={require("@/assets/fish-group-1-icon.png")}
-                              alt="yellow fishes in group"
+                              alt="黄色的鱼群"
                               className='w-[6rem] h-[6rem] fish-group delay-300'
                             />
                         <Image 
                               src={require("@/assets/fish-group-2-icon.png")}
-                              alt="salmon fish swimming"
+                              alt="鲑鱼鱼游泳"
                               className='w-[8rem] h-[8rem] fish-group-2'
                         />
                         <Image 
                               src={require("@/assets/fish-group-3-icon.png")}
-                              alt="shark swimming"
+                              alt="鲨鱼游泳"
                               className='w-[30rem] h-[10rem] fish-group-3'
                         />
                     </div>
@@ -246,7 +246,7 @@ export default function HomeES() {
                     <div className='flex h-[18rem]'>
                         <Image 
                               src={require("@/assets/tentaculos.gif")}
-                              alt="kraken tentaculus"
+                              alt="克拉肯触手"
                               className='w-[30rem] h-[30rem] rotate-[75deg] -translate-x-20'
                             />
                     </div>
@@ -286,7 +286,7 @@ export default function HomeES() {
                       </div>
                       <Image 
                         src={require("@/assets/titanic.png")}
-                        alt="titanic in the deep of the sea"
+                        alt="泰坦尼克号在海底深处"
                         className='w-full scale-150 lg:scale-[1.4] -translate-x-6 mt-[15rem]'
                       />
                 </div>
