@@ -469,7 +469,7 @@ export const Vehicle = ({lenguage}:any) => {
             }
 
             {
-                  <div ref={vehicleWrapper} className={`fixed bottom-0 right-0 mr-6 z-40 flex flex-col justify-center items-center`}>
+                  <div ref={vehicleWrapper} className={`fixed bottom-0 right-0 mr-6 z-[995] flex flex-col justify-center items-center`}>
                                         <button onClick={goUp}
                                                 type='button' 
                                                 className={`rounded-full bg-white p-2 ${(canUptade) ? "border-green-500" : "border-gray-400"} border-4 w-[6rem] h-[6rem]`}>

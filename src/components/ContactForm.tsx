@@ -213,7 +213,7 @@ export const ContactForm = ({lenguage}:any) => {
 
         </div>
 
-        <button type='submit' className='mt-8 w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]'>{texts.actionButton}</button>
+        <button type='submit' className='mt-8 w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B] hover:bg-yellow-300 transition-all'>{texts.actionButton}</button>
 
     </form>
   )
