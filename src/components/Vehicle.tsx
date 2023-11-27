@@ -442,7 +442,7 @@ export const Vehicle = ({lenguage}:any) => {
             {
 
                    showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
-                                            <h2 className='font-bold text-white mb-10 text-2xl'>Speed Simulator</h2>
+                                            <h2 className='font-bold text-white mb-10 text-2xl'>{texts.title}</h2>
                                             <div className='flex'>
                                                 <p className='font-bold text-lg mr-2'>{texts.vehicleName}</p>
                                                 <p className='text-lg opacity-80'>{vehicles[vehicleIndex].vehicle}</p>
@@ -458,7 +458,7 @@ export const Vehicle = ({lenguage}:any) => {
                                             
                                             <div>
                                                 <p className='font-bold text-lg mt-6'>{texts.adviceTitle}</p>
-                                                <p className='text-lg opacity-80 mt-2'>{texts.advice}.</p>
+                                                <p className='text-lg opacity-80 mt-2'>{texts.advice}</p>
                                             </div>
                                             <div className='w-full flex justify-end items-center mt-10'>
                                                 <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold mr-6' type='button'>{texts.followButton}</button>

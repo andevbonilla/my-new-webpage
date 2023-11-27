@@ -134,7 +134,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"Voir le projet"}
                     />
                     <Project name={"Fansive"} 
                             desc={"Fansive est une startup que j'ai créée et qui est une plateforme de contenu exclusif. Cette application dispose de tous les outils nécessaires aux créateurs de contenu pour offrir le meilleur contenu à leurs abonnés, tels que les flux en direct, les histoires, les chats de groupe, les chats privés, la publication, le stockage de fichiers et bien plus encore."} 
@@ -142,7 +142,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"Voir le projet"}
                     />
                     <Project name={"Virtual Board"} 
                             desc={"Virtual Board est une application web créée sans l'utilisation de bibliothèques qui simule un tableau noir de salle de classe, vous permettant de dessiner, d'effacer, de créer des formes, de glisser-déposer, de faire pivoter et bien d'autres fonctions. Cette application utilise la trigonométrie et l'algèbre pour résoudre certaines des fonctionnalités du tableau virtuel."} 
@@ -150,7 +150,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"Voir le projet"}
                     />
                 </div>
 
@@ -225,7 +225,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"Voir le projet"}
                     />
                     <Project name={"Geekepedia"} 
                             desc={"Geekipedia est un blog où vous pouvez apprendre comment fonctionnent certains des algorithmes les plus célèbres en informatique, tels que BFS (Breadth Search), QuickSort, Binary Search et bien d'autres."} 
@@ -233,7 +233,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"Voir le projet"}
                     />
                     <Project name={"thePokedex"} 
                             desc={"thePokedex est une application à thème clair et sombre où vous pouvez trouver et rechercher des informations sur tous les Pokémon existants. Elle est également compatible avec les appareils Android et iOS."} 
@@ -241,7 +241,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"Voir le projet"}
                     />
                     <div className='flex h-[18rem]'>
                         <Image 
@@ -254,7 +254,7 @@ export default function HomeES() {
 
                 <div className='px-[13%]'>
                     <div className='flex w-full justify-center items-center' id='contact'>
-                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>CONTACTO</h2>
+                        <h2 className='border-b-[.5rem] pl-[1rem] pr-[.2rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>COTACT</h2>
                     </div>
                     <ContactForm lenguage={"fr"} />
                 </div>

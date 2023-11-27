@@ -125,7 +125,7 @@ export default function HomeES() {
                 {/* my projects */}
                 <div id='projects'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS PROYECTOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>我的项目</h2>
                     </div>
 
                     <Project name={"YourDreamCar"} 
@@ -134,7 +134,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"查看项目"}
                     />
                     <Project name={"Fansive"} 
                             desc={"Fansive 是我创建的一家初创公司，是一个提供独家内容的平台。这款应用程序为内容创作者提供了所有必要的工具，如直播流、故事、群聊、私聊、发布、文件存储等，以便为订阅者提供最好的内容。"} 
@@ -142,7 +142,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"查看项目"}
                     />
                     <Project name={"Virtual Board"} 
                             desc={"虚拟黑板是一款无需使用库即可创建的网络应用程序，它可以模拟教室黑板，允许您绘图、擦除、创建形状、拖放、旋转和许多其他功能。该应用程序使用三角学和代数学来解决虚拟黑板上的一些功能问题。"} 
@@ -150,7 +150,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"查看项目"}
                     />
                 </div>
 
@@ -225,7 +225,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"查看项目"}
                     />
                     <Project name={"Geekepedia"} 
                             desc={"Geekipedia 是一个博客，在这里你可以了解计算机科学中一些最著名算法的工作原理，如 BFS（广度搜索）、QuickSort、二进制搜索等。"} 
@@ -233,7 +233,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"查看项目"}
                     />
                     <Project name={"thePokedex"} 
                             desc={"ThePokedex 是一款以明暗为主题的应用程序，您可以在其中查找和搜索所有现有神奇宝贝的信息。它还兼容安卓和 iOS 设备。"} 
@@ -241,7 +241,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"查看项目"}
                     />
                     <div className='flex h-[18rem]'>
                         <Image 

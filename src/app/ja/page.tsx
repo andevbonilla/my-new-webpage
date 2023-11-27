@@ -134,7 +134,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"プロジェクトを見る"}
                     />
                     <Project name={"Fansive"} 
                             desc={"Fansiveは私が作ったスタートアップで、独占コンテンツのプラットフォームだ。このアプリには、ライブストリーム、ストーリー、グループチャット、プライベートチャット、パブリッシング、ファイルストレージなど、コンテンツクリエイターが最高のコンテンツを購読者に提供するために必要なツールがすべて揃っている。"} 
@@ -142,7 +142,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"プロジェクトを見る"}
                     />
                     <Project name={"Virtual Board"} 
                             desc={"Virtual Boardは、教室の黒板をシミュレートし、描画、消去、図形の作成、ドラッグ＆ドロップ、回転、その他多くの機能を可能にする、ライブラリを使用せずに作成されたWebアプリケーションです。このアプリケーションは、バーチャルボード上の機能の一部を解くために三角法と代数を使用します。"} 
@@ -150,7 +150,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"プロジェクトを見る"}
                     />
                 </div>
 
@@ -225,7 +225,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"プロジェクトを見る"}
                     />
                     <Project name={"Geekepedia"} 
                             desc={"Geekipediaは、BFS(Breadth Search)、QuickSort、Binary Searchなど、コンピュータサイエンスで最も有名なアルゴリズムの仕組みを学べるブログです。"} 
@@ -233,7 +233,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"プロジェクトを見る"}
                     />
                     <Project name={"thePokedex"} 
                             desc={"thePokedexは光と闇をテーマにしたアプリで、現存する全てのポケモンの情報を検索することができます。また、AndroidとiOSデバイスに対応しています。"} 
@@ -241,7 +241,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"プロジェクトを見る"}
                     />
                     <div className='flex h-[18rem]'>
                         <Image 

@@ -134,7 +134,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"प्रोजेक्ट देखें"}
                     />
                     <Project name={"Fansive"} 
                             desc={"फैनसिव मेरे द्वारा बनाया गया एक स्टार्टअप है, जो एक्सक्लूसिव कंटेंट के लिए एक प्लेटफॉर्म है। इस ऐप में सामग्री निर्माताओं के लिए अपने ग्राहकों को सर्वोत्तम सामग्री प्रदान करने के लिए सभी आवश्यक उपकरण हैं, जैसे लाइव स्ट्रीम, कहानियां, समूह चैट, निजी चैट, पोस्ट, फ़ाइल भंडारण और बहुत कुछ।"} 
@@ -142,7 +142,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"प्रोजेक्ट देखें"}
                     />
                     <Project name={"Virtual Board"} 
                             desc={"वर्चुअलबोर्ड एक लाइब्रेरी-मुक्त वेब ऐप है जो एक कक्षा व्हाइटबोर्ड का अनुकरण करता है, जो आपको चित्र बनाने, मिटाने, आकार बनाने, खींचने और छोड़ने, घुमाने और कई अन्य सुविधाओं की अनुमति देता है। यह एप्लिकेशन वर्चुअल व्हाइटबोर्ड पर कुछ कार्यक्षमताओं को हल करने के लिए त्रिकोणमिति और बीजगणित का उपयोग करता है।"} 
@@ -150,7 +150,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"प्रोजेक्ट देखें"}
                     />
                 </div>
 
@@ -225,7 +225,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"प्रोजेक्ट देखें"}
                     />
                     <Project name={"Geekepedia"} 
                             desc={"गीकीपीडिया एक ब्लॉग है जहां आप सीख सकते हैं कि कंप्यूटर विज्ञान में कुछ सबसे प्रसिद्ध एल्गोरिदम कैसे काम करते हैं, जैसे कि बीएफएस (ब्रेडथ सर्च), क्विकसॉर्ट, बाइनरी सर्च और कई अन्य।"} 
@@ -233,7 +233,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"प्रोजेक्ट देखें"}
                     />
                     <Project name={"thePokedex"} 
                             desc={"पोकेडेक्स प्रकाश और अंधेरे थीम वाला एक एप्लिकेशन है जहां आप सभी मौजूदा पोकेमोन के बारे में जानकारी पा सकते हैं और खोज सकते हैं। इसके अतिरिक्त, यह Android और iOS उपकरणों के साथ संगत है।"} 
@@ -241,7 +241,7 @@ export default function HomeES() {
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
-                            buttonText={"Ver Proyecto"}
+                            buttonText={"प्रोजेक्ट देखें"}
                     />
                     <div className='flex h-[18rem]'>
                         <Image 
