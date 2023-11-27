@@ -1,3 +1,4 @@
+import { City } from '@/components/City';
 import { ContactForm } from '@/components/ContactForm';
 import { CuriosFact } from '@/components/CuriosFact';
 import { Navbar } from '@/components/Navbar';
@@ -23,7 +24,7 @@ export default function Home() {
       <Vehicle lenguage={"en"}/>
       <main className='overflow-x-hidden z-20'>
           
-          <div className='gradient-background'>
+          <div className='gradient-background relative'>
 
             <StarsBackground>
 
@@ -179,24 +180,18 @@ export default function Home() {
                 </div>
                 
                 
-                <div className='h-[12rem]'></div>
-
-                <div className='city scale-150 lg:scale-100 -translate-y-[6rem] md:-translate-y-[10rem] lg:-translate-y-[0rem]' id="part1">
-                      <Image 
-                        src={require("@/assets/city.png")}
-                        alt="singapur city"
-                        className='w-full scale-150 -translate-x-6'
-                      />
-                </div>
+                <div className='h-[30rem] sm:h-[40rem] md:h-[50rem] lg:h-[60rem] 2xl:h-[80rem] 3xl:h-[100rem]'></div>
 
 
               </StarsBackground>
 
-          </div>
-
-          <div className='sea mt-0 lg:mt-[10rem] overflow-hidden'>
+              <City />
 
               <Waves />
+
+          </div>
+
+          <div className='sea overflow-hidden'>
 
               <div className='flex h-[10rem]'>
                   <Image 
