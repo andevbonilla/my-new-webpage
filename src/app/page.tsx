@@ -39,7 +39,7 @@ export default function Home() {
                             </div>
                             
                     </div>
-                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
+                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem] md:mb-[6rem] lg:mb-[12rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
                                 alt='Andres Bonilla in a tesla roadster'
@@ -99,7 +99,7 @@ export default function Home() {
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
-                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B] hover:bg-yellow-300 transition-all' href={"https://www.simpliterms.com/"} target='_blank'>View More</Link>
                             </div>
 
                         </div>

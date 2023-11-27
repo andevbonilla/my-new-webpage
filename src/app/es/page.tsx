@@ -39,7 +39,7 @@ export default function HomeES() {
                             </div>
                             
                     </div>
-                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
+                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem] md:mb-[6rem] lg:mb-[12rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
                                 alt='Andres Bonilla en un tesla roadster'
@@ -91,11 +91,11 @@ export default function HomeES() {
                             <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
-                                ¿Alguna vez has hecho clic en &quot;Aceptar política de privacidad&quot; y/o &quot;Términos de uso&quot; sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
+                                ¿Alguna vez has hecho clic en Aceptar política de privacidad y/o Términos de uso sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
-                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>Ver Mas</Link>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B] hover:bg-yellow-300 transition-all' href={"https://www.simpliterms.com/"} target='_blank'>Ver Mas</Link>
                             </div>
 
                         </div>

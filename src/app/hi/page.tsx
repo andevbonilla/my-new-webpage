@@ -39,7 +39,7 @@ export default function HomeES() {
                             </div>
                             
                     </div>
-                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem]'>
+                    <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem] md:mb-[6rem] lg:mb-[12rem]'>
                             <Image 
                                 src={require("@/assets/yo-en-el-tesla.png")}
                                 alt='टेस्ला रोडस्टर में एंड्रेस बोनिला'
@@ -95,7 +95,7 @@ export default function HomeES() {
                             </p>
 
                             <div className='px-[13%] lg:px-0'>
-                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B]' href={"https://www.simpliterms.com/"} target='_blank'>और देखें</Link>
+                              <Link className='w-full flex items-center justify-center bg-yellow-200 py-4 px-5 text-lg font-bold text-[#0F193B] hover:bg-yellow-300 transition-all' href={"https://www.simpliterms.com/"} target='_blank'>और देखें</Link>
                             </div>
 
                         </div>
