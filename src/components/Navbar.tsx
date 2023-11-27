@@ -282,7 +282,7 @@ export const Navbar = ({lenguage}:any) => {
                                                 <p className='font-bold text-white text-2xl'>{texts.aboutAsteroid}</p>
                                             </button>
 
-                                            <button onClick={()=>clickOnAsteroid("/#projects")} className='w-[10rem] h-[10rem] flex justify-center items-center mb-12 asteroid1' id='asteroid1'>
+                                            <button onClick={()=>clickOnAsteroid("/#business-part")} className='w-[10rem] h-[10rem] flex justify-center items-center mb-12 asteroid1' id='asteroid1'>
                                                 <p className='font-bold text-white text-2xl'>{texts.bussinessAsteroid}</p>                         
                                             </button>
 

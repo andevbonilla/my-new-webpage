@@ -76,7 +76,7 @@ export default function Home() {
                 {/* my business */}
                 <div className='w-full'>
                   
-                    <div className='flex w-full justify-center items-center'>
+                    <div className='flex w-full justify-center items-center' id="business-part">
                         <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MY BUSINESS</h2>
                     </div>
 
