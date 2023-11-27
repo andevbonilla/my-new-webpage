@@ -53,7 +53,7 @@ export default function HomeES() {
                 {/* about me */}
                 <div className='px-[15%]'>
                     <div className='flex w-full justify-center items-center' id='about'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SOBRE MI</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>私について</h2>
                     </div>
                     <p className='text-white text-left text-xl leading-10'>こんにちは！👋 はじめまして、アンドレス・ボニーリャです。学生、ソフトウェア開発者、起業家です。16歳のときにFansiveという最初の会社を立ち上げて以来、技術プロジェクトを作るのが大好きです。科学、テクノロジー、スポーツ、車、音楽、そして何よりもアイスクリームが好きです！😄
                     </p>

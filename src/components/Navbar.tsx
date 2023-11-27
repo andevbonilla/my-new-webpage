@@ -116,20 +116,20 @@ export const Navbar = ({lenguage}:any) => {
                 svgUrl: "flag-for-spain-svgrepo-com.svg",
                 LenguageName: "JA",
                 changeLenguageText: "言語の変更",
-                projectAsteroid: "",
-                contactAsteroid: "",
-                aboutAsteroid: "",
-                bussinessAsteroid: "",
+                projectAsteroid: "プロジェクト",
+                contactAsteroid: "接触",
+                aboutAsteroid: "私について",
+                bussinessAsteroid: "仕事",
             })
         }else {
             setTexts({
                 svgUrl: "flag-for-united-kingdom-svgrepo-com.svg",
                 LenguageName: "EN",
                 changeLenguageText: "Change Lenguage",
-                projectAsteroid: "プロジェクト",
-                contactAsteroid: "接触",
-                aboutAsteroid: "私について",
-                bussinessAsteroid: "仕事",
+                projectAsteroid: "PROJECTS",
+                contactAsteroid: "CONTACT",
+                aboutAsteroid: "ABOUT",
+                bussinessAsteroid: "BUSINESS",
             })
         }
 
