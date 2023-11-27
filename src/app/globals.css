@@ -18,6 +18,14 @@
   }
 }
 
+.asteroid, .asteroid1, .asteroid2, .asteroid3 {
+    will-change: transform;
+}
+
+.floating, .international-space-station, .moon, .plane1, .plane2, .plane3, .fish-group, .fish-group-2, .fish-group-3, .fish-group-4 {
+    will-change: transform;
+}
+
 /* stars */
 
 /* planets */

@@ -30,13 +30,14 @@ export const Navbar = ({lenguage}:any) => {
     let principalUbication = 0;
     const handleViewNav = () => {
 
-        if (!global?.window) return;
+        if (typeof window === 'undefined') return;
         if (asteroidsMenuOpen) return;
         if (window.scrollY < 0) {
             return;
         };
 
         let currentDisplacement = window.scrollY;
+        if (currentDisplacement === principalUbication) return;
 
 
         if(currentDisplacement >= 1 ){
