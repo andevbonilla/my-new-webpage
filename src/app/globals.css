@@ -41,10 +41,6 @@
     background: linear-gradient(180deg, rgb(15, 25, 59) 35%, rgb(147, 197, 253) 99%);
 }
 
-.gradient-background-water{
-    background: linear-gradient(180deg, #71acad 0%, #018af5 50%, #001a2f 100%);
-}
-
 /* curiosity objects */
 .international-space-station{
     animation-name: normalmove;
@@ -203,6 +199,57 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+/* water style part */
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+  overflow: hidden; /* Agregamos esto para ocultar el desenfoque que se extiende más allá del contenedor */
+}
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+.sea {
+  background: 
+    linear-gradient(#bfe0f4,rgba(120,220,250,0.6) 0.5%, rgba(0,20,100,1) 35%, rgb(0,0,10)), 
+    radial-gradient(rgba(200,200,250,0.9), rgba(0,0,0,0.7) 90%), 
+    linear-gradient(to right bottom, white, navy);
+  background-position: 0px 0px;
+  background-attachment: scroll, fixed, fixed;
+  filter: blur(.05rem);
 }
 
 @keyframes spin {

@@ -180,7 +180,7 @@ export const ContactForm = ({lenguage}:any) => {
             <input type="text" 
                    placeholder={texts.namePlaceholder}
                    name='name'
-                   className={`${(nameError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}
+                   className={`${(nameError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#001c5f] text-white`}
             />
 
             {nameError && <p className='text-red-500 text-lg'>{nameError}</p>}
@@ -193,7 +193,7 @@ export const ContactForm = ({lenguage}:any) => {
             <input type="email" 
                    placeholder={texts.emailPlaceholder}
                    name='email'
-                   className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}
+                   className={`${(emailError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#001c5f] text-white`}
             />
 
             {emailError && <p className='text-red-500 text-lg'>{emailError}</p>}
@@ -205,7 +205,7 @@ export const ContactForm = ({lenguage}:any) => {
           <textarea name="message" 
                     rows={"5" as any} 
                     placeholder={texts.messagePlaceholder}
-                    className={`${(messageError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#008CFF] text-white`}>
+                    className={`${(messageError !== "") ? "border-2 border-red-500" : ""} w-full mt-8 py-3 px-4 bg-[#001c5f] text-white`}>
               
           </textarea>
 

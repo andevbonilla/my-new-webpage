@@ -6,6 +6,7 @@ import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
 import { Vehicle } from '@/components/Vehicle';
+import { Waves } from '@/components/Waves';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -180,7 +181,7 @@ export default function Home() {
                 
                 <div className='h-[12rem]'></div>
 
-                <div className='city scale-150 lg:scale-100' id="part1">
+                <div className='city scale-150 lg:scale-100 -translate-y-[6rem] md:-translate-y-[10rem] lg:-translate-y-[0rem]' id="part1">
                       <Image 
                         src={require("@/assets/city.png")}
                         alt="singapur city"
@@ -193,7 +194,9 @@ export default function Home() {
 
           </div>
 
-          <div className='gradient-background-water overflow-hidden md:pt-[10rem]'>
+          <div className='sea mt-0 lg:mt-[10rem] overflow-hidden'>
+
+              <Waves />
 
               <div className='flex h-[10rem]'>
                   <Image 
