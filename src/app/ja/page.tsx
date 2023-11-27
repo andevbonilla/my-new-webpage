@@ -190,7 +190,7 @@ export default function HomeES() {
 
           </div>
 
-          <div className='sea overflow-hidden mt-[3rem] overflow-hidden'>
+          <div className='sea mt-0 lg:mt-[10rem] overflow-hidden'>
 
               <Waves />
 
