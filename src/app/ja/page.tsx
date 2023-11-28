@@ -138,9 +138,9 @@ export default function HomeES() {
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
                             buttonText={"プロジェクトを見る"}
-                            iconList={[<Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <TailwindSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <NextJsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
+                            iconList={[<Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <TailwindSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <NextJsSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>
                                       ]}
                     />
                     <Project name={"Fansive"} 
@@ -150,12 +150,12 @@ export default function HomeES() {
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
                             buttonText={"プロジェクトを見る"}
-                            iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <WebRTCSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <SocketIOSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <TypeScriptSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <NodejsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <MongoDBSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
+                            iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <WebRTCSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <SocketIOSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <TypeScriptSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <NodejsSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <MongoDBSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
                                       ]}                            
                     />
                     <Project name={"Virtual Board"} 
@@ -165,9 +165,9 @@ export default function HomeES() {
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
                             buttonText={"プロジェクトを見る"}
-                            iconList={[<ReactSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <Css3SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
+                            iconList={[<ReactSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <Css3SVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>
                                       ]}                          
                     />
                 </div>
@@ -240,10 +240,10 @@ export default function HomeES() {
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
                             buttonText={"プロジェクトを見る"}
-                            iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <MongoDBSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <AwsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <NodejsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
+                            iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <MongoDBSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <AwsSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <NodejsSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>
                                       ]}                            
                     />
                     <Project name={"Geekepedia"} 
@@ -253,9 +253,9 @@ export default function HomeES() {
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
                             buttonText={"プロジェクトを見る"}
-                            iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                       <Css3SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
+                            iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <Css3SVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>
                                       ]}                           
                     />
                     <Project name={"thePokedex"} 
@@ -265,7 +265,7 @@ export default function HomeES() {
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
                             buttonText={"プロジェクトを見る"}
-                            iconList={[<ReactSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
+                            iconList={[<ReactSVG className={"w-[2rem] lg:w-[3rem] mr-3"} key={Math.random()}/>,
                                       ]}                            
                     />
                     <div className='flex h-[18rem]'>
