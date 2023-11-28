@@ -11,12 +11,11 @@ interface ProjectInterface {
   link: string,
   github: string,
   imgUrl: string,
-  imgStack: string,
   buttonText: string,
   iconList: Array<any>
 }
 
-export const Project = ({name, desc, link, github, imgUrl, imgStack, buttonText, iconList}:ProjectInterface) => {
+export const Project = ({name, desc, link, github, imgUrl, buttonText, iconList}:ProjectInterface) => {
   return (
     <div className='mt-20 sm:mx-[15%] md:mx-[25%] lg:flex lg:mx-[15%]'>
         <Image 

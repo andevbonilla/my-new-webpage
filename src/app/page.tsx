@@ -2,6 +2,7 @@ import { City } from '@/components/City';
 import { ContactForm } from '@/components/ContactForm';
 import { CuriosFact } from '@/components/CuriosFact';
 import { Navbar } from '@/components/Navbar';
+import { PicturesInBalloons } from '@/components/Pictures';
 import { Project } from '@/components/Project';
 import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
@@ -22,12 +23,10 @@ export default function Home() {
       
       <Navbar lenguage={"en"}/>
       <Vehicle lenguage={"en"}/>
-      <main className='overflow-x-hidden z-20'>
-          
+      <main className='overflow-x-hidden z-20 relative'>
+          <PicturesInBalloons />
           <div className='gradient-background relative'>
-
             <StarsBackground>
-
                 {/* simulate the navbar height */}
                 <div id="part4" className='h-16'></div>
 
@@ -140,7 +139,6 @@ export default function Home() {
                             link={"https://www.yourdreamcar.ca/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
-                            imgStack={"yourdreamcar-stack.png"}
                             buttonText={"View Project"}
                             iconList={[<Html5SVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <TailwindSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
@@ -152,7 +150,6 @@ export default function Home() {
                             link={"https://fansive.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
-                            imgStack={"fansive-stack.png"}
                             buttonText={"View Project"}
                             iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <WebRTCSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
@@ -166,7 +163,6 @@ export default function Home() {
                             link={"https://super-virtual-board.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
-                            imgStack={"virtual-board-stack.png"}
                             buttonText={"View Project"}
                             iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <Html5SVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
@@ -239,7 +235,6 @@ export default function Home() {
                             link={"https://filebox.netlify.app/#/login"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
-                            imgStack={"filebox-stack.png"}
                             buttonText={"View Project"}
                             iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <MongoDBSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
@@ -252,7 +247,6 @@ export default function Home() {
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
-                            imgStack={"geekipedia-stack.png"}
                             buttonText={"View Project"}
                             iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <Html5SVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
@@ -264,7 +258,6 @@ export default function Home() {
                             link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
-                            imgStack={"pokedex-stack.png"}
                             buttonText={"View Project"}
                             iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                       ]}
