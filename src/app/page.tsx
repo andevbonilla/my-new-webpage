@@ -55,7 +55,7 @@ export default function Home() {
                 {/* about me */}
                 <div className='px-[15%]'>
                     <div className='flex w-full justify-center items-center' id='about'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>ABOUT ME</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>ABOUT ME</h2>
                     </div>
                     <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur. 
                       I love creating technological products. When I was 16, I founded my first company, Fansive. 
@@ -64,7 +64,7 @@ export default function Home() {
                 </div>
 
                 <CuriosFact text={"We are 384,400 km above sea level, at this altitude the moon is orbiting the earth. Wait a little and you will surely see it."}/>
-                <div className='lg:h-[35rem] flex relative h-[20rem]'>
+                <div className='lg:h-[35rem] flex relative h-[10rem]'>
                   <Image 
                         src={require("@/assets/moon-icon.png")}
                         alt="moon picture"
@@ -77,12 +77,12 @@ export default function Home() {
                 <div className='w-full'>
                   
                     <div className='flex w-full justify-center items-center' id="business-part">
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MY BUSINESS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white mt-[6rem] text-lg um:text-xl lg:mb-12'>MY BUSINESS</h2>
                     </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
-                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[35rem] relative w-auto mx-[13%]'>
+                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[28rem] relative w-auto mx-[13%]'>
                             <Image 
                               src={require("@/assets/simpliterms-planet.png")}
                               alt="simpliterm's planet"
@@ -92,7 +92,7 @@ export default function Home() {
 
                         <div className='lg:w-[60%] lg:ml-12'>
 
-                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
+                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
                                 Have you ever clicked on accept privacy policy and/or terms of use without reading them because 
@@ -113,7 +113,7 @@ export default function Home() {
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SKILLS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>SKILLS</h2>
                     </div>
                     <Skills />
                 </div>
@@ -124,6 +124,7 @@ export default function Home() {
                         src={require("@/assets/space-station-icon.png")}
                         alt="International Space Station"
                         className='international-space-station'
+                        id='international-space-station'
                       />
                 </div>
 

@@ -55,7 +55,7 @@ export default function HomeES() {
                 {/* about me */}
                 <div className='px-[15%]'>
                     <div className='flex w-full justify-center items-center' id='about'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>SOBRE MI</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>SOBRE MI</h2>
                     </div>
                     <p className='text-white text-left text-xl leading-10'>¡Hola! 👋 ¿Cómo estás? Mi nombre es Andrés Bonilla. Soy estudiante, desarrollador de software y emprendedor. Me encanta crear proyectos tecnológicos; lo hago desde los 16 años, cuando comencé con mi primera compañía tecnológica llamada Fansive. Disfruto de todo lo relacionado con la ciencia, la tecnología, el deporte, los autos, la música, pero sobre todo, ¡el helado! 😄
                     </p>
@@ -75,12 +75,12 @@ export default function HomeES() {
                 <div className='w-full'>
                   
                     <div className='flex w-full justify-center items-center' id="business-part">
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>MIS NEGOCIOS</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] lg:mb-12'>MIS NEGOCIOS</h2>
                     </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
-                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[35rem] relative w-auto mx-[13%]'>
+                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[28rem] relative w-auto mx-[13%]'>
                             <Image 
                               src={require("@/assets/simpliterms-planet.png")}
                               alt="simpliterm's planet"
@@ -90,7 +90,7 @@ export default function HomeES() {
 
                         <div className='lg:w-[60%] lg:ml-12'>
 
-                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
+                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
                                 ¿Alguna vez has hecho clic en Aceptar política de privacidad y/o Términos de uso sin leerlos porque son demasiado extensos y difíciles de entender? Simpliterms es una extensión de google que resume las políticas con un solo clic para que no tengas que aceptarlas a ciegas nuevamente.
@@ -109,7 +109,7 @@ export default function HomeES() {
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>HABILIDADES</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>HABILIDADES</h2>
                     </div>
                     <Skills />
                 </div>
@@ -120,6 +120,7 @@ export default function HomeES() {
                         src={require("@/assets/space-station-icon.png")}
                         alt="Estacion Espaacial internacional"
                         className='international-space-station'
+                        id='international-space-station'
                       />
                 </div>
 

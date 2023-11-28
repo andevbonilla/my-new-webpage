@@ -55,7 +55,7 @@ export default function HomeES() {
                 {/* about me */}
                 <div className='px-[15%]'>
                     <div className='flex w-full justify-center items-center' id='about'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>मेरे बारे में</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>मेरे बारे में</h2>
                     </div>
                     <p className='text-white text-left text-xl leading-10'>नमस्ते! 👋आप कैसे हैं? मेरा नाम एन्ड्रेस बोनिला है। मैं एक छात्र, सॉफ्टवेयर डेवलपर और उद्यमी हूं। मुझे तकनीकी परियोजनाएँ बनाना पसंद है; मैं इसे तब से कर रहा हूं जब मैं 16 साल का था, जब मैंने फैनसिव नाम से अपनी पहली तकनीकी कंपनी शुरू की थी। मैं विज्ञान, प्रौद्योगिकी, खेल, कार, संगीत से संबंधित हर चीज का आनंद लेता हूं, लेकिन सबसे ऊपर, आइसक्रीम! 😄
                     </p>
@@ -75,12 +75,12 @@ export default function HomeES() {
                 <div className='w-full'>
                   
                     <div className='flex w-full justify-center items-center' id="business-part">
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>मेरा व्यापार</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] lg:mb-12'>मेरा व्यापार</h2>
                     </div>
 
                     <div className='w-auto lg:flex lg:justify-between lg:items-center lg:mx-[16%]'>
 
-                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[35rem] relative w-auto mx-[13%]'>
+                        <div className='lg:w-[40%] lg:mx-0 md:mx-[25%] flex items-center justify-center h-[28rem] relative w-auto mx-[13%]'>
                             <Image 
                               src={require("@/assets/simpliterms-planet.png")}
                               alt="simpliterm's planet"
@@ -90,7 +90,7 @@ export default function HomeES() {
 
                         <div className='lg:w-[60%] lg:ml-12'>
 
-                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mt-[5rem] mb-[2rem]'>Simpliterms</h3>
+                            <h3 className='font-bold text-2xl text-white mx-[13%] lg:mx-0 mb-[2rem]'>Simpliterms</h3>
 
                             <p className='text-white text-left text-xl leading-10 mx-[13%] lg:mx-0 mb-8'>
                                क्या आपने कभी गोपनीयता नीति और/या उपयोग की शर्तों को पढ़े बिना स्वीकार करें पर क्लिक किया है क्योंकि वे बहुत लंबी हैं और उन्हें समझना मुश्किल है? सिंपलीटर्म्स एक Google एक्सटेंशन है जो एक क्लिक से नीतियों का सारांश प्रस्तुत करता है ताकि आपको उन्हें आँख बंद करके दोबारा स्वीकार न करना पड़े।
@@ -109,7 +109,7 @@ export default function HomeES() {
                 {/* my skills */}
                 <div className='lg:px-[30%] px-[13%] mb-14'>
                     <div className='flex w-full justify-center items-center'>
-                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-10'>कौशल</h2>
+                        <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>कौशल</h2>
                     </div>
                     <Skills />
                 </div>
@@ -120,6 +120,7 @@ export default function HomeES() {
                         src={require("@/assets/space-station-icon.png")}
                         alt="International Space Station"
                         className='international-space-station'
+                        id='international-space-station'
                       />
                 </div>
 
