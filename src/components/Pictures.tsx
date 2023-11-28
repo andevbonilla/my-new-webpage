@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const PicturesInBalloons = () => {
   const [balloons, setBalloons] = useState(5);
-  const [animationY, setAnimationY] = useState(-100);
+  const [animationY, setAnimationY] = useState(450);
   const animatedImage = useRef(null);
 
   const directionFunction = (value:any) => {
@@ -21,12 +21,36 @@ export const PicturesInBalloons = () => {
       return value + 1;
     }
     if (balloons === 1) {
-      return value + 3;
+      return value + 2.2;
     }
     if (balloons === 0) {
-      return value + 10;
+      return value + 8;
     }
   }
+
+  useEffect(() => {
+      let initialPosition = animationY;
+      setInterval(() => {
+
+
+        setAnimationY(initialPosition);
+        setBalloons(5);
+
+        const ballonOBj1:any = document.getElementById(`balloon1`);
+        const ballonOBj2:any = document.getElementById(`balloon2`);
+        const ballonOBj3:any = document.getElementById(`balloon3`);
+        const ballonOBj4:any = document.getElementById(`balloon4`);
+        const ballonOBj5:any = document.getElementById(`balloon5`);
+
+        ballonOBj1.style.display = "block";
+        ballonOBj2.style.display = "block";
+        ballonOBj3.style.display = "block";
+        ballonOBj4.style.display = "block";
+        ballonOBj5.style.display = "block";
+
+      }, 20000);
+  }, [])
+  
 
   useEffect(() => {
     const animate = () => {
