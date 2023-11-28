@@ -30,8 +30,8 @@ export const Project = ({name, desc, link, github, imgUrl, imgStack, buttonText,
             <p className='text-white text-lg mb-4 leading-8'>{desc}</p>
 
             <div className='flex items-center mt-10'>
-                {iconList && iconList.map((elemento:any, index:any) => (
-                  <React.Fragment key={index}>
+                {iconList && iconList.map((elemento:any) => (
+                  <React.Fragment key={Math.random()}>
                     {elemento}
                   </React.Fragment>
                 ))}
