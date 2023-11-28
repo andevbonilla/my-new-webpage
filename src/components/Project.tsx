@@ -30,11 +30,11 @@ export const Project = ({name, desc, link, github, imgUrl, imgStack, buttonText,
             <p className='text-white text-lg mb-4 leading-8'>{desc}</p>
 
             <div className='flex items-center mt-10'>
-              {iconList && iconList.map((elemento:any, index:any) => (
-                <React.Fragment key={index}>
-                  {elemento}
-                </React.Fragment>
-              ))}
+                {iconList && iconList.map((elemento:any, index:any) => (
+                  <React.Fragment key={index}>
+                    {elemento}
+                  </React.Fragment>
+                ))}
             </div>
 
             <div className='flex justify-between items-center mt-10 lg:mt-5'>
