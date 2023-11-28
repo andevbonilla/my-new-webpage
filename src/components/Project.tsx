@@ -18,11 +18,11 @@ interface ProjectInterface {
 
 export const Project = ({name, desc, link, github, imgUrl, imgStack, buttonText, iconList}:ProjectInterface) => {
   return (
-    <div className='mt-12 sm:mx-[15%] md:mx-[25%] lg:flex lg:items-center lg:w-full lg:mx-0'>
+    <div className='mt-20 sm:mx-[15%] md:mx-[25%] lg:flex lg:mx-[15%]'>
         <Image 
           src={require(`@/assets/${imgUrl}`)}
           alt={name + " image mockup"}
-          className='mb-4 w-full lg:h-auto lg:w-[50%] xl:w-[55%]'
+          className='mb-4 w-full lg:w-[30rem] lg:h-10rem lg:rounded-md'
         />
         <div className='px-[10%] sm:px-0 md:px-0 mt-10 lg:px-0 lg:mt-0 lg:mx-10 xl:w-[45%]'>
 

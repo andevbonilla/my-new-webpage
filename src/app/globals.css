@@ -193,14 +193,6 @@
     transition: opacity 0.5s ease;
 }
 
-
-.message{
-    background-image: url("../assets/message.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 /* water style part */
 
 .waves {
@@ -270,7 +262,7 @@
 
 @keyframes moonmove {
       0% {
-        transform: translate(-300rem, -30rem) scale(3,3);
+        transform: translate(-600rem, -30rem) scale(3,3);
       }
       100% {
         transform: translate(500vw, 0) scale(3,3);
