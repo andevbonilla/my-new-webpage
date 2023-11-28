@@ -132,43 +132,43 @@ export default function HomeES() {
                     </div>
 
                     <Project name={"YourDreamCar"} 
-                            desc={"YourDreamCar is a web page that I designed for a company that I developed with my best friend David. Which offers wrapping services, window tinting and more. #YourDreamCar"} 
+                            desc={"YourDreamCar est un site web que j'ai conçu pour une entreprise que je développe avec mon meilleur ami David. Nous offrons des services d'habillage de voiture, de vitres teintées et bien d'autres choses encore. #YourDreamCar"} 
                             link={"https://www.yourdreamcar.ca/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"} 
                             imgUrl={"yourdreamcar-interface.png"}
                             imgStack={"yourdreamcar-stack.png"}
-                            buttonText={"View Project"}
+                            buttonText={"Voir le projet"}
                             iconList={[<Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <TailwindSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <NextJsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
                                       ]}
                     />
                     <Project name={"Fansive"} 
-                            desc={"Fansive is a startup created by me which is a platform for exclusive content. This app has all the necessary tools for content creators to offer the best content to their subscribers, such as live streaming, stories, group chats, private chats, post, file storage and much more."} 
+                            desc={"Fansive est une startup que j'ai créée et qui est une plateforme de contenu exclusif. Cette application dispose de tous les outils nécessaires aux créateurs de contenu pour offrir le meilleur contenu à leurs abonnés, tels que les flux en direct, les histoires, les chats de groupe, les chats privés, la publication, le stockage de fichiers et bien plus encore."} 
                             link={"https://fansive.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"} 
                             imgUrl={"fansive-interface.png"}
                             imgStack={"fansive-stack.png"}
-                            buttonText={"View Project"}
+                            buttonText={"Voir le projet"}
                             iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <WebRTCSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <SocketIOSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <TypeScriptSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <NodejsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <MongoDBSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                      ]}
+                                      ]}                            
                     />
                     <Project name={"Virtual Board"} 
-                            desc={"Virtual Board is a web application made without using libraries that simulates a classroom board, so you can draw, erase, create figures, drag and drop, rotate and many other things. This app use trigonometry and algebra to solve some of the functionalities in the virtual board."} 
+                            desc={"Virtual Board est une application web créée sans l'utilisation de bibliothèques qui simule un tableau noir de salle de classe, vous permettant de dessiner, d'effacer, de créer des formes, de glisser-déposer, de faire pivoter et bien d'autres fonctions. Cette application utilise la trigonométrie et l'algèbre pour résoudre certaines des fonctionnalités du tableau virtuel."} 
                             link={"https://super-virtual-board.netlify.app/"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"} 
                             imgUrl={"virtualboard-interface.jpg"}
                             imgStack={"virtual-board-stack.png"}
-                            buttonText={"View Project"}
+                            buttonText={"Voir le projet"}
                             iconList={[<ReactSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <Css3SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
-                                      ]}
+                                      ]}                            
                     />
                 </div>
 
@@ -234,39 +234,39 @@ export default function HomeES() {
                         />
                     </div>
                     <Project name={"FileBox"} 
-                            desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."} 
+                            desc={"FileBox est une application que j'ai créée, très similaire à Dropbox, Google Drive ou d'autres applications similaires, dans laquelle n'importe qui peut charger des fichiers, les télécharger, créer des dossiers et exécuter de nombreuses autres fonctions."} 
                             link={"https://filebox.netlify.app/#/login"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"} 
                             imgUrl={"filebox-interface.png"}
                             imgStack={"filebox-stack.png"}
-                            buttonText={"View Project"}
+                            buttonText={"Voir le projet"}
                             iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <MongoDBSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <AwsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <NodejsSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
-                                      ]}
+                                      ]}                            
                     />
                     <Project name={"Geekepedia"} 
-                            desc={"Geekipedia is a blog where you can learn how some of the most famous algorithms in computer science work, such as BFS (Breath First Search), QuickSort, Binary Search and many more."} 
+                            desc={"Geekipedia est un blog où vous pouvez apprendre comment fonctionnent certains des algorithmes les plus célèbres en informatique, tels que BFS (Breadth Search), QuickSort, Binary Search et bien d'autres."} 
                             link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"} 
                             imgUrl={"geekipedia-interface.png"}
                             imgStack={"geekipedia-stack.png"}
-                            buttonText={"View Project"}
+                            buttonText={"Voir le projet"}
                             iconList={[<AngularSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <Html5SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
                                        <Css3SVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>
-                                      ]}
+                                      ]}                            
                     />
                     <Project name={"thePokedex"} 
-                            desc={"thePokedex is an app with light and dark theme in which you can find and search information of all existing pokemon and you can use it on android and ios devices."} 
+                            desc={"thePokedex est une application à thème clair et sombre où vous pouvez trouver et rechercher des informations sur tous les Pokémon existants. Elle est également compatible avec les appareils Android et iOS."} 
                             link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"} 
                             imgUrl={"pokedex-interface.png"}
                             imgStack={"pokedex-stack.png"}
-                            buttonText={"View Project"}
+                            buttonText={"Voir le projet"}
                             iconList={[<ReactSVG className={"w-[2rem] lg:w-[3rem] mr-3"}/>,
-                                      ]}
+                                      ]}                            
                     />
                     <div className='flex h-[18rem]'>
                         <Image 
