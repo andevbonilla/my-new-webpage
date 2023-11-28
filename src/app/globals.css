@@ -378,7 +378,38 @@
     animation-timing-function: linear;
     animation-direction: normal;
 }
+
+.pictures5{
+    animation-duration: 40000ms;
+}
+
+.pictures4{
+    animation-duration: 60000ms;
+}
+
+.pictures3{
+    animation-duration: 80000ms;
+}
+
+.pictures2{
+    animation-duration: 40000ms;
+}
+
+.pictures1{
+    animation-name: picturesBalloons;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
 @keyframes picturesBalloons {
+  0%{transform: rotate(0deg) translateY(20rem);}
+  50%{transform: rotate(20deg) translateY(-150rem);}
+  100%{transform: rotate(0deg) translateY(-300rem);}
+}
+
+@keyframes picturesBalloonsFalling {
   0%{transform: rotate(0deg) translateY(20rem);}
   50%{transform: rotate(20deg) translateY(-150rem);}
   100%{transform: rotate(0deg) translateY(-300rem);}
