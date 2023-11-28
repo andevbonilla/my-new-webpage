@@ -7,48 +7,57 @@ export const PicturesInBalloons = () => {
   const [animationY, setAnimationY] = useState(450);
   const animatedImage = useRef(null);
 
+  let tempPositionY = animationY;
   const directionFunction = (value:any) => {
     if (balloons === 5) {
+      tempPositionY = value - 0.8;
       return value - 0.8;
     }
     if (balloons === 4) {
+      tempPositionY = value - 0.8;
       return value + 0.3;
     }
     if (balloons === 3) {
+      tempPositionY = value - 0.8;
       return value + 0.3;
     }
     if (balloons === 2) {
+      tempPositionY = value - 0.8;
       return value + 1;
     }
     if (balloons === 1) {
+      tempPositionY = value - 0.8;
       return value + 2.2;
     }
     if (balloons === 0) {
+      tempPositionY = value - 0.8;
       return value + 8;
     }
   }
 
   useEffect(() => {
       let initialPosition = animationY;
+      console.log(screen.height)
       setInterval(() => {
+        
+        if (tempPositionY > 300 || Math.abs(tempPositionY) > (screen.height+500)) {
+            setAnimationY(initialPosition);
+            setBalloons(5);
 
+            const ballonOBj1:any = document.getElementById(`balloon1`);
+            const ballonOBj2:any = document.getElementById(`balloon2`);
+            const ballonOBj3:any = document.getElementById(`balloon3`);
+            const ballonOBj4:any = document.getElementById(`balloon4`);
+            const ballonOBj5:any = document.getElementById(`balloon5`);
 
-        setAnimationY(initialPosition);
-        setBalloons(5);
+            ballonOBj1.style.display = "block";
+            ballonOBj2.style.display = "block";
+            ballonOBj3.style.display = "block";
+            ballonOBj4.style.display = "block";
+            ballonOBj5.style.display = "block";
+        }
 
-        const ballonOBj1:any = document.getElementById(`balloon1`);
-        const ballonOBj2:any = document.getElementById(`balloon2`);
-        const ballonOBj3:any = document.getElementById(`balloon3`);
-        const ballonOBj4:any = document.getElementById(`balloon4`);
-        const ballonOBj5:any = document.getElementById(`balloon5`);
-
-        ballonOBj1.style.display = "block";
-        ballonOBj2.style.display = "block";
-        ballonOBj3.style.display = "block";
-        ballonOBj4.style.display = "block";
-        ballonOBj5.style.display = "block";
-
-      }, 20000);
+      }, 10000);
   }, [])
   
 
