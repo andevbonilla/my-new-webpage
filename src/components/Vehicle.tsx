@@ -428,7 +428,7 @@ export const Vehicle = ({lenguage}:any) => {
             }
 
             {
-               vehicleIsMoving && <div className='fixed flex justify-center items-center w-full mt-4'>
+               vehicleIsMoving && <div className='fixed flex justify-center items-center w-full mt-4 z-[995]'>
                                         <button onClick={findVehicleInScreen} className='text-white font-bold bg-green-500 bg-opacity-90 z-[99] py-4 px-5 rounded-full'>
                                             {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
                                             {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
@@ -441,7 +441,7 @@ export const Vehicle = ({lenguage}:any) => {
 
             {
 
-                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
+                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-[996] bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
                                             <h2 className='font-bold text-white mb-10 text-2xl'>{texts.title}</h2>
                                             <div className='flex'>
                                                 <p className='font-bold text-lg mr-2'>{texts.vehicleName}</p>
