@@ -7,7 +7,7 @@ import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
 import { Vehicle } from '@/components/Vehicle';
-import { AngularSVG, AwsSVG, Css3SVG, Html5SVG, MongoDBSVG, NextJsSVG, NodejsSVG, ReactSVG, SocketIOSVG, TailwindSVG, TypeScriptSVG, WebRTCSVG } from '@/utils/IconsSvgs';
+import { AngularSVG, AwsSVG, Css3SVG, Html5SVG, MongoDBSVG, NextJsSVG, NodejsSVG, ReactSVG, SocketIOSVG, TailwindSVG, WebRTCSVG } from '@/utils/IconsSvgs';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
@@ -152,9 +152,8 @@ export default function HomeES() {
                             iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <WebRTCSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <SocketIOSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
-                                       <TypeScriptSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
                                        <NodejsSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
-                                       <MongoDBSVG className={"w-[3rem] mr-3"} key={Math.random()}/>,
+                                       <MongoDBSVG className={"w-[3rem] mr-3"} key={Math.random()}/>
                                       ]}                            
                     />
                     <Project name={"Virtual Board"} 
