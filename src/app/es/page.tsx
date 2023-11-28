@@ -2,6 +2,7 @@ import { City } from '@/components/City';
 import { ContactForm } from '@/components/ContactForm';
 import { CuriosFact } from '@/components/CuriosFact';
 import { Navbar } from '@/components/Navbar';
+import { PicturesInBalloons } from '@/components/Pictures';
 import { Project } from '@/components/Project';
 import { Skills } from '@/components/Skills';
 import { StarsBackground } from '@/components/Stars';
@@ -22,8 +23,8 @@ export default function HomeES() {
       
       <Navbar lenguage={"es"}/>
       <Vehicle lenguage={"es"}/>
-      <main className='overflow-x-hidden z-20'>
-          
+      <main className='overflow-x-hidden z-20 relative'>
+          <PicturesInBalloons />
           <div className='gradient-background relative'>
 
             <StarsBackground>
