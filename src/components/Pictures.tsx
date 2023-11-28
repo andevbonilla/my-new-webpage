@@ -61,11 +61,11 @@ export const PicturesInBalloons = () => {
     >
       <div className="flex z-[995] relative">
         {/* Balloons here */}
-        <div id="balloon1" onClick={() => deleteBalloon(1)} className="cursor-pointer balloon -translate-y-[10rem] top-0 left-[-7rem]"></div>
-        <div id="balloon2" onClick={() => deleteBalloon(2)} className="cursor-pointer balloon -translate-y-[15rem] top-0 left-[-7rem]"></div>
-        <div id="balloon3" onClick={() => deleteBalloon(3)} className="cursor-pointer balloon -translate-y-[20rem] top-0 left-[-7rem]"></div>
-        <div id="balloon4" onClick={() => deleteBalloon(4)} className="cursor-pointer balloon -translate-y-[25rem] top-0 left-[-7rem]"></div>
-        <div id="balloon5" onClick={() => deleteBalloon(5)} className="cursor-pointer balloon -translate-y-[30rem] top-0 left-[-7rem]"></div>
+        <div id="balloon1" onClick={() => deleteBalloon(1)} className="cursor-pointer balloon rotate-[13deg] -translate-y-[10rem] top-0 left-[-3rem]"></div>
+        <div id="balloon2" onClick={() => deleteBalloon(2)} className="cursor-pointer balloon rotate-[-12deg] -translate-y-[8rem] top-0 left-[-10rem]"></div>
+        <div id="balloon3" onClick={() => deleteBalloon(3)} className="cursor-pointer balloon rotate-[-10deg] -translate-y-[15rem] top-0 left-[-12rem]"></div>
+        <div id="balloon4" onClick={() => deleteBalloon(4)} className="cursor-pointer balloon -translate-y-[20rem] top-0 left-[-7rem]"></div>
+        <div id="balloon5" onClick={() => deleteBalloon(5)} className="cursor-pointer balloon rotate-[10deg] -translate-y-[12rem] top-0 left-[-6rem]"></div>
       </div>
       <Image
         src={require(`@/assets/ovni.png`)}
