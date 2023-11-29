@@ -35,10 +35,10 @@ export const PicturesInBalloons = () => {
     }else{
 
       if (balloons === 5) {
-        return value - 2
+        return value - 1.5
       }
       if (balloons === 4) {
-        return value - 1.4
+        return value - 1
       }
       if (balloons === 3) {
         return value - 0.4
@@ -50,7 +50,7 @@ export const PicturesInBalloons = () => {
         return value + 3;
       }
       if (balloons === 0) {
-        return value + 7;
+        return value + 6;
       }
 
     }
@@ -59,7 +59,7 @@ export const PicturesInBalloons = () => {
   useEffect(() => {
 
     if (window && window.innerHeight) {
-      if (Math.abs(animationY) > window.innerHeight+4000) {
+      if (Math.abs(animationY) > window.innerHeight+5000) {
         console.log("reaparece")
         setBalloons(5);
         setAnimationY(initialAnimationY);
