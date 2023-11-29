@@ -4,80 +4,71 @@ import Image from "next/image";
 
 export const PicturesInBalloons = () => {
   const [balloons, setBalloons] = useState(5);
-  const [animationY, setAnimationY] = useState(450);
+  const [initialAnimationY, setInitialAnimationY] = useState(450);
+  const [animationY, setAnimationY] = useState(initialAnimationY);
   const animatedImage = useRef(null);
 
-  let tempPositionY = animationY;
   const directionFunction = (value:any) => {
     if (balloons === 5) {
-      tempPositionY = value - 0.8;
-      return value - 0.8;
+      return value - screen.height/1000;
     }
     if (balloons === 4) {
-      tempPositionY = value - 0.8;
-      return value + 0.3;
+      return value - (screen.height/1000)*0.50;
     }
     if (balloons === 3) {
-      tempPositionY = value - 0.8;
-      return value + 0.3;
+      return value - (screen.height/1000)*0.25;
     }
     if (balloons === 2) {
-      tempPositionY = value - 0.8;
       return value + 1;
     }
     if (balloons === 1) {
-      tempPositionY = value - 0.8;
       return value + 2.2;
     }
     if (balloons === 0) {
-      tempPositionY = value - 0.8;
-      return value + 8;
+      return value + 4;
     }
   }
 
   useEffect(() => {
-      let initialPosition = animationY;
-      console.log(screen.height)
-      setInterval(() => {
-        
-        if (tempPositionY > 300 || Math.abs(tempPositionY) > (screen.height+500)) {
-            setAnimationY(initialPosition);
-            setBalloons(5);
 
-            const ballonOBj1:any = document.getElementById(`balloon1`);
-            const ballonOBj2:any = document.getElementById(`balloon2`);
-            const ballonOBj3:any = document.getElementById(`balloon3`);
-            const ballonOBj4:any = document.getElementById(`balloon4`);
-            const ballonOBj5:any = document.getElementById(`balloon5`);
-
-            ballonOBj1.style.display = "block";
-            ballonOBj2.style.display = "block";
-            ballonOBj3.style.display = "block";
-            ballonOBj4.style.display = "block";
-            ballonOBj5.style.display = "block";
+    if (Math.abs(animationY) > screen.height+3000) {
+      console.log("reaparece")
+      setBalloons(5);
+      setAnimationY(initialAnimationY);
+      for (let i = 1; i <= 5; i++) {
+        const balloonObj = document.getElementById(`balloon${i}`);
+        if (balloonObj) {
+          balloonObj.style.display = "block";
         }
+      }
+    }
 
-      }, 10000);
-  }, [])
+  }, [animationY, initialAnimationY]);
   
 
   useEffect(() => {
+    let animationId:any;
+
     const animate = () => {
       setAnimationY((prevY) => directionFunction(prevY));
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     };
 
-    const animationId = requestAnimationFrame(animate);
+    animate(); // Iniciar la animación al principio
 
-    return () => cancelAnimationFrame(animationId);
-  }, [balloons]);
+    return () => {
+      // Cancelar la animación cuando balloons cambie
+      cancelAnimationFrame(animationId);
+    };
+  }, [balloons, initialAnimationY]);
 
   const deleteBalloon = (id:number) => {
 
-    const balloonSelected:any = document.getElementById(`balloon${id}`);
-    balloonSelected.style.display = "none";
-
-    setBalloons(balloons-1);
+    const balloonSelected = document.getElementById(`balloon${id}`);
+    if (balloonSelected) {
+      balloonSelected.style.display = "none";
+      setBalloons((prevBalloons) => prevBalloons - 1);
+    }
 
   };
 
