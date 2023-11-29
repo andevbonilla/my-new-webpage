@@ -17,10 +17,10 @@ export const PicturesInBalloons = () => {
         return value - 4
       }
       if (balloons === 4) {
-        return value - 3.2
+        return value - 2.8
       }
       if (balloons === 3) {
-        return value - 2.4
+        return value - 1
       }
       if (balloons === 2) {
         return value + 1;
