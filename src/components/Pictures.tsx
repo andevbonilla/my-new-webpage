@@ -9,36 +9,40 @@ export const PicturesInBalloons = () => {
   const animatedImage = useRef(null);
 
   const directionFunction = (value:any) => {
-    if (balloons === 5) {
-      return value - screen.height/1000;
-    }
-    if (balloons === 4) {
-      return value - (screen.height/1000)*0.50;
-    }
-    if (balloons === 3) {
-      return value - (screen.height/1000)*0.25;
-    }
-    if (balloons === 2) {
-      return value + 1;
-    }
-    if (balloons === 1) {
-      return value + 2.2;
-    }
-    if (balloons === 0) {
-      return value + 4;
+    if (window && window.innerHeight) {
+      if (balloons === 5) {
+        return value - window.innerHeight/1000;
+      }
+      if (balloons === 4) {
+        return value - (window.innerHeight/1000)*0.50;
+      }
+      if (balloons === 3) {
+        return value - (window.innerHeight/1000)*0.25;
+      }
+      if (balloons === 2) {
+        return value + 1;
+      }
+      if (balloons === 1) {
+        return value + 2.2;
+      }
+      if (balloons === 0) {
+        return value + 4;
+      }
     }
   }
 
   useEffect(() => {
 
-    if (Math.abs(animationY) > screen.height+3000) {
-      console.log("reaparece")
-      setBalloons(5);
-      setAnimationY(initialAnimationY);
-      for (let i = 1; i <= 5; i++) {
-        const balloonObj = document.getElementById(`balloon${i}`);
-        if (balloonObj) {
-          balloonObj.style.display = "block";
+    if (window && window.innerHeight) {
+      if (Math.abs(animationY) > window.innerHeight+3000) {
+        console.log("reaparece")
+        setBalloons(5);
+        setAnimationY(initialAnimationY);
+        for (let i = 1; i <= 5; i++) {
+          const balloonObj = document.getElementById(`balloon${i}`);
+          if (balloonObj) {
+            balloonObj.style.display = "block";
+          }
         }
       }
     }
