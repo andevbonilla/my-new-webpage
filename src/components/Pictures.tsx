@@ -9,24 +9,49 @@ export const PicturesInBalloons = () => {
   const animatedImage = useRef(null);
 
   const directionFunction = (value:any) => {
+    if (window.innerHeight < 700) {
+
       if (balloons === 5) {
-        return value - 1
+        return value - 4
       }
       if (balloons === 4) {
-        return value - 0.8
+        return value - 3.2
       }
       if (balloons === 3) {
-        return value - 0.6
+        return value - 2.4
       }
       if (balloons === 2) {
         return value + 1;
       }
       if (balloons === 1) {
-        return value + 2.2;
+        return value + 6;
       }
       if (balloons === 0) {
-        return value + 4;
+        return value + 10;
       }
+      
+    }else{
+
+      if (balloons === 5) {
+        return value - 0.8
+      }
+      if (balloons === 4) {
+        return value - 0.64
+      }
+      if (balloons === 3) {
+        return value - 0.48
+      }
+      if (balloons === 2) {
+        return value + 0.2;
+      }
+      if (balloons === 1) {
+        return value + 2;
+      }
+      if (balloons === 0) {
+        return value + 6;
+      }
+
+    }
   }
 
   useEffect(() => {
