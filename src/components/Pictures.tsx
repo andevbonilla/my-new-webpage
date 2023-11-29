@@ -9,7 +9,9 @@ export const PicturesInBalloons = () => {
   const animatedImage = useRef(null);
 
   const directionFunction = (value:any) => {
-    if (window.innerHeight < 700) {
+
+    console.log(screen.width)
+    if (screen.width < 700) {
 
       if (balloons === 5) {
         return value - 4
