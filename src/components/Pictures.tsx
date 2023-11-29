@@ -29,28 +29,28 @@ export const PicturesInBalloons = () => {
         return value + 6;
       }
       if (balloons === 0) {
-        return value + 10;
+        return value + 12;
       }
       
     }else{
 
       if (balloons === 5) {
-        return value - 0.8
+        return value - 2
       }
       if (balloons === 4) {
-        return value - 0.64
+        return value - 1.4
       }
       if (balloons === 3) {
-        return value - 0.48
+        return value - 0.4
       }
       if (balloons === 2) {
-        return value + 0.2;
+        return value + 1;
       }
       if (balloons === 1) {
-        return value + 2;
+        return value + 3;
       }
       if (balloons === 0) {
-        return value + 6;
+        return value + 7;
       }
 
     }
@@ -59,7 +59,7 @@ export const PicturesInBalloons = () => {
   useEffect(() => {
 
     if (window && window.innerHeight) {
-      if (Math.abs(animationY) > window.innerHeight+3000) {
+      if (Math.abs(animationY) > window.innerHeight+4000) {
         console.log("reaparece")
         setBalloons(5);
         setAnimationY(initialAnimationY);

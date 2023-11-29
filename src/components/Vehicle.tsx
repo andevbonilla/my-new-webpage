@@ -416,32 +416,10 @@ export const Vehicle = ({lenguage}:any) => {
     }
     
   return (
-    <div>
-            {
-               vehicleIsMoving && <button onClick={()=>setShowVehicleInfo(true)} ref={vehicleIMG} className='absolute left-0 bottom-0 w-[12rem] h-[12rem]'>
-                                        <Image    
-                                            src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
-                                            alt={vehicles[vehicleIndex].vehicle}
-                                            className='w-auto'
-                                        />
-                                  </button>
-            }
-
-            {
-               vehicleIsMoving && <div className='fixed flex justify-center items-center w-full mt-4 z-[995]'>
-                                        <button onClick={findVehicleInScreen} className='text-white font-bold bg-green-500 bg-opacity-90 z-[99] py-4 px-5 rounded-full'>
-                                            {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
-                                            {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
-                                            {(vehiclePart === 3) && <p className='font-bold'>{`Airplanes -> ISS`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeAirplanes}</span></p>}
-                                            {(vehiclePart === 4) && <p className='font-bold'>{`ISS -> +moon`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].totalTime}</span></p>}
-                                        </button>
-                
-                                  </div>
-            }
-
+    <>
             {
 
-                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-[996] bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
+                   showVehicleInfo &&  <div className={`opacity-transition fixed w-full bottom-0 left-0 z-50 bg-black bg-opacity-95 text-white py-10 px-[10%] lg:px-[25%]`}>            
                                             <h2 className='font-bold text-white mb-10 text-2xl'>{texts.title}</h2>
                                             <div className='flex'>
                                                 <p className='font-bold text-lg mr-2'>{texts.vehicleName}</p>
@@ -460,7 +438,7 @@ export const Vehicle = ({lenguage}:any) => {
                                                 <p className='font-bold text-lg mt-6'>{texts.adviceTitle}</p>
                                                 <p className='text-lg opacity-80 mt-2'>{texts.advice}</p>
                                             </div>
-                                            <div className='w-full flex justify-end items-center mt-10'>
+                                            <div className='w-full flex justify-start items-center mt-10'>
                                                 <button onClick={findVehicleInScreen} className='bg-yellow-200 py-4 px-5 text-black font-bold mr-6' type='button'>{texts.followButton}</button>
                                                 <button onClick={closeInfo} className='bg-yellow-200 py-4 px-5 text-black font-bold' type='button'>{texts.closeButton}</button>
                                             </div>
@@ -469,7 +447,29 @@ export const Vehicle = ({lenguage}:any) => {
             }
 
             {
-                  <div ref={vehicleWrapper} className={`fixed bottom-0 right-0 mr-6 z-[995] flex flex-col justify-center items-center`}>
+               vehicleIsMoving && <button onClick={()=>setShowVehicleInfo(true)} ref={vehicleIMG} className='z-[999] absolute left-0 bottom-0 w-[12rem] h-[12rem]'>
+                                        <Image    
+                                            src={require(`@/assets/${vehicles[vehicleIndex].img}`)}
+                                            alt={vehicles[vehicleIndex].vehicle}
+                                            className='w-auto relative z-[999]'
+                                        />
+                                  </button>
+            }
+
+            {
+               vehicleIsMoving && <div className='fixed flex justify-center items-center w-full mt-4 z-[995]'>
+                                        <button onClick={findVehicleInScreen} className='text-white font-bold bg-green-500 bg-opacity-90 z-[99] py-4 px-5 rounded-full'>
+                                            {(vehiclePart === 1) && <p className='font-bold'>{`Titanic -> City`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeTitanic}</span></p>}
+                                            {(vehiclePart === 2) && <p className='font-bold'>{`City -> Airplanes`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeCity}</span></p>}
+                                            {(vehiclePart === 3) && <p className='font-bold'>{`Airplanes -> ISS`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].timeAirplanes}</span></p>}
+                                            {(vehiclePart === 4) && <p className='font-bold'>{`ISS -> +moon`}: <span className='font-normal opacity-85'>{vehicles[vehicleIndex].totalTime}</span></p>}
+                                        </button>
+                
+                                  </div>
+            }
+
+            {
+                  <div ref={vehicleWrapper} className={`fixed bottom-0 right-0 mr-6 z-[200] flex flex-col justify-center items-center`}>
                                         <button onClick={goUp}
                                                 type='button' 
                                                 className={`rounded-full bg-white p-2 ${(canUptade) ? "border-green-500" : "border-gray-400"} border-4 w-[6rem] h-[6rem]`}>
@@ -498,7 +498,7 @@ export const Vehicle = ({lenguage}:any) => {
             }
 
 
-    </div>
+    </>
 
   )
 }
