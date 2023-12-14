@@ -8,13 +8,13 @@ export const PicturesInBalloons = () => {
   const [animationY, setAnimationY] = useState(initialAnimationY);
   const animatedImage = useRef(null);
 
-  const directionFunction = (value:any) => {
+  const directionFunction = (value: any) => {
 
     console.log(screen.width)
     if (screen.width < 700) {
 
       if (balloons === 5) {
-        return value - 4
+        return value - 3.6
       }
       if (balloons === 4) {
         return value - 2.8
@@ -31,11 +31,11 @@ export const PicturesInBalloons = () => {
       if (balloons === 0) {
         return value + 12;
       }
-      
-    }else{
+
+    } else {
 
       if (balloons === 5) {
-        return value - 1.5
+        return value - 1.3
       }
       if (balloons === 4) {
         return value - 1
@@ -59,7 +59,7 @@ export const PicturesInBalloons = () => {
   useEffect(() => {
 
     if (window && window.innerHeight) {
-      if (Math.abs(animationY) > window.innerHeight+5000) {
+      if (Math.abs(animationY) > window.innerHeight + 6000) {
         console.log("reaparece")
         setBalloons(5);
         setAnimationY(initialAnimationY);
@@ -73,10 +73,10 @@ export const PicturesInBalloons = () => {
     }
 
   }, [animationY, initialAnimationY]);
-  
+
 
   useEffect(() => {
-    let animationId:any;
+    let animationId: any;
 
     const animate = () => {
       setAnimationY((prevY) => directionFunction(prevY));
@@ -91,7 +91,7 @@ export const PicturesInBalloons = () => {
     };
   }, [balloons, initialAnimationY]);
 
-  const deleteBalloon = (id:number) => {
+  const deleteBalloon = (id: number) => {
 
     const balloonSelected = document.getElementById(`balloon${id}`);
     if (balloonSelected) {
