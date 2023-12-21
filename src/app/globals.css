@@ -268,7 +268,7 @@
         transform: translate(-600rem, -30rem) scale(3,3);
       }
       100% {
-        transform: translate(500vw, 0) scale(3,3);
+        transform: translate(600vw, 0) scale(3,3);
       }
 }
 
