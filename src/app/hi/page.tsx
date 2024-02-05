@@ -1,6 +1,7 @@
 import { City } from '@/components/City';
 import { ContactForm } from '@/components/ContactForm';
 import { CuriosFact } from '@/components/CuriosFact';
+import { Footer } from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
 import { PicturesInBalloons } from '@/components/Pictures';
 import { Project } from '@/components/Project';
@@ -279,35 +280,7 @@ export default function HomeES() {
 
           <CuriosFact text={"इस समय हम 3,800 मीटर गहराई पर हैं, जहां टाइटैनिक के अवशेष स्थित हैं और मेरी वेबसाइट के अंत में हैं।"} />
 
-          <div className='titanic mt-20'>
-            <div className='flex justify-center items-center mb-24'>
-              <Link href={"https://www.instagram.com/__andrec__/"}
-                target='_blank'
-                title='instagram link'>
-                <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
-              </Link>
-              <Link href={"https://twitter.com/AndresB64566284"}
-                target='_blank'
-                title='twitter link'>
-                <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
-              </Link>
-              <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"}
-                target='_blank'
-                title='linkedin link'>
-                <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
-              </Link>
-              <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"}
-                target='_blank'
-                title='github link'>
-                <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
-              </Link>
-            </div>
-            <Image
-              src={require("@/assets/titanic.png")}
-              alt="titanic in the deep of the sea"
-              className='w-full scale-150 lg:scale-[1.4] -translate-x-6 mt-[15rem]'
-            />
-          </div>
+          <Footer titanicAlt={"समुद्र की गहराई में टाइटैनिक"} />
 
         </div>
 

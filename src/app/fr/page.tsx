@@ -1,6 +1,7 @@
 import { City } from '@/components/City';
 import { ContactForm } from '@/components/ContactForm';
 import { CuriosFact } from '@/components/CuriosFact';
+import { Footer } from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
 import { PicturesInBalloons } from '@/components/Pictures';
 import { Project } from '@/components/Project';
@@ -278,35 +279,7 @@ export default function HomeES() {
 
           <CuriosFact text={"Nous nous trouvons actuellement à une profondeur de 3 800 mètres, là où se trouve l'épave du Titanic et à la fin de mon site web."} />
 
-          <div className='titanic mt-20'>
-            <div className='flex justify-center items-center mb-24'>
-              <Link href={"https://www.instagram.com/__andrec__/"}
-                target='_blank'
-                title='instagram link'>
-                <FontAwesomeIcon icon={faInstagram} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
-              </Link>
-              <Link href={"https://twitter.com/AndresB64566284"}
-                target='_blank'
-                title='twitter link'>
-                <FontAwesomeIcon icon={faTwitter} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
-              </Link>
-              <Link href={"https://www.linkedin.com/in/andres-bonilla-685983189/"}
-                target='_blank'
-                title='linkedin link'>
-                <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
-              </Link>
-              <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"}
-                target='_blank'
-                title='github link'>
-                <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
-              </Link>
-            </div>
-            <Image
-              src={require("@/assets/titanic.png")}
-              alt="titanesque au fond de la mer"
-              className='w-full scale-150 lg:scale-[1.4] -translate-x-6 mt-[15rem]'
-            />
-          </div>
+          <Footer titanicAlt={"titanic dans les profondeurs de la mer"} />
 
         </div>
 
