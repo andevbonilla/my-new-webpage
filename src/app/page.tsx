@@ -43,7 +43,7 @@ export default function Home() {
               </div>
               <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem] md:mb-[6rem] lg:mb-[12rem]'>
                 <Image
-                  src={require("@/assets/yo-en-el-tesla.png")}
+                  src={require("@/assets/yo-en-el-tesla.webp")}
                   alt='Andres Bonilla in a tesla roadster'
                   width={350}
                   height={350}

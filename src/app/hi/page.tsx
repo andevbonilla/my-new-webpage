@@ -45,7 +45,7 @@ export default function HomeES() {
               </div>
               <div className='md:w-[50%] relative w-full h-[20rem] mt-[5rem] md:mb-[6rem] lg:mb-[12rem]'>
                 <Image
-                  src={require("@/assets/yo-en-el-tesla.png")}
+                  src={require("@/assets/yo-en-el-tesla.webp")}
                   alt='टेस्ला रोडस्टर में एंड्रेस बोनिला'
                   width={350}
                   height={350}
