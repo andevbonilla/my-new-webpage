@@ -136,7 +136,7 @@ export default function HomeES() {
               <Project name={"YourDreamCar"}
                 desc={"YourDreamCar एक वेबसाइट है जिसे मैंने एक कंपनी के लिए डिज़ाइन किया है जिसे मैं अपने सबसे अच्छे दोस्त डेविड के साथ विकसित कर रहा हूं। हम विनाइल सेवाएँ, विंडो टिंटिंग और बहुत कुछ प्रदान करते हैं। #आपकी सपनों की कार"}
                 link={"https://www.yourdreamcar.ca/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"}
+                github={"https://github.com/andevbonilla/YourDreamCar"}
                 imgUrl={"yourdreamcar-interface.png"}
                 buttonText={"प्रोजेक्ट देखें"}
                 iconList={[<Html5SVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -147,7 +147,7 @@ export default function HomeES() {
               <Project name={"Fansive"}
                 desc={"Fansive मेरे द्वारा बनाया गया एक स्टार्टअप है, जो एक्सक्लूसिव कंटेंट के लिए एक प्लेटफॉर्म है। इस ऐप में सामग्री निर्माताओं के लिए अपने ग्राहकों को सर्वोत्तम सामग्री प्रदान करने के लिए सभी आवश्यक उपकरण हैं, जैसे लाइव स्ट्रीम, कहानियां, समूह चैट, निजी चैट, पोस्ट, फ़ाइल भंडारण और बहुत कुछ।"}
                 link={"https://fansive.netlify.app/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"}
+                github={"https://github.com/andevbonilla/fansive-code"}
                 imgUrl={"fansive-interface.png"}
                 buttonText={"प्रोजेक्ट देखें"}
                 iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -160,7 +160,7 @@ export default function HomeES() {
               <Project name={"Virtual Board"}
                 desc={"वर्चुअलबोर्ड एक लाइब्रेरी-मुक्त वेब ऐप है जो एक कक्षा व्हाइटबोर्ड का अनुकरण करता है, जो आपको चित्र बनाने, मिटाने, आकार बनाने, खींचने और छोड़ने, घुमाने और कई अन्य सुविधाओं की अनुमति देता है। यह एप्लिकेशन वर्चुअल व्हाइटबोर्ड पर कुछ कार्यक्षमताओं को हल करने के लिए त्रिकोणमिति और बीजगणित का उपयोग करता है।"}
                 link={"https://super-virtual-board.netlify.app/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"}
+                github={"https://github.com/andevbonilla/Virtual-Board"}
                 imgUrl={"virtualboard-interface.jpg"}
                 buttonText={"प्रोजेक्ट देखें"}
                 iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -233,7 +233,7 @@ export default function HomeES() {
             <Project name={"FileBox"}
               desc={"फाइलबॉक्स मेरे द्वारा बनाया गया एक एप्लिकेशन है, जो ड्रॉपबॉक्स, गूगल ड्राइव या अन्य समान के समान है, जिसमें कोई भी फाइल अपलोड कर सकता है, उन्हें डाउनलोड कर सकता है, फ़ोल्डर्स बना सकता है और कई अन्य कार्य कर सकता है।"}
               link={"https://filebox.netlify.app/#/login"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"}
+              github={"https://github.com/andevbonilla/backend-fileBox"}
               imgUrl={"filebox-interface.png"}
               buttonText={"प्रोजेक्ट देखें"}
               iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -244,8 +244,8 @@ export default function HomeES() {
             />
             <Project name={"Geekepedia"}
               desc={"गीकीपीडिया एक ब्लॉग है जहां आप सीख सकते हैं कि कंप्यूटर विज्ञान में कुछ सबसे प्रसिद्ध एल्गोरिदम कैसे काम करते हैं, जैसे कि बीएफएस (ब्रेडथ सर्च), क्विकसॉर्ट, बाइनरी सर्च और कई अन्य।"}
-              link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"}
+              link={"https://andevbonilla.github.io/Geekipedia/home/Geekipedia"}
+              github={"https://github.com/andevbonilla/Geekipedia"}
               imgUrl={"geekipedia-interface.png"}
               buttonText={"प्रोजेक्ट देखें"}
               iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -255,8 +255,8 @@ export default function HomeES() {
             />
             <Project name={"thePokedex"}
               desc={"पोकेडेक्स प्रकाश और अंधेरे थीम वाला एक एप्लिकेशन है जहां आप सभी मौजूदा पोकेमोन के बारे में जानकारी पा सकते हैं और खोज सकते हैं। इसके अतिरिक्त, यह Android और iOS उपकरणों के साथ संगत है।"}
-              link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"}
+              link={"https://github.com/andevbonilla/thePokedex"}
+              github={"https://github.com/andevbonilla/thePokedex"}
               imgUrl={"pokedex-interface.png"}
               buttonText={"प्रोजेक्ट देखें"}
               iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()} />,

@@ -138,7 +138,7 @@ export default function Home() {
               <Project name={"YourDreamCar"}
                 desc={"YourDreamCar is a web page that I designed for a company that I developed with my best friend David. Which offers wrapping services, window tinting and more. #YourDreamCar"}
                 link={"https://www.yourdreamcar.ca/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"}
+                github={"https://github.com/andevbonilla/YourDreamCar"}
                 imgUrl={"yourdreamcar-interface.png"}
                 buttonText={"View Project"}
                 iconList={[<Html5SVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -149,7 +149,7 @@ export default function Home() {
               <Project name={"Fansive"}
                 desc={"Fansive is a startup created by me which is a platform for exclusive content. This app has all the necessary tools for content creators to offer the best content to their subscribers, such as live streaming, stories, group chats, private chats, post, file storage and much more."}
                 link={"https://fansive.netlify.app/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"}
+                github={"https://github.com/andevbonilla/fansive-code"}
                 imgUrl={"fansive-interface.png"}
                 buttonText={"View Project"}
                 iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -162,7 +162,7 @@ export default function Home() {
               <Project name={"Virtual Board"}
                 desc={"Virtual Board is a web application made without using libraries that simulates a classroom board, so you can draw, erase, create figures, drag and drop, rotate and many other things. This app use trigonometry and algebra to solve some of the functionalities in the virtual board."}
                 link={"https://super-virtual-board.netlify.app/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"}
+                github={"https://github.com/andevbonilla/Virtual-Board"}
                 imgUrl={"virtualboard-interface.jpg"}
                 buttonText={"View Project"}
                 iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -234,7 +234,7 @@ export default function Home() {
             <Project name={"FileBox"}
               desc={"fileBox is an application created by me very similar to dropbox, google drive or similar, in which anyone can upload files, download them, create folders and many other functions."}
               link={"https://filebox.netlify.app/#/login"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"}
+              github={"https://github.com/andevbonilla/backend-fileBox"}
               imgUrl={"filebox-interface.png"}
               buttonText={"View Project"}
               iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -245,8 +245,8 @@ export default function Home() {
             />
             <Project name={"Geekepedia"}
               desc={"Geekipedia is a blog where you can learn how some of the most famous algorithms in computer science work, such as BFS (Breath First Search), QuickSort, Binary Search and many more."}
-              link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"}
+              link={"https://andevbonilla.github.io/Geekipedia/home/Geekipedia"}
+              github={"https://github.com/andevbonilla/Geekipedia"}
               imgUrl={"geekipedia-interface.png"}
               buttonText={"View Project"}
               iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -256,8 +256,8 @@ export default function Home() {
             />
             <Project name={"thePokedex"}
               desc={"thePokedex is an app with light and dark theme in which you can find and search information of all existing pokemon and you can use it on android and ios devices."}
-              link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"}
+              link={"https://github.com/andevbonilla/thePokedex"}
+              github={"https://github.com/andevbonilla/thePokedex"}
               imgUrl={"pokedex-interface.png"}
               buttonText={"View Project"}
               iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()} />,

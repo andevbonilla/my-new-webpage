@@ -136,7 +136,7 @@ export default function HomeES() {
               <Project name={"YourDreamCar"}
                 desc={"YourDreamCar es una página web que diseñé para una empresa que estoy desarrollando con mi mejor amigo David. Ofrecemos servicios de vinilado, polarizacion de ventanas y muchos más. #YourDreamCar"}
                 link={"https://www.yourdreamcar.ca/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/YourDreamCar"}
+                github={"https://github.com/andevbonilla/YourDreamCar"}
                 imgUrl={"yourdreamcar-interface.png"}
                 buttonText={"Ver Proyecto"}
                 iconList={[<Html5SVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -147,7 +147,7 @@ export default function HomeES() {
               <Project name={"Fansive"}
                 desc={"Fansive es una startup creada por mí, La cual es una plataforma para contenido exclusivo. Esta aplicación cuenta con todas las herramientas necesarias para que los creadores de contenido ofrezcan el mejor contenido a sus suscriptores, como transmisiones en vivo, historias, chats grupales, chats privados, publicaciones, almacenamiento de archivos y mucho más."}
                 link={"https://fansive.netlify.app/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/fansive-code"}
+                github={"https://github.com/andevbonilla/fansive-code"}
                 imgUrl={"fansive-interface.png"}
                 buttonText={"Ver Proyecto"}
                 iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -160,7 +160,7 @@ export default function HomeES() {
               <Project name={"Virtual Board"}
                 desc={"Virtual Board es una aplicación web creada sin utilizar bibliotecas que simula un pizarrón de aula, lo que te permite dibujar, borrar, crear figuras, arrastrar y soltar, rotar y muchas otras funciones. Esta aplicación utiliza trigonometría y álgebra para resolver algunas de las funcionalidades en el pizarrón virtual."}
                 link={"https://super-virtual-board.netlify.app/"}
-                github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Virtual-Board"}
+                github={"https://github.com/andevbonilla/Virtual-Board"}
                 imgUrl={"virtualboard-interface.jpg"}
                 buttonText={"Ver Proyecto"}
                 iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -232,7 +232,7 @@ export default function HomeES() {
             <Project name={"FileBox"}
               desc={"fileBox es una aplicación creada por mí, muy similar a Dropbox, Google Drive u otras similares, en la cual cualquiera puede cargar archivos, descargarlos, crear carpetas y realizar muchas otras funciones."}
               link={"https://filebox.netlify.app/#/login"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/backend-fileBox"}
+              github={"https://github.com/andevbonilla/backend-fileBox"}
               imgUrl={"filebox-interface.png"}
               buttonText={"Ver Proyecto"}
               iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -243,8 +243,8 @@ export default function HomeES() {
             />
             <Project name={"Geekepedia"}
               desc={"Geekipedia es un blog donde puedes aprender cómo funcionan algunos de los algoritmos más famosos en ciencias de la computación, como BFS (Búsqueda en Anchura), QuickSort, Búsqueda Binaria y muchos más."}
-              link={"https://a-n-d-r-e-s-b-o-n-i-l-l-a.github.io/Geekipedia/home/Geekipedia"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/Geekipedia"}
+              link={"https://andevbonilla.github.io/Geekipedia/home/Geekipedia"}
+              github={"https://github.com/andevbonilla/Geekipedia"}
               imgUrl={"geekipedia-interface.png"}
               buttonText={"Ver Proyecto"}
               iconList={[<AngularSVG className={"w-[3rem] mr-3"} key={Math.random()} />,
@@ -254,8 +254,8 @@ export default function HomeES() {
             />
             <Project name={"thePokedex"}
               desc={"thePokedex es una aplicación con temas claro y oscuro en la que puedes encontrar y buscar información sobre todos los Pokémon existentes. Además, es compatible con dispositivos Android e iOS."}
-              link={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"}
-              github={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A/thePokedex"}
+              link={"https://github.com/andevbonilla/thePokedex"}
+              github={"https://github.com/andevbonilla/thePokedex"}
               imgUrl={"pokedex-interface.png"}
               buttonText={"Ver Proyecto"}
               iconList={[<ReactSVG className={"w-[3rem] mr-3"} key={Math.random()} />,

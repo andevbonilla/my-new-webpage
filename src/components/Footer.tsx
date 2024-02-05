@@ -23,7 +23,7 @@ export const Footer = ({ titanicAlt }: any) => {
                     title='linkedin link'>
                     <FontAwesomeIcon icon={faLinkedin} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem] mr-12' />
                 </Link>
-                <Link href={"https://github.com/A-N-D-R-E-S-B-O-N-I-L-L-A"}
+                <Link href={"https://github.com/andevbonilla"}
                     target='_blank'
                     title='github link'>
                     <FontAwesomeIcon icon={faGithub} className='text-white md:w-[3rem] md:h-[3rem] w-[2.5rem] h-[2.5rem]' />
