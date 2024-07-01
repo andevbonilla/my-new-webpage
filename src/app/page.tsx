@@ -31,7 +31,7 @@ export default function Home() {
               <div className='mb-10 md:w-[50%]'>
                 <h1 className='text-white font-bold text-[1.6rem] um:text-[2.2rem] xl:text-[3rem]'>Andres Bonilla</h1>
                 <div className='flex text-white'>
-                  <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete']}
+                  <TypingAnimation stringList={['Software Developer', 'Entrepreneur', 'Athlete', "University Student"]}
                     wrapper="h2" />
                 </div>
 
