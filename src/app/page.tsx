@@ -10,11 +10,6 @@ import { StarsBackground } from '@/components/Stars';
 import { TypingAnimation } from '@/components/TypingAnimation';
 import { Vehicle } from '@/components/Vehicle';
 import { AngularSVG, AwsSVG, Css3SVG, Html5SVG, MongoDBSVG, NextJsSVG, NodejsSVG, ReactSVG, SocketIOSVG, TailwindSVG, WebRTCSVG } from '@/utils/IconsSvgs';
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -53,14 +48,13 @@ export default function Home() {
             </div>
 
             {/* about me */}
-            <div className='px-[15%]'>
+            <div className='px-[20%]'>
               <div className='flex w-full justify-center items-center' id='about'>
                 <h2 className='border-b-[.5rem] pl-[1.6rem] pr-[.8rem] pb-2 border-yellow-200 tracking-[.8rem] md:text-3xl font-bold text-white text-lg um:text-xl mt-[12rem] mb-12'>ABOUT ME</h2>
               </div>
-              <p className='text-white text-left text-xl leading-10'>Hi there! 👋 How are you? My name is Andres Bonilla. I&apos;m a student, software developer, and entrepreneur.
-                I love creating technological products. When I was 16, I founded my first company, Fansive.
-                I&apos;m passionate about science, technology, cars, music, but above all, ice cream. 😄
+              <p className='text-white text-center text-xl leading-10 text-opacity-80'>👋 Hi, I&apos;m Andrés Bonilla. I&apos;m a university student, entrepreneur, and software developer. I started programming as a hobby at the age of 13 and founded my first tech company, <a target='_blank' className='underline text-opacity-100 font-bold' href='https://fansive.netlify.app/#/login'>Fansive</a>, at 16. Since then, I&apos;ve developed several projects, including <a target='_blank' className='underline text-opacity-100 font-bold' href='https://www.simpliterms.com'>Simpliterms</a> and <a target='_blank' className='underline text-opacity-100 font-bold' href='https://info.movete.me'>Movete</a>.
               </p>
+              <p className='mt-4 text-white text-center text-xl leading-10 text-opacity-80'> I&apos;m passionate about continuous learning, traveling, cars, and, above all, ice cream. I&apos;m always looking for new opportunities to grow and contribute with my skills in software development and technological innovation.</p>
             </div>
 
             <CuriosFact text={"We are 384,400 km above sea level, at this altitude the moon is orbiting the earth. Wait a little and you will surely see it."} />

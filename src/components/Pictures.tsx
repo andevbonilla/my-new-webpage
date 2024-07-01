@@ -10,7 +10,6 @@ export const PicturesInBalloons = () => {
 
   const directionFunction = (value: any) => {
 
-    console.log(screen.width)
     if (screen.width < 700) {
 
       if (balloons === 5) {
@@ -60,7 +59,6 @@ export const PicturesInBalloons = () => {
 
     if (window && window.innerHeight) {
       if (Math.abs(animationY) > window.innerHeight + 6000) {
-        console.log("reaparece")
         setBalloons(5);
         setAnimationY(initialAnimationY);
         for (let i = 1; i <= 5; i++) {
